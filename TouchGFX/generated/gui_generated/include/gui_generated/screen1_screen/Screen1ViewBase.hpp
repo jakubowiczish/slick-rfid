@@ -7,8 +7,9 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <mvp/View.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
-#include <touchgfx/widgets/Box.hpp>
+#include <touchgfx/widgets/ScalableImage.hpp>
 #include <touchgfx/widgets/Button.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -25,16 +26,21 @@ protected:
     /*
      * Member Declarations
      */
-    touchgfx::Box box1;
-    touchgfx::Button button1;
-    touchgfx::Button button2;
-    touchgfx::Button button3;
-    touchgfx::Button button4;
-    touchgfx::Button button5;
-    touchgfx::Button button6;
-    touchgfx::Button button7;
+    touchgfx::ScalableImage backgroundImage;
+    touchgfx::Button actionButton;
+    touchgfx::TextArea uidTextField;
 
 private:
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButton&> buttonCallback;
+
+    /*
+     * Callback Handler Declarations
+     */
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

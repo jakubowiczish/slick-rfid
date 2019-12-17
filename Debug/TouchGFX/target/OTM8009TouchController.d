@@ -4,8 +4,8 @@ TouchGFX/target/OTM8009TouchController.o: \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/platform/driver/touch/TouchController.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/Types.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/Config.hpp \
- C:/Users/Kasper/Documents/AGH/Wbudowane/rfid_project/STM32469I-Discovery/stm32469i_discovery_ts.h \
- C:/Users/Kasper/Documents/AGH/Wbudowane/rfid_project/STM32469I-Discovery/stm32469i_discovery.h \
+ C:/Users/jakub/Downloads/test/slick_rfid/STM32469I-Discovery/stm32469i_discovery_ts.h \
+ C:/Users/jakub/Downloads/test/slick_rfid/STM32469I-Discovery/stm32469i_discovery.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -52,8 +52,8 @@ TouchGFX/target/OTM8009TouchController.o: \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dsi.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_qspi.h \
- c:\users\kasper\documents\agh\wbudowane\rfid_project\drivers\bsp\components\ft6x06\ft6x06.h \
- c:\users\kasper\documents\agh\wbudowane\rfid_project\drivers\bsp\components\common\ts.h
+ c:\users\jakub\downloads\test\slick_rfid\drivers\bsp\components\ft6x06\ft6x06.h \
+ c:\users\jakub\downloads\test\slick_rfid\drivers\bsp\components\common\ts.h
 
 ../TouchGFX/target/OTM8009TouchController.hpp:
 
@@ -63,9 +63,9 @@ TouchGFX/target/OTM8009TouchController.o: \
 
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/Config.hpp:
 
-C:/Users/Kasper/Documents/AGH/Wbudowane/rfid_project/STM32469I-Discovery/stm32469i_discovery_ts.h:
+C:/Users/jakub/Downloads/test/slick_rfid/STM32469I-Discovery/stm32469i_discovery_ts.h:
 
-C:/Users/Kasper/Documents/AGH/Wbudowane/rfid_project/STM32469I-Discovery/stm32469i_discovery.h:
+C:/Users/jakub/Downloads/test/slick_rfid/STM32469I-Discovery/stm32469i_discovery.h:
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 
@@ -159,6 +159,6 @@ C:/Users/Kasper/Documents/AGH/Wbudowane/rfid_project/STM32469I-Discovery/stm3246
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_qspi.h:
 
-c:\users\kasper\documents\agh\wbudowane\rfid_project\drivers\bsp\components\ft6x06\ft6x06.h:
+c:\users\jakub\downloads\test\slick_rfid\drivers\bsp\components\ft6x06\ft6x06.h:
 
-c:\users\kasper\documents\agh\wbudowane\rfid_project\drivers\bsp\components\common\ts.h:
+c:\users\jakub\downloads\test\slick_rfid\drivers\bsp\components\common\ts.h:

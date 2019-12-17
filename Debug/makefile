@@ -89,8 +89,8 @@ rfid_project.list \
 all: rfid_project.elf secondary-outputs
 
 # Tool invocations
-rfid_project.elf: $(OBJS) $(USER_OBJS) C:\Users\Kasper\Documents\AGH\Wbudowane\rfid_project\STM32F469NIHX_FLASH.ld
-	arm-none-eabi-g++ -o "rfid_project.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Kasper\Documents\AGH\Wbudowane\rfid_project\STM32F469NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="rfid_project.map" -Wl,--gc-sections -static -L../Middlewares/ST/TouchGFX/touchgfx/lib/core/cortex_m4f/gcc --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+rfid_project.elf: $(OBJS) $(USER_OBJS) C:\Users\jakub\Downloads\test\slick_rfid\STM32F469NIHX_FLASH.ld
+	arm-none-eabi-g++ -o "rfid_project.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\jakub\Downloads\test\slick_rfid\STM32F469NIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="rfid_project.map" -Wl,--gc-sections -static -L../Middlewares/ST/TouchGFX/touchgfx/lib/core/cortex_m4f/gcc --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

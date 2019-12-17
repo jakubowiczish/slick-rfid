@@ -9,5 +9,5 @@ ModelListener.hpp:20:13:virtual ModelListener::~ModelListener()	16	static
 Screen1Presenter.hpp:28:13:Screen1Presenter::~Screen1Presenter()	16	static
 Screen1Presenter.hpp:28:13:virtual Screen1Presenter::~Screen1Presenter()	16	static
 Screen1Presenter.cpp:4:1:Screen1Presenter::Screen1Presenter(Screen1View&)	16	static
-Screen1Presenter.cpp:9:6:virtual void Screen1Presenter::activate()	16	static
-Screen1Presenter.cpp:14:6:virtual void Screen1Presenter::deactivate()	16	static
+Screen1Presenter.cpp:8:6:virtual void Screen1Presenter::activate()	16	static
+Screen1Presenter.cpp:12:6:virtual void Screen1Presenter::deactivate()	16	static

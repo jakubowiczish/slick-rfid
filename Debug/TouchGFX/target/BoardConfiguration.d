@@ -52,10 +52,12 @@ TouchGFX/target/BoardConfiguration.o: \
  ../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp \
  ../TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp \
  ../TouchGFX/gui/include/gui/model/ModelListener.hpp \
- ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
- ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  ../TouchGFX/generated/images/include/BitmapDatabase.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/BoardConfiguration.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/GPIO.hpp \
@@ -217,13 +219,17 @@ TouchGFX/target/BoardConfiguration.o: \
 
 ../TouchGFX/gui/include/gui/model/ModelListener.hpp:
 
-../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Box.hpp:
-
-../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
-
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 
 ../TouchGFX/generated/images/include/BitmapDatabase.hpp:
 

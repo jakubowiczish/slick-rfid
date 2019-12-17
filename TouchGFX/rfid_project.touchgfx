@@ -4,137 +4,55 @@
       {
         "Components": [
           {
+            "Filename": "CapalaReal.png",
+            "Alpha": 200,
+            "ScalingAlgorithm": "Bilinear Interpolation",
+            "Name": "backgroundImage",
+            "X": -270,
+            "Y": 0,
+            "Width": 1569,
+            "Height": 480,
+            "Type": "ScalableImage",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Alpha": 255,
+            "Style": "Style4",
+            "Name": "actionButton",
+            "X": 333,
+            "Y": 368,
+            "Width": 170,
+            "Height": 60,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId1",
+            "TextRotation": "0",
             "Color": {
-              "Red": 199,
-              "Green": 142,
+              "Red": 255,
+              "Green": 246,
               "Blue": 0
             },
             "Alpha": 255,
-            "Name": "box1",
-            "X": 0,
-            "Y": 0,
-            "Width": 800,
-            "Height": 480,
-            "Type": "Box",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
-            "Alpha": 255,
-            "Style": "Style4",
-            "Name": "button1",
-            "X": 0,
-            "Y": 0,
-            "Width": 170,
-            "Height": 60,
-            "Type": "Button",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
-            "Alpha": 255,
-            "Style": "Style4",
-            "Name": "button2",
-            "X": 0,
-            "Y": 0,
-            "Width": 170,
-            "Height": 60,
-            "Type": "Button",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
-            "Alpha": 255,
-            "Style": "Style4",
-            "Name": "button3",
-            "X": 630,
-            "Y": 0,
-            "Width": 170,
-            "Height": 60,
-            "Type": "Button",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
-            "Alpha": 255,
-            "Style": "Style4",
-            "Name": "button4",
-            "X": 0,
-            "Y": 0,
-            "Width": 170,
-            "Height": 60,
-            "Type": "Button",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
-            "Alpha": 255,
-            "Style": "Style4",
-            "Name": "button5",
-            "X": 0,
-            "Y": 420,
-            "Width": 170,
-            "Height": 60,
-            "Type": "Button",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
-            "Alpha": 255,
-            "Style": "Style4",
-            "Name": "button6",
-            "X": 0,
-            "Y": 0,
-            "Width": 170,
-            "Height": 60,
-            "Type": "Button",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
-            "Alpha": 255,
-            "Style": "Style4",
-            "Name": "button7",
-            "X": 630,
-            "Y": 420,
-            "Width": 170,
-            "Height": 60,
-            "Type": "Button",
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Name": "uidTextField",
+            "X": 111,
+            "Y": 106,
+            "Width": 614,
+            "Height": 80,
+            "Type": "TextArea",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -142,13 +60,37 @@
             "Moveable": false
           }
         ],
-        "Interactions": [],
+        "Interactions": [
+          {
+            "InteractionName": "onButtonClickInteraction",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "actionButton",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "TextId": "SingleUseId2",
+              "ActionComponent": "uidTextField",
+              "Type": "ActionSetText"
+            }
+          }
+        ],
         "Name": "Screen1",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0
       }
     ],
     "CustomContainerDefinitions": [],
+    "TextEntries": [
+      {
+        "TextEntryId": "SingleUseId1",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId2",
+        "IsResource": false
+      }
+    ],
     "Name": "MyApplication",
     "Resolution": {
       "Width": 800,

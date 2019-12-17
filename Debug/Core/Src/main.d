@@ -70,11 +70,11 @@ Core/Src/main.o: ../Core/Src/main.cpp ../Core/Inc/main.h \
  ../Middlewares/Third_Party/FatFs/src/diskio.h \
  ../Middlewares/Third_Party/FatFs/src/ff.h ../FATFS/Target/sd_diskio.h \
  ../USB_HOST/App/usb_host.h \
- C:/Users/Kasper/Documents/AGH/Wbudowane/rfid_project/rfid_folder/rfid.h \
- C:/Users/Kasper/Documents/AGH/Wbudowane/rfid_project/rfid_folder/dbgu.h \
- C:/Users/Kasper/Documents/AGH/Wbudowane/rfid_project/rfid_folder/ansi.h \
- C:/Users/Kasper/Documents/AGH/Wbudowane/rfid_project/rfid_folder/term_io.h \
- C:/Users/Kasper/Documents/AGH/Wbudowane/rfid_project/rfid_folder/dbgu.h
+ C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/rfid.h \
+ C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/dbgu.h \
+ C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/ansi.h \
+ C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/term_io.h \
+ C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/dbgu.h
 
 ../Core/Inc/main.h:
 
@@ -228,12 +228,12 @@ Core/Src/main.o: ../Core/Src/main.cpp ../Core/Inc/main.h \
 
 ../USB_HOST/App/usb_host.h:
 
-C:/Users/Kasper/Documents/AGH/Wbudowane/rfid_project/rfid_folder/rfid.h:
+C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/rfid.h:
 
-C:/Users/Kasper/Documents/AGH/Wbudowane/rfid_project/rfid_folder/dbgu.h:
+C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/dbgu.h:
 
-C:/Users/Kasper/Documents/AGH/Wbudowane/rfid_project/rfid_folder/ansi.h:
+C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/ansi.h:
 
-C:/Users/Kasper/Documents/AGH/Wbudowane/rfid_project/rfid_folder/term_io.h:
+C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/term_io.h:
 
-C:/Users/Kasper/Documents/AGH/Wbudowane/rfid_project/rfid_folder/dbgu.h:
+C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/dbgu.h:
