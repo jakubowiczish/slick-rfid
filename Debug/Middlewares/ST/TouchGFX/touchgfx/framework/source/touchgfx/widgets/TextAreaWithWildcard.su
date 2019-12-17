@@ -1,0 +1,6 @@
+Drawable.hpp:293:13:int16_t touchgfx::Drawable::getWidth() const	16	static
+TypedText.hpp:106:10:bool touchgfx::TypedText::hasValidId() const	16	static
+TypedText.hpp:135:17:const touchgfx::Font* touchgfx::TypedText::getFont() const	16	static
+TypedText.hpp:180:19:touchgfx::TextDirection touchgfx::TypedText::getTextDirection() const	16	static
+TypedText.hpp:220:10:void touchgfx::TypedText::assertValid() const	16	static
+TextAreaWithWildcard.cpp:20:9:) const	140	static

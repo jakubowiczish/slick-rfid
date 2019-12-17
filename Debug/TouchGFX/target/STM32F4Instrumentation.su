@@ -1,0 +1,11 @@
+MCUInstrumentation.hpp:63:13:touchgfx::MCUInstrumentation::~MCUInstrumentation()	16	static
+MCUInstrumentation.hpp:63:13:virtual touchgfx::MCUInstrumentation::~MCUInstrumentation()	16	static
+MCUInstrumentation.hpp:100:18:virtual void touchgfx::MCUInstrumentation::setMCUActive(bool)	24	static
+MCUInstrumentation.hpp:122:22:virtual uint32_t touchgfx::MCUInstrumentation::getCCConsumed()	16	static
+MCUInstrumentation.hpp:136:18:virtual void touchgfx::MCUInstrumentation::setCCConsumed(uint32_t)	16	static
+STM32F4Instrumentation.cpp:16:6:virtual void touchgfx::STM32F4Instrumentation::init()	80	static
+STM32F4Instrumentation.cpp:68:14:virtual unsigned int touchgfx::STM32F4Instrumentation::getElapsedUS(unsigned int, unsigned int, unsigned int)	24	static
+STM32F4Instrumentation.cpp:73:14:virtual unsigned int touchgfx::STM32F4Instrumentation::getCPUCycles()	16	static
+STM32F4Instrumentation.cpp:78:6:virtual void touchgfx::STM32F4Instrumentation::setMCUActive(bool)	16	static
+STM32F4Instrumentation.hpp:48:7:touchgfx::STM32F4Instrumentation::~STM32F4Instrumentation()	16	static
+STM32F4Instrumentation.hpp:48:7:virtual touchgfx::STM32F4Instrumentation::~STM32F4Instrumentation()	16	static

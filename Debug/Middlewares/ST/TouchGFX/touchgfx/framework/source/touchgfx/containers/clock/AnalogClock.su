@@ -1,0 +1,61 @@
+Types.hpp:173:5:touchgfx::Rect::Rect()	16	static
+Types.hpp:193:5:touchgfx::Rect::Rect(int16_t, int16_t, int16_t, int16_t)	24	static
+Bitmap.hpp:167:14:touchgfx::Bitmap::Bitmap(touchgfx::BitmapId)	16	static
+Drawable.hpp:60:5:touchgfx::Drawable::Drawable()	24	static
+Drawable.hpp:76:13:touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:76:13:virtual touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:249:18:virtual void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+Drawable.hpp:293:13:int16_t touchgfx::Drawable::getWidth() const	16	static
+Drawable.hpp:307:13:int16_t touchgfx::Drawable::getHeight() const	16	static
+Drawable.hpp:323:18:virtual void touchgfx::Drawable::setX(int16_t)	16	static
+Drawable.hpp:339:18:virtual void touchgfx::Drawable::setY(int16_t)	16	static
+Drawable.hpp:356:18:virtual void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+Drawable.hpp:373:18:virtual void touchgfx::Drawable::setWidth(int16_t)	16	static
+Drawable.hpp:389:18:virtual void touchgfx::Drawable::setHeight(int16_t)	16	static
+Drawable.hpp:404:18:virtual void touchgfx::Drawable::childGeometryChanged()	16	static
+Drawable.hpp:416:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	16	static
+Drawable.hpp:428:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	16	static
+Drawable.hpp:440:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	16	static
+Drawable.hpp:453:18:virtual void touchgfx::Drawable::handleTickEvent()	16	static
+Drawable.hpp:469:10:void touchgfx::Drawable::setVisible(bool)	16	static
+Drawable.hpp:500:10:bool touchgfx::Drawable::isVisible() const	16	static
+Drawable.hpp:516:10:bool touchgfx::Drawable::isTouchable() const	16	static
+Drawable.hpp:564:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	16	static
+Drawable.hpp:662:10:void touchgfx::Drawable::resetDrawChainCache()	16	static
+Drawable.hpp:748:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	24	static
+Container.hpp:64:13:touchgfx::Container::~Container()	16	static
+Container.hpp:64:13:virtual touchgfx::Container::~Container()	16	static
+Container.hpp:202:22:virtual uint16_t touchgfx::Container::getType() const	16	static
+Widget.hpp:44:5:touchgfx::Widget::Widget()	16	static
+Widget.hpp:53:13:touchgfx::Widget::~Widget()	16	static
+Widget.hpp:53:13:virtual touchgfx::Widget::~Widget()	16	static
+Widget.hpp:74:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	24	static
+Widget.hpp:91:22:virtual uint16_t touchgfx::Widget::getType() const	16	static
+Image.hpp:50:5:touchgfx::Image::Image(const touchgfx::Bitmap&)	16	static
+TextureMapper.hpp:248:18:virtual void touchgfx::TextureMapper::updateZAngle(float)	16	static
+TextureMapper.hpp:290:19:virtual float touchgfx::TextureMapper::getZAngle() const	16	static
+AbstractClock.hpp:50:13:touchgfx::AbstractClock::~AbstractClock()	16	static
+AbstractClock.hpp:50:13:virtual touchgfx::AbstractClock::~AbstractClock()	16	static
+AnalogClock.hpp:223:22:virtual uint16_t touchgfx::AnalogClock::getAnimationDuration()	16	static
+AnalogClock.cpp:20:1:touchgfx::AnalogClock::AnalogClock()	32	static
+AnalogClock.cpp:43:1:touchgfx::AnalogClock::~AnalogClock()	16	static
+AnalogClock.cpp:43:1:virtual touchgfx::AnalogClock::~AnalogClock()	16	static
+AnalogClock.cpp:47:6:virtual void touchgfx::AnalogClock::setBackground(touchgfx::BitmapId)	32	static
+AnalogClock.cpp:52:6:virtual void touchgfx::AnalogClock::setBackground(touchgfx::BitmapId, int16_t, int16_t)	40	static
+AnalogClock.cpp:63:6:virtual void touchgfx::AnalogClock::setRotationCenter(int16_t, int16_t)	16	static
+AnalogClock.cpp:69:6:virtual void touchgfx::AnalogClock::setupHourHand(touchgfx::BitmapId, int16_t, int16_t)	40	static
+AnalogClock.cpp:74:6:virtual void touchgfx::AnalogClock::setupMinuteHand(touchgfx::BitmapId, int16_t, int16_t)	40	static
+AnalogClock.cpp:79:6:virtual void touchgfx::AnalogClock::setupSecondHand(touchgfx::BitmapId, int16_t, int16_t)	40	static
+AnalogClock.cpp:84:6:virtual void touchgfx::AnalogClock::setupHand(touchgfx::TextureMapper&, touchgfx::BitmapId, int16_t, int16_t)	48	static
+AnalogClock.cpp:102:6:virtual void touchgfx::AnalogClock::initializeTime24Hour(uint8_t, uint8_t, uint8_t)	32	static
+AnalogClock.cpp:116:6:virtual void touchgfx::AnalogClock::initializeTime12Hour(uint8_t, uint8_t, uint8_t, bool)	24	static
+AnalogClock.cpp:121:6:virtual void touchgfx::AnalogClock::updateClock()	40	static
+AnalogClock.cpp:201:7:virtual float touchgfx::AnalogClock::convertHandValueToAngle(uint8_t, uint8_t, uint8_t) const	16	static
+AnalogClock.cpp:206:6:virtual void touchgfx::AnalogClock::setHourHandMinuteCorrection(bool)	32	static
+AnalogClock.cpp:212:6:virtual bool touchgfx::AnalogClock::getHourHandMinuteCorrection() const	16	static
+AnalogClock.cpp:217:6:virtual void touchgfx::AnalogClock::setMinuteHandSecondCorrection(bool)	32	static
+AnalogClock.cpp:223:6:virtual bool touchgfx::AnalogClock::getMinuteHandSecondCorrection() const	16	static
+AnalogClock.cpp:228:6:virtual bool touchgfx::AnalogClock::animationEnabled() const	16	static
+AnalogClock.cpp:233:6:virtual void touchgfx::AnalogClock::setAnimation(uint16_t, touchgfx::EasingEquation)	24	static
+Image.hpp:36:7:touchgfx::Image::~Image()	16	static
+Image.hpp:36:7:virtual touchgfx::Image::~Image()	16	static

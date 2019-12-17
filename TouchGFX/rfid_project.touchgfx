@@ -1,0 +1,190 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 199,
+              "Green": 142,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "box1",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Alpha": 255,
+            "Style": "Style4",
+            "Name": "button1",
+            "X": 0,
+            "Y": 0,
+            "Width": 170,
+            "Height": 60,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Alpha": 255,
+            "Style": "Style4",
+            "Name": "button2",
+            "X": 0,
+            "Y": 0,
+            "Width": 170,
+            "Height": 60,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Alpha": 255,
+            "Style": "Style4",
+            "Name": "button3",
+            "X": 630,
+            "Y": 0,
+            "Width": 170,
+            "Height": 60,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Alpha": 255,
+            "Style": "Style4",
+            "Name": "button4",
+            "X": 0,
+            "Y": 0,
+            "Width": 170,
+            "Height": 60,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Alpha": 255,
+            "Style": "Style4",
+            "Name": "button5",
+            "X": 0,
+            "Y": 420,
+            "Width": 170,
+            "Height": 60,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Alpha": 255,
+            "Style": "Style4",
+            "Name": "button6",
+            "X": 0,
+            "Y": 0,
+            "Width": 170,
+            "Height": 60,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Alpha": 255,
+            "Style": "Style4",
+            "Name": "button7",
+            "X": 630,
+            "Y": 420,
+            "Width": 170,
+            "Height": 60,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "Screen1",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "MyApplication",
+    "Resolution": {
+      "Width": 800,
+      "Height": 480
+    },
+    "SelectedColorDepth": 24,
+    "StartupScreenName": "Screen1",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/TouchGFX/touchgfx/",
+    "UIPath": ".",
+    "ApplicationTemplate": {
+      "Name": "Simulator",
+      "Version": "1.0.0",
+      "Description": "STM32CubeMX Generated Simulator Application Template",
+      "AvailableColorDepths": [
+        24
+      ],
+      "AvailableSections": [
+        "ExtFlashSection",
+        "IntFlashSection"
+      ],
+      "AvailableResolutions": [],
+      "PhysicalButtons": [],
+      "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j10",
+      "PostGenerateCommand": "touchgfx update_project --project-file=../.cproject ",
+      "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j10",
+      "RunSimulatorCommand": "build\\bin\\simulator.exe",
+      "CompileTargetCommand": "",
+      "FlashTargetCommand": ""
+    },
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape"
+  },
+  "Version": "4.12.3"
+}

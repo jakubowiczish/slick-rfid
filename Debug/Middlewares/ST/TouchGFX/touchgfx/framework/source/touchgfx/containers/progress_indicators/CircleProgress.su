@@ -1,0 +1,56 @@
+Drawable.hpp:249:18:virtual void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+Drawable.hpp:293:13:int16_t touchgfx::Drawable::getWidth() const	16	static
+Drawable.hpp:307:13:int16_t touchgfx::Drawable::getHeight() const	16	static
+Drawable.hpp:323:18:virtual void touchgfx::Drawable::setX(int16_t)	16	static
+Drawable.hpp:339:18:virtual void touchgfx::Drawable::setY(int16_t)	16	static
+Drawable.hpp:356:18:virtual void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+Drawable.hpp:373:18:virtual void touchgfx::Drawable::setWidth(int16_t)	16	static
+Drawable.hpp:389:18:virtual void touchgfx::Drawable::setHeight(int16_t)	16	static
+Drawable.hpp:404:18:virtual void touchgfx::Drawable::childGeometryChanged()	16	static
+Drawable.hpp:416:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	16	static
+Drawable.hpp:428:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	16	static
+Drawable.hpp:440:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	16	static
+Drawable.hpp:453:18:virtual void touchgfx::Drawable::handleTickEvent()	16	static
+Drawable.hpp:564:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	16	static
+Container.hpp:202:22:virtual uint16_t touchgfx::Container::getType() const	16	static
+CWRUtil.hpp:71:9:touchgfx::CWRUtil::Q5::Q5()	16	static
+CWRUtil.hpp:83:18:touchgfx::CWRUtil::Q5::Q5(int)	16	static
+CWRUtil.hpp:107:9:touchgfx::CWRUtil::Q5::operator int() const	16	static
+CWRUtil.hpp:137:12:touchgfx::CWRUtil::Q5 touchgfx::CWRUtil::Q5::operator+(const touchgfx::CWRUtil::Q5&) const	24	static
+CWRUtil.hpp:153:12:touchgfx::CWRUtil::Q5 touchgfx::CWRUtil::Q5::operator-(const touchgfx::CWRUtil::Q5&) const	24	static
+CWRUtil.hpp:244:12:touchgfx::CWRUtil::Q5 touchgfx::CWRUtil::Q5::operator/(touchgfx::CWRUtil::Q5) const	24	static
+CanvasWidget.hpp:97:18:virtual void touchgfx::CanvasWidget::setAlpha(uint8_t)	16	static
+CanvasWidget.hpp:111:21:virtual uint8_t touchgfx::CanvasWidget::getAlpha() const	16	static
+Circle.hpp:265:13:int16_t touchgfx::Circle::getArcStart() const	16	static
+CircleProgress.hpp:184:17:virtual int touchgfx::CircleProgress::getCapPrecision() const	16	static
+CircleProgress.cpp:20:1:touchgfx::CircleProgress::CircleProgress()	32	static
+CircleProgress.cpp:28:1:touchgfx::CircleProgress::~CircleProgress()	16	static
+CircleProgress.cpp:28:1:virtual touchgfx::CircleProgress::~CircleProgress()	16	static
+CircleProgress.cpp:32:6:virtual void touchgfx::CircleProgress::setProgressIndicatorPosition(int16_t, int16_t, int16_t, int16_t)	40	static
+CircleProgress.cpp:39:6:virtual void touchgfx::CircleProgress::setPainter(touchgfx::AbstractPainter&)	16	static
+CircleProgress.cpp:44:6:virtual void touchgfx::CircleProgress::setCenter(int, int)	24	static
+CircleProgress.cpp:49:6:virtual void touchgfx::CircleProgress::getCenter(int&, int&) const	24	static
+CircleProgress.cpp:54:6:virtual void touchgfx::CircleProgress::setRadius(int)	16	static
+CircleProgress.cpp:59:5:virtual int touchgfx::CircleProgress::getRadius() const	24	static
+CircleProgress.cpp:66:6:virtual void touchgfx::CircleProgress::setLineWidth(int)	16	static
+CircleProgress.cpp:71:5:virtual int touchgfx::CircleProgress::getLineWidth() const	24	static
+CircleProgress.cpp:78:6:virtual void touchgfx::CircleProgress::setCapPrecision(int)	16	static
+CircleProgress.cpp:83:6:virtual void touchgfx::CircleProgress::setStartEndAngle(int, int)	32	static
+CircleProgress.cpp:91:5:virtual int touchgfx::CircleProgress::getStartAngle() const	16	static
+CircleProgress.cpp:96:5:virtual int touchgfx::CircleProgress::getEndAngle() const	16	static
+CircleProgress.cpp:101:6:virtual void touchgfx::CircleProgress::setAlpha(uint8_t)	16	static
+CircleProgress.cpp:106:9:virtual uint8_t touchgfx::CircleProgress::getAlpha() const	16	static
+CircleProgress.cpp:111:6:virtual void touchgfx::CircleProgress::setValue(int)	56	static
+CWRUtil.hpp:263:11:T touchgfx::CWRUtil::Q5::to() const [with T = int]	16	static
+Circle.hpp:107:10:void touchgfx::Circle::setCenter(T, T) [with T = int]	40	static
+Circle.hpp:203:10:void touchgfx::Circle::setArc(T, T) [with T = int]	40	static
+Circle.hpp:142:10:void touchgfx::Circle::getCenter(T&, T&) const [with T = int]	24	static
+Circle.hpp:161:10:void touchgfx::Circle::setRadius(T) [with T = int]	24	static
+Circle.hpp:177:10:void touchgfx::Circle::getRadius(T&) const [with T = int]	16	static
+Circle.hpp:541:10:void touchgfx::Circle::setLineWidth(T) [with T = int]	24	static
+Circle.hpp:559:10:void touchgfx::Circle::getLineWidth(T&) const [with T = int]	16	static
+Circle.hpp:284:10:void touchgfx::Circle::getArcStart(T&) const [with T = touchgfx::CWRUtil::Q5]	16	static
+Circle.hpp:373:10:void touchgfx::Circle::updateArcEnd(T) [with T = touchgfx::CWRUtil::Q5]	40	static
+CWRUtil.hpp:263:11:T touchgfx::CWRUtil::Q5::to() const [with T = touchgfx::CWRUtil::Q5]	24	static
+Circle.hpp:41:7:touchgfx::Circle::~Circle()	16	static
+Circle.hpp:41:7:virtual touchgfx::Circle::~Circle()	16	static

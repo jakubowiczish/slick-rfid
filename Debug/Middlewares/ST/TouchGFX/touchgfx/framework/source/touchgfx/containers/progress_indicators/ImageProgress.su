@@ -1,0 +1,56 @@
+Types.hpp:173:5:touchgfx::Rect::Rect()	16	static
+Types.hpp:193:5:touchgfx::Rect::Rect(int16_t, int16_t, int16_t, int16_t)	24	static
+Bitmap.hpp:167:14:touchgfx::Bitmap::Bitmap(touchgfx::BitmapId)	16	static
+Bitmap.hpp:180:14:touchgfx::BitmapId touchgfx::Bitmap::getId() const	16	static
+Drawable.hpp:60:5:touchgfx::Drawable::Drawable()	24	static
+Drawable.hpp:76:13:touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:76:13:virtual touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:249:18:virtual void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+Drawable.hpp:265:13:int16_t touchgfx::Drawable::getX() const	16	static
+Drawable.hpp:279:13:int16_t touchgfx::Drawable::getY() const	16	static
+Drawable.hpp:293:13:int16_t touchgfx::Drawable::getWidth() const	16	static
+Drawable.hpp:307:13:int16_t touchgfx::Drawable::getHeight() const	16	static
+Drawable.hpp:323:18:virtual void touchgfx::Drawable::setX(int16_t)	16	static
+Drawable.hpp:339:18:virtual void touchgfx::Drawable::setY(int16_t)	16	static
+Drawable.hpp:356:18:virtual void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+Drawable.hpp:373:18:virtual void touchgfx::Drawable::setWidth(int16_t)	16	static
+Drawable.hpp:389:18:virtual void touchgfx::Drawable::setHeight(int16_t)	16	static
+Drawable.hpp:404:18:virtual void touchgfx::Drawable::childGeometryChanged()	16	static
+Drawable.hpp:416:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	16	static
+Drawable.hpp:428:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	16	static
+Drawable.hpp:440:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	16	static
+Drawable.hpp:453:18:virtual void touchgfx::Drawable::handleTickEvent()	16	static
+Drawable.hpp:500:10:bool touchgfx::Drawable::isVisible() const	16	static
+Drawable.hpp:516:10:bool touchgfx::Drawable::isTouchable() const	16	static
+Drawable.hpp:564:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	16	static
+Drawable.hpp:662:10:void touchgfx::Drawable::resetDrawChainCache()	16	static
+Drawable.hpp:748:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	24	static
+Container.hpp:52:5:touchgfx::Container::Container()	16	static
+Container.hpp:64:13:touchgfx::Container::~Container()	16	static
+Container.hpp:64:13:virtual touchgfx::Container::~Container()	16	static
+Container.hpp:202:22:virtual uint16_t touchgfx::Container::getType() const	16	static
+Widget.hpp:44:5:touchgfx::Widget::Widget()	16	static
+Widget.hpp:53:13:touchgfx::Widget::~Widget()	16	static
+Widget.hpp:53:13:virtual touchgfx::Widget::~Widget()	16	static
+Widget.hpp:74:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	24	static
+Widget.hpp:91:22:virtual uint16_t touchgfx::Widget::getType() const	16	static
+Image.hpp:50:5:touchgfx::Image::Image(const touchgfx::Bitmap&)	16	static
+Image.hpp:78:10:void touchgfx::Image::setAlpha(uint8_t)	16	static
+Image.hpp:104:14:touchgfx::BitmapId touchgfx::Image::getBitmap() const	16	static
+Image.hpp:118:13:uint8_t touchgfx::Image::getAlpha() const	16	static
+Image.hpp:36:7:touchgfx::Image::~Image()	16	static
+Image.hpp:36:7:virtual touchgfx::Image::~Image()	16	static
+TiledImage.hpp:53:5:touchgfx::TiledImage::TiledImage(const touchgfx::Bitmap&)	16	static
+ImageProgress.cpp:20:1:touchgfx::ImageProgress::ImageProgress()	32	static
+ImageProgress.cpp:27:1:touchgfx::ImageProgress::~ImageProgress()	16	static
+ImageProgress.cpp:27:1:virtual touchgfx::ImageProgress::~ImageProgress()	16	static
+ImageProgress.cpp:31:6:virtual void touchgfx::ImageProgress::setProgressIndicatorPosition(int16_t, int16_t, int16_t, int16_t)	40	static
+ImageProgress.cpp:38:6:virtual void touchgfx::ImageProgress::setAnchorAtZero(bool)	24	static
+ImageProgress.cpp:44:6:virtual bool touchgfx::ImageProgress::getAnchorAtZero() const	16	static
+ImageProgress.cpp:49:6:virtual void touchgfx::ImageProgress::setBitmap(touchgfx::BitmapId)	32	static
+ImageProgress.cpp:54:20:virtual touchgfx::BitmapId touchgfx::ImageProgress::getBitmap() const	16	static
+ImageProgress.cpp:59:6:virtual void touchgfx::ImageProgress::setAlpha(uint8_t)	16	static
+ImageProgress.cpp:64:9:virtual uint8_t touchgfx::ImageProgress::getAlpha() const	16	static
+ImageProgress.cpp:69:6:virtual void touchgfx::ImageProgress::setValue(int)	48	static
+TiledImage.hpp:39:7:touchgfx::TiledImage::~TiledImage()	16	static
+TiledImage.hpp:39:7:virtual touchgfx::TiledImage::~TiledImage()	16	static

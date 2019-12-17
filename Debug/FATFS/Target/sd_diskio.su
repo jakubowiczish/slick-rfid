@@ -1,0 +1,9 @@
+sd_diskio.c:133:12:SD_CheckStatusWithTimeout	24	static
+sd_diskio.c:148:16:SD_CheckStatus	16	static
+sd_diskio.c:165:9:SD_initialize	40	static
+sd_diskio.c:205:9:SD_status	16	static
+sd_diskio.c:222:9:SD_read	64	static
+sd_diskio.c:315:9:SD_write	72	static
+sd_diskio.c:417:9:SD_ioctl	56	static
+sd_diskio.c:472:6:BSP_SD_WriteCpltCallback	8	static
+sd_diskio.c:487:6:BSP_SD_ReadCpltCallback	8	static

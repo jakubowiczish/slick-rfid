@@ -1,0 +1,21 @@
+Types.hpp:173:5:touchgfx::Rect::Rect()	16	static
+Types.hpp:193:5:touchgfx::Rect::Rect(int16_t, int16_t, int16_t, int16_t)	24	static
+Bitmap.hpp:167:14:touchgfx::Bitmap::Bitmap(touchgfx::BitmapId)	16	static
+Bitmap.hpp:180:14:touchgfx::BitmapId touchgfx::Bitmap::getId() const	16	static
+Bitmap.hpp:277:10:touchgfx::Rect touchgfx::Bitmap::getRect() const	32	static
+HAL.hpp:115:17:static touchgfx::HAL* touchgfx::HAL::getInstance()	4	static
+HAL.hpp:296:17:static touchgfx::LCD& touchgfx::HAL::lcd()	4	static
+HAL.hpp:1317:10:touchgfx::LCD* touchgfx::HAL::getAuxiliaryLCD()	16	static
+AbstractPainter.hpp:120:24:static bool touchgfx::AbstractPainter::compatibleFramebuffer(touchgfx::Bitmap::BitmapFormat)	24	static
+AbstractPainterRGB888.hpp:39:5:touchgfx::AbstractPainterRGB888::AbstractPainterRGB888()	16	static
+AbstractPainterRGB888.hpp:44:13:touchgfx::AbstractPainterRGB888::~AbstractPainterRGB888()	16	static
+AbstractPainterRGB888.hpp:44:13:virtual touchgfx::AbstractPainterRGB888::~AbstractPainterRGB888()	16	static
+PainterRGB888L8Bitmap.cpp:20:1:touchgfx::PainterRGB888L8Bitmap::PainterRGB888L8Bitmap(const touchgfx::Bitmap&, uint8_t)	24	static
+PainterRGB888L8Bitmap.cpp:27:6:void touchgfx::PainterRGB888L8Bitmap::setBitmap(const touchgfx::Bitmap&)	32	static
+PainterRGB888L8Bitmap.cpp:35:6:void touchgfx::PainterRGB888L8Bitmap::setAlpha(uint8_t)	16	static
+PainterRGB888L8Bitmap.cpp:40:9:uint8_t touchgfx::PainterRGB888L8Bitmap::getAlpha() const	16	static
+PainterRGB888L8Bitmap.cpp:45:6:virtual void touchgfx::PainterRGB888L8Bitmap::render(uint8_t*, int, int, int, unsigned int, const uint8_t*)	104	static
+PainterRGB888L8Bitmap.cpp:169:6:virtual bool touchgfx::PainterRGB888L8Bitmap::renderInit()	16	static
+PainterRGB888L8Bitmap.cpp:206:6:virtual bool touchgfx::PainterRGB888L8Bitmap::renderNext(uint8_t&, uint8_t&, uint8_t&, uint8_t&)	40	static
+PainterRGB888L8Bitmap.hpp:38:7:touchgfx::PainterRGB888L8Bitmap::~PainterRGB888L8Bitmap()	16	static
+PainterRGB888L8Bitmap.hpp:38:7:virtual touchgfx::PainterRGB888L8Bitmap::~PainterRGB888L8Bitmap()	16	static

@@ -1,0 +1,48 @@
+Drawable.hpp:76:13:touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:76:13:virtual touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:249:18:virtual void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+Drawable.hpp:265:13:int16_t touchgfx::Drawable::getX() const	16	static
+Drawable.hpp:279:13:int16_t touchgfx::Drawable::getY() const	16	static
+Drawable.hpp:293:13:int16_t touchgfx::Drawable::getWidth() const	16	static
+Drawable.hpp:307:13:int16_t touchgfx::Drawable::getHeight() const	16	static
+Drawable.hpp:323:18:virtual void touchgfx::Drawable::setX(int16_t)	16	static
+Drawable.hpp:339:18:virtual void touchgfx::Drawable::setY(int16_t)	16	static
+Drawable.hpp:356:18:virtual void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+Drawable.hpp:373:18:virtual void touchgfx::Drawable::setWidth(int16_t)	16	static
+Drawable.hpp:389:18:virtual void touchgfx::Drawable::setHeight(int16_t)	16	static
+Drawable.hpp:404:18:virtual void touchgfx::Drawable::childGeometryChanged()	16	static
+Drawable.hpp:416:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	16	static
+Drawable.hpp:428:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	16	static
+Drawable.hpp:440:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	16	static
+Drawable.hpp:453:18:virtual void touchgfx::Drawable::handleTickEvent()	16	static
+Drawable.hpp:564:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	16	static
+Container.hpp:64:13:touchgfx::Container::~Container()	16	static
+Container.hpp:64:13:virtual touchgfx::Container::~Container()	16	static
+ListLayout.hpp:65:13:touchgfx::ListLayout::~ListLayout()	16	static
+ListLayout.hpp:65:13:virtual touchgfx::ListLayout::~ListLayout()	16	static
+ListLayout.hpp:92:23:virtual touchgfx::Direction touchgfx::ListLayout::getDirection() const	16	static
+ListLayout.hpp:151:22:virtual uint16_t touchgfx::ListLayout::getType() const	16	static
+ListLayout.cpp:23:5:touchgfx::AdjustElements::AdjustElements(touchgfx::Drawable*, touchgfx::Direction)	24	static
+ListLayout.cpp:28:10:void touchgfx::AdjustElements::handleInsert(touchgfx::Drawable&)	24	static
+ListLayout.cpp:61:10:void touchgfx::AdjustElements::handleRemove(touchgfx::Drawable&)	24	static
+ListLayout.cpp:108:6:void touchgfx::ListLayout::internalAddElementAt(touchgfx::Drawable&, int16_t)	32	static
+ListLayout.cpp:137:6:void touchgfx::ListLayout::internalAddElement(touchgfx::Drawable&)	16	static
+ListLayout.cpp:142:6:void touchgfx::ListLayout::internalRemoveElement(touchgfx::Drawable&, int16_t)	24	static
+ListLayout.cpp:173:6:virtual void touchgfx::ListLayout::setDirection(touchgfx::Direction)	40	static
+ListLayout.cpp:191:6:virtual void touchgfx::ListLayout::add(touchgfx::Drawable&)	16	static
+ListLayout.cpp:201:6:virtual void touchgfx::ListLayout::removeAll()	16	static
+ListLayout.cpp:213:6:virtual void touchgfx::ListLayout::insert(touchgfx::Drawable*, touchgfx::Drawable&)	64	static
+ListLayout.cpp:232:6:virtual void touchgfx::ListLayout::remove(touchgfx::Drawable&)	56	static
+Callback.hpp:167:7:constexpr touchgfx::GenericCallback<touchgfx::Drawable&>::GenericCallback()	16	static
+Callback.hpp:493:5:touchgfx::Callback<dest_type, T1, void, void>::Callback(dest_type*, void (dest_type::*)(T1)) [with dest_type = touchgfx::ListLayout; T1 = touchgfx::Drawable&]	24	static
+Callback.hpp:493:5:touchgfx::Callback<dest_type, T1, void, void>::Callback(dest_type*, void (dest_type::*)(T1)) [with dest_type = touchgfx::AdjustElements; T1 = touchgfx::Drawable&]	24	static
+Callback.hpp:177:13:touchgfx::GenericCallback<T1, void, void>::~GenericCallback() [with T1 = touchgfx::Drawable&]	16	static
+Callback.hpp:177:13:touchgfx::GenericCallback<T1, void, void>::~GenericCallback() [with T1 = touchgfx::Drawable&]	16	static
+Callback.hpp:469:8:touchgfx::Callback<touchgfx::AdjustElements, touchgfx::Drawable&>::~Callback()	16	static
+Callback.hpp:469:8:virtual touchgfx::Callback<touchgfx::AdjustElements, touchgfx::Drawable&>::~Callback()	16	static
+Callback.hpp:469:8:touchgfx::Callback<touchgfx::ListLayout, touchgfx::Drawable&>::~Callback()	16	static
+Callback.hpp:469:8:virtual touchgfx::Callback<touchgfx::ListLayout, touchgfx::Drawable&>::~Callback()	16	static
+Callback.hpp:511:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = touchgfx::AdjustElements; T1 = touchgfx::Drawable&]	16	static
+Callback.hpp:525:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = touchgfx::AdjustElements; T1 = touchgfx::Drawable&]	16	static
+Callback.hpp:511:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = touchgfx::ListLayout; T1 = touchgfx::Drawable&]	16	static
+Callback.hpp:525:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = touchgfx::ListLayout; T1 = touchgfx::Drawable&]	16	static

@@ -1,0 +1,19 @@
+Types.hpp:114:5:touchgfx::colortype::colortype(uint32_t)	16	static
+Types.hpp:147:5:touchgfx::colortype::operator uint16_t() const	16	static
+HAL.hpp:115:17:static touchgfx::HAL* touchgfx::HAL::getInstance()	4	static
+HAL.hpp:296:17:static touchgfx::LCD& touchgfx::HAL::lcd()	4	static
+HAL.hpp:1317:10:touchgfx::LCD* touchgfx::HAL::getAuxiliaryLCD()	16	static
+AbstractPainter.hpp:120:24:static bool touchgfx::AbstractPainter::compatibleFramebuffer(touchgfx::Bitmap::BitmapFormat)	24	static
+AbstractPainterGRAY4.hpp:39:5:touchgfx::AbstractPainterGRAY4::AbstractPainterGRAY4()	16	static
+AbstractPainterGRAY4.hpp:44:13:touchgfx::AbstractPainterGRAY4::~AbstractPainterGRAY4()	16	static
+AbstractPainterGRAY4.hpp:44:13:virtual touchgfx::AbstractPainterGRAY4::~AbstractPainterGRAY4()	16	static
+AbstractPainterGRAY4.hpp:59:18:virtual bool touchgfx::AbstractPainterGRAY4::renderInit()	16	static
+PainterGRAY4.cpp:22:1:touchgfx::PainterGRAY4::PainterGRAY4(touchgfx::colortype, uint8_t)	24	static
+PainterGRAY4.cpp:28:6:void touchgfx::PainterGRAY4::setColor(touchgfx::colortype, uint8_t)	24	static
+PainterGRAY4.cpp:34:21:touchgfx::colortype touchgfx::PainterGRAY4::getColor() const	24	static
+PainterGRAY4.cpp:39:6:void touchgfx::PainterGRAY4::setAlpha(uint8_t)	16	static
+PainterGRAY4.cpp:44:9:uint8_t touchgfx::PainterGRAY4::getAlpha() const	16	static
+PainterGRAY4.cpp:49:6:virtual void touchgfx::PainterGRAY4::render(uint8_t*, int, int, int, unsigned int, const uint8_t*)	96	static
+PainterGRAY4.cpp:93:6:virtual bool touchgfx::PainterGRAY4::renderNext(uint8_t&, uint8_t&)	24	static
+PainterGRAY4.hpp:35:7:touchgfx::PainterGRAY4::~PainterGRAY4()	16	static
+PainterGRAY4.hpp:35:7:virtual touchgfx::PainterGRAY4::~PainterGRAY4()	16	static

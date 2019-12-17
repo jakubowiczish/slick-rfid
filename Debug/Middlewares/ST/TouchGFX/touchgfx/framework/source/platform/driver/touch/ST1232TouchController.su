@@ -1,0 +1,11 @@
+TouchController.hpp:40:13:touchgfx::TouchController::~TouchController()	16	static
+TouchController.hpp:40:13:virtual touchgfx::TouchController::~TouchController()	16	static
+I2CTouchController.hpp:59:13:touchgfx::I2CTouchController::~I2CTouchController()	16	static
+I2CTouchController.hpp:59:13:virtual touchgfx::I2CTouchController::~I2CTouchController()	16	static
+ST1232TouchController.cpp:22:6:virtual void touchgfx::ST1232TouchController::init()	16	static
+ST1232TouchController.cpp:38:6:virtual bool touchgfx::ST1232TouchController::sampleTouch(int32_t&, int32_t&)	32	static
+ST1232TouchController.cpp:59:6:void touchgfx::ST1232TouchController::transformTouchData(int32_t&, int32_t&)	24	static
+ST1232TouchController.cpp:109:9:uint8_t touchgfx::ST1232TouchController::touchDetected()	40	static
+ST1232TouchController.cpp:120:6:bool touchgfx::ST1232TouchController::getSample(Finger*)	40	static
+ST1232TouchController.hpp:108:7:touchgfx::ST1232TouchController::~ST1232TouchController()	16	static
+ST1232TouchController.hpp:108:7:virtual touchgfx::ST1232TouchController::~ST1232TouchController()	16	static

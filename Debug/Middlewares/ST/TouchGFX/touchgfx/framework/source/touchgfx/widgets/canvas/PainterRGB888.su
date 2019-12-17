@@ -1,0 +1,21 @@
+HAL.hpp:115:17:static touchgfx::HAL* touchgfx::HAL::getInstance()	4	static
+HAL.hpp:296:17:static touchgfx::LCD& touchgfx::HAL::lcd()	4	static
+HAL.hpp:1317:10:touchgfx::LCD* touchgfx::HAL::getAuxiliaryLCD()	16	static
+AbstractPainter.hpp:120:24:static bool touchgfx::AbstractPainter::compatibleFramebuffer(touchgfx::Bitmap::BitmapFormat)	24	static
+AbstractPainterRGB888.hpp:39:5:touchgfx::AbstractPainterRGB888::AbstractPainterRGB888()	16	static
+AbstractPainterRGB888.hpp:44:13:touchgfx::AbstractPainterRGB888::~AbstractPainterRGB888()	16	static
+AbstractPainterRGB888.hpp:44:13:virtual touchgfx::AbstractPainterRGB888::~AbstractPainterRGB888()	16	static
+AbstractPainterRGB888.hpp:59:18:virtual bool touchgfx::AbstractPainterRGB888::renderInit()	16	static
+Color.hpp:54:22:static touchgfx::colortype touchgfx::Color::getColorFrom24BitRGB(uint8_t, uint8_t, uint8_t)	24	static
+Color.hpp:71:27:static uint8_t touchgfx::Color::getRedColor(touchgfx::colortype)	16	static
+Color.hpp:87:27:static uint8_t touchgfx::Color::getGreenColor(touchgfx::colortype)	16	static
+Color.hpp:103:27:static uint8_t touchgfx::Color::getBlueColor(touchgfx::colortype)	16	static
+PainterRGB888.cpp:21:1:touchgfx::PainterRGB888::PainterRGB888(touchgfx::colortype, uint8_t)	24	static
+PainterRGB888.cpp:27:6:void touchgfx::PainterRGB888::setColor(touchgfx::colortype, uint8_t)	24	static
+PainterRGB888.cpp:35:21:touchgfx::colortype touchgfx::PainterRGB888::getColor() const	16	static
+PainterRGB888.cpp:40:6:void touchgfx::PainterRGB888::setAlpha(uint8_t)	16	static
+PainterRGB888.cpp:45:9:uint8_t touchgfx::PainterRGB888::getAlpha() const	16	static
+PainterRGB888.cpp:50:6:virtual void touchgfx::PainterRGB888::render(uint8_t*, int, int, int, unsigned int, const uint8_t*)	56	static
+PainterRGB888.cpp:96:6:virtual bool touchgfx::PainterRGB888::renderNext(uint8_t&, uint8_t&, uint8_t&, uint8_t&)	24	static
+PainterRGB888.hpp:35:7:touchgfx::PainterRGB888::~PainterRGB888()	16	static
+PainterRGB888.hpp:35:7:virtual touchgfx::PainterRGB888::~PainterRGB888()	16	static

@@ -1,0 +1,4 @@
+AbstractPainterARGB8888.hpp:59:18:virtual bool touchgfx::AbstractPainterARGB8888::renderInit()	16	static
+AbstractPainterARGB8888.cpp:21:6:virtual void touchgfx::AbstractPainterARGB8888::render(uint8_t*, int, int, int, unsigned int, const uint8_t*)	80	static
+AbstractPainterARGB8888.cpp:68:6:virtual void touchgfx::AbstractPainterARGB8888::renderPixel(uint16_t*, uint8_t, uint8_t, uint8_t)	40	static
+AbstractPainterARGB8888.cpp:73:6:virtual void touchgfx::AbstractPainterARGB8888::renderPixel(uint16_t*, uint8_t, uint8_t, uint8_t, uint8_t)	32	static

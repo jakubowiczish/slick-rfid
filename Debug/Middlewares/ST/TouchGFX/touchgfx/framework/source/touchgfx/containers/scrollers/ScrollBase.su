@@ -1,0 +1,59 @@
+Types.hpp:173:5:touchgfx::Rect::Rect()	16	static
+Types.hpp:193:5:touchgfx::Rect::Rect(int16_t, int16_t, int16_t, int16_t)	24	static
+DragEvent.hpp:153:13:int16_t touchgfx::DragEvent::getDeltaX() const	16	static
+DragEvent.hpp:167:13:int16_t touchgfx::DragEvent::getDeltaY() const	16	static
+GestureEvent.hpp:79:13:int16_t touchgfx::GestureEvent::getVelocity() const	16	static
+GestureEvent.hpp:93:17:touchgfx::GestureEvent::GestureType touchgfx::GestureEvent::getType() const	16	static
+Drawable.hpp:60:5:touchgfx::Drawable::Drawable()	24	static
+Drawable.hpp:249:18:virtual void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+Drawable.hpp:323:18:virtual void touchgfx::Drawable::setX(int16_t)	16	static
+Drawable.hpp:339:18:virtual void touchgfx::Drawable::setY(int16_t)	16	static
+Drawable.hpp:356:18:virtual void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+Drawable.hpp:373:18:virtual void touchgfx::Drawable::setWidth(int16_t)	16	static
+Drawable.hpp:389:18:virtual void touchgfx::Drawable::setHeight(int16_t)	16	static
+Drawable.hpp:404:18:virtual void touchgfx::Drawable::childGeometryChanged()	16	static
+Drawable.hpp:416:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	16	static
+Drawable.hpp:483:10:void touchgfx::Drawable::setTouchable(bool)	16	static
+Drawable.hpp:564:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	16	static
+Container.hpp:52:5:touchgfx::Container::Container()	16	static
+Container.hpp:202:22:virtual uint16_t touchgfx::Container::getType() const	16	static
+ScrollBase.hpp:497:18:virtual void touchgfx::ScrollBase::initialize()	16	static
+ScrollBase.cpp:20:1:touchgfx::ScrollBase::ScrollBase()	16	static
+ScrollBase.cpp:52:6:virtual void touchgfx::ScrollBase::setWidth(int16_t)	16	static
+ScrollBase.cpp:58:6:virtual void touchgfx::ScrollBase::setHeight(int16_t)	16	static
+ScrollBase.cpp:64:6:virtual void touchgfx::ScrollBase::setHorizontal(bool)	16	static
+ScrollBase.cpp:71:6:virtual bool touchgfx::ScrollBase::getHorizontal() const	16	static
+ScrollBase.cpp:76:6:virtual void touchgfx::ScrollBase::setCircular(bool)	16	static
+ScrollBase.cpp:81:6:virtual bool touchgfx::ScrollBase::getCircular() const	16	static
+ScrollBase.cpp:86:6:void touchgfx::ScrollBase::setDrawableSize(int16_t, int16_t)	16	static
+ScrollBase.cpp:92:9:virtual int16_t touchgfx::ScrollBase::getDrawableSize() const	16	static
+ScrollBase.cpp:97:9:virtual int16_t touchgfx::ScrollBase::getDrawableMargin() const	16	static
+ScrollBase.cpp:102:6:virtual void touchgfx::ScrollBase::setNumberOfItems(int16_t)	24	static
+ScrollBase.cpp:114:9:virtual int16_t touchgfx::ScrollBase::getNumberOfItems() const	16	static
+ScrollBase.cpp:119:6:void touchgfx::ScrollBase::setEasingEquation(touchgfx::EasingEquation)	16	static
+ScrollBase.cpp:124:6:void touchgfx::ScrollBase::setAnimationSteps(int16_t)	16	static
+ScrollBase.cpp:129:10:uint16_t touchgfx::ScrollBase::getAnimationSteps() const	16	static
+ScrollBase.cpp:134:6:void touchgfx::ScrollBase::setSwipeAcceleration(uint16_t)	16	static
+ScrollBase.cpp:139:10:uint16_t touchgfx::ScrollBase::getSwipeAcceleration() const	16	static
+ScrollBase.cpp:144:6:void touchgfx::ScrollBase::setMaxSwipeItems(uint16_t)	16	static
+ScrollBase.cpp:149:10:uint16_t touchgfx::ScrollBase::getMaxSwipeItems() const	16	static
+ScrollBase.cpp:154:6:void touchgfx::ScrollBase::setDragAcceleration(uint16_t)	16	static
+ScrollBase.cpp:159:10:uint16_t touchgfx::ScrollBase::getDragAcceleration() const	16	static
+ScrollBase.cpp:164:6:void touchgfx::ScrollBase::allowHorizontalDrag(bool)	16	static
+ScrollBase.cpp:169:6:void touchgfx::ScrollBase::allowVerticalDrag(bool)	16	static
+ScrollBase.cpp:174:6:virtual void touchgfx::ScrollBase::animateToItem(int16_t, int16_t)	32	static
+ScrollBase.cpp:180:6:void touchgfx::ScrollBase::setItemSelectedCallback(touchgfx::GenericCallback<short int>&)	16	static
+ScrollBase.cpp:185:6:void touchgfx::ScrollBase::setAnimationEndedCallback(touchgfx::GenericCallback<void>&)	16	static
+ScrollBase.cpp:190:6:void touchgfx::ScrollBase::setItemPressedCallback(touchgfx::GenericCallback<short int>&)	16	static
+ScrollBase.cpp:195:6:bool touchgfx::ScrollBase::isAnimating() const	16	static
+ScrollBase.cpp:200:6:void touchgfx::ScrollBase::stopAnimation()	16	static
+ScrollBase.cpp:210:6:virtual void touchgfx::ScrollBase::handleDragEvent(const touchgfx::DragEvent&)	32	static
+ScrollBase.cpp:219:6:virtual void touchgfx::ScrollBase::handleGestureEvent(const touchgfx::GestureEvent&)	40	static
+ScrollBase.cpp:238:6:virtual void touchgfx::ScrollBase::handleTickEvent()	32	static
+ScrollBase.cpp:261:6:virtual void touchgfx::ScrollBase::itemChanged(int)	16	static
+ScrollBase.cpp:266:6:virtual void touchgfx::ScrollBase::setOffset(int32_t)	16	static
+ScrollBase.cpp:271:9:virtual int32_t touchgfx::ScrollBase::getOffset() const	16	static
+ScrollBase.cpp:276:5:int touchgfx::ScrollBase::getNormalizedOffset(int) const	24	static
+ScrollBase.cpp:292:9:virtual int32_t touchgfx::ScrollBase::getNearestAlignedOffset(int32_t) const	16	static
+ScrollBase.cpp:310:6:virtual void touchgfx::ScrollBase::animateToPosition(int32_t, int16_t)	24	static
+Utils.hpp:129:3:T touchgfx::abs(T) [with T = short int]	16	static

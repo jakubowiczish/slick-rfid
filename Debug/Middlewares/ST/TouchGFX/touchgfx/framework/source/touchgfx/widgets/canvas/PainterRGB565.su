@@ -1,0 +1,19 @@
+Types.hpp:114:5:touchgfx::colortype::colortype(uint32_t)	16	static
+Types.hpp:147:5:touchgfx::colortype::operator uint16_t() const	16	static
+HAL.hpp:115:17:static touchgfx::HAL* touchgfx::HAL::getInstance()	4	static
+HAL.hpp:296:17:static touchgfx::LCD& touchgfx::HAL::lcd()	4	static
+HAL.hpp:1317:10:touchgfx::LCD* touchgfx::HAL::getAuxiliaryLCD()	16	static
+AbstractPainter.hpp:120:24:static bool touchgfx::AbstractPainter::compatibleFramebuffer(touchgfx::Bitmap::BitmapFormat)	24	static
+AbstractPainterRGB565.hpp:43:5:touchgfx::AbstractPainterRGB565::AbstractPainterRGB565()	16	static
+AbstractPainterRGB565.hpp:48:13:touchgfx::AbstractPainterRGB565::~AbstractPainterRGB565()	16	static
+AbstractPainterRGB565.hpp:48:13:virtual touchgfx::AbstractPainterRGB565::~AbstractPainterRGB565()	16	static
+AbstractPainterRGB565.hpp:105:18:virtual bool touchgfx::AbstractPainterRGB565::renderInit()	16	static
+PainterRGB565.cpp:21:1:touchgfx::PainterRGB565::PainterRGB565(touchgfx::colortype, uint8_t)	24	static
+PainterRGB565.cpp:27:6:void touchgfx::PainterRGB565::setColor(touchgfx::colortype, uint8_t)	24	static
+PainterRGB565.cpp:36:21:touchgfx::colortype touchgfx::PainterRGB565::getColor() const	24	static
+PainterRGB565.cpp:41:6:void touchgfx::PainterRGB565::setAlpha(uint8_t)	16	static
+PainterRGB565.cpp:46:9:uint8_t touchgfx::PainterRGB565::getAlpha() const	16	static
+PainterRGB565.cpp:51:6:virtual void touchgfx::PainterRGB565::render(uint8_t*, int, int, int, unsigned int, const uint8_t*)	72	static
+PainterRGB565.cpp:93:6:virtual bool touchgfx::PainterRGB565::renderNext(uint8_t&, uint8_t&, uint8_t&, uint8_t&)	24	static
+PainterRGB565.hpp:35:7:touchgfx::PainterRGB565::~PainterRGB565()	16	static
+PainterRGB565.hpp:35:7:virtual touchgfx::PainterRGB565::~PainterRGB565()	16	static

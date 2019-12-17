@@ -1,0 +1,26 @@
+Types.hpp:173:5:touchgfx::Rect::Rect()	16	static
+Types.hpp:193:5:touchgfx::Rect::Rect(int16_t, int16_t, int16_t, int16_t)	24	static
+Bitmap.hpp:167:14:touchgfx::Bitmap::Bitmap(touchgfx::BitmapId)	16	static
+Bitmap.hpp:180:14:touchgfx::BitmapId touchgfx::Bitmap::getId() const	16	static
+Bitmap.hpp:277:10:touchgfx::Rect touchgfx::Bitmap::getRect() const	32	static
+HAL.hpp:115:17:static touchgfx::HAL* touchgfx::HAL::getInstance()	4	static
+HAL.hpp:296:17:static touchgfx::LCD& touchgfx::HAL::lcd()	4	static
+HAL.hpp:1317:10:touchgfx::LCD* touchgfx::HAL::getAuxiliaryLCD()	16	static
+LCD1bpp.hpp:471:9:touchgfx::LCD1bpp::bwRLEdata::bwRLEdata(const uint8_t*)	16	static
+LCD1bpp.hpp:475:14:void touchgfx::LCD1bpp::bwRLEdata::init(const uint8_t*)	16	static
+LCD1bpp.hpp:489:14:void touchgfx::LCD1bpp::bwRLEdata::skipNext(uint32_t)	16	static
+LCD1bpp.hpp:506:17:uint8_t touchgfx::LCD1bpp::bwRLEdata::getColor() const	16	static
+LCD1bpp.hpp:510:18:uint32_t touchgfx::LCD1bpp::bwRLEdata::getLength() const	16	static
+LCD1bpp.hpp:515:14:void touchgfx::LCD1bpp::bwRLEdata::getNextLength()	16	static
+LCD1bpp.hpp:536:17:uint8_t touchgfx::LCD1bpp::bwRLEdata::getNextHalfByte()	24	static
+AbstractPainter.hpp:120:24:static bool touchgfx::AbstractPainter::compatibleFramebuffer(touchgfx::Bitmap::BitmapFormat)	24	static
+AbstractPainterBW.hpp:39:5:touchgfx::AbstractPainterBW::AbstractPainterBW()	16	static
+AbstractPainterBW.hpp:44:13:touchgfx::AbstractPainterBW::~AbstractPainterBW()	16	static
+AbstractPainterBW.hpp:44:13:virtual touchgfx::AbstractPainterBW::~AbstractPainterBW()	16	static
+PainterBWBitmap.hpp:54:13:touchgfx::PainterBWBitmap::~PainterBWBitmap()	16	static
+PainterBWBitmap.hpp:54:13:virtual touchgfx::PainterBWBitmap::~PainterBWBitmap()	16	static
+PainterBWBitmap.cpp:20:1:touchgfx::PainterBWBitmap::PainterBWBitmap(const touchgfx::Bitmap&)	16	static
+PainterBWBitmap.cpp:26:6:void touchgfx::PainterBWBitmap::setBitmap(const touchgfx::Bitmap&)	32	static
+PainterBWBitmap.cpp:37:6:virtual void touchgfx::PainterBWBitmap::render(uint8_t*, int, int, int, unsigned int, const uint8_t*)	80	static
+PainterBWBitmap.cpp:157:6:virtual bool touchgfx::PainterBWBitmap::renderInit()	48	static
+PainterBWBitmap.cpp:198:6:virtual bool touchgfx::PainterBWBitmap::renderNext(uint8_t&)	24	static

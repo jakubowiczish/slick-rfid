@@ -1,0 +1,5 @@
+AbstractPainter.cpp:20:1:touchgfx::AbstractPainter::AbstractPainter()	16	static
+AbstractPainter.cpp:27:1:touchgfx::AbstractPainter::~AbstractPainter()	16	static
+AbstractPainter.cpp:27:1:virtual touchgfx::AbstractPainter::~AbstractPainter()	16	static
+AbstractPainter.cpp:31:6:void touchgfx::AbstractPainter::setOffset(uint16_t, uint16_t)	16	static
+AbstractPainter.cpp:37:6:void touchgfx::AbstractPainter::setWidgetAlpha(uint8_t)	16	static

@@ -1,0 +1,3 @@
+AbstractPainterGRAY4.hpp:59:18:virtual bool touchgfx::AbstractPainterGRAY4::renderInit()	16	static
+AbstractPainterGRAY4.cpp:22:6:virtual void touchgfx::AbstractPainterGRAY4::render(uint8_t*, int, int, int, unsigned int, const uint8_t*)	56	static
+AbstractPainterGRAY4.cpp:61:6:virtual void touchgfx::AbstractPainterGRAY4::renderPixel(uint8_t*, uint16_t, uint8_t)	40	static

@@ -1,0 +1,21 @@
+HAL.hpp:115:17:static touchgfx::HAL* touchgfx::HAL::getInstance()	4	static
+HAL.hpp:296:17:static touchgfx::LCD& touchgfx::HAL::lcd()	4	static
+HAL.hpp:1317:10:touchgfx::LCD* touchgfx::HAL::getAuxiliaryLCD()	16	static
+AbstractPainter.hpp:120:24:static bool touchgfx::AbstractPainter::compatibleFramebuffer(touchgfx::Bitmap::BitmapFormat)	24	static
+AbstractPainterARGB8888.hpp:39:5:touchgfx::AbstractPainterARGB8888::AbstractPainterARGB8888()	16	static
+AbstractPainterARGB8888.hpp:44:13:touchgfx::AbstractPainterARGB8888::~AbstractPainterARGB8888()	16	static
+AbstractPainterARGB8888.hpp:44:13:virtual touchgfx::AbstractPainterARGB8888::~AbstractPainterARGB8888()	16	static
+AbstractPainterARGB8888.hpp:59:18:virtual bool touchgfx::AbstractPainterARGB8888::renderInit()	16	static
+Color.hpp:54:22:static touchgfx::colortype touchgfx::Color::getColorFrom24BitRGB(uint8_t, uint8_t, uint8_t)	24	static
+Color.hpp:71:27:static uint8_t touchgfx::Color::getRedColor(touchgfx::colortype)	16	static
+Color.hpp:87:27:static uint8_t touchgfx::Color::getGreenColor(touchgfx::colortype)	16	static
+Color.hpp:103:27:static uint8_t touchgfx::Color::getBlueColor(touchgfx::colortype)	16	static
+PainterARGB8888.cpp:21:1:touchgfx::PainterARGB8888::PainterARGB8888(touchgfx::colortype, uint8_t)	24	static
+PainterARGB8888.cpp:27:6:void touchgfx::PainterARGB8888::setColor(touchgfx::colortype, uint8_t)	24	static
+PainterARGB8888.cpp:35:21:touchgfx::colortype touchgfx::PainterARGB8888::getColor() const	16	static
+PainterARGB8888.cpp:40:6:void touchgfx::PainterARGB8888::setAlpha(uint8_t)	16	static
+PainterARGB8888.cpp:45:9:uint8_t touchgfx::PainterARGB8888::getAlpha() const	16	static
+PainterARGB8888.cpp:50:6:virtual void touchgfx::PainterARGB8888::render(uint8_t*, int, int, int, unsigned int, const uint8_t*)	56	static
+PainterARGB8888.cpp:101:6:virtual bool touchgfx::PainterARGB8888::renderNext(uint8_t&, uint8_t&, uint8_t&, uint8_t&)	24	static
+PainterARGB8888.hpp:35:7:touchgfx::PainterARGB8888::~PainterARGB8888()	16	static
+PainterARGB8888.hpp:35:7:virtual touchgfx::PainterARGB8888::~PainterARGB8888()	16	static

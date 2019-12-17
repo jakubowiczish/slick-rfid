@@ -1,0 +1,50 @@
+Drawable.hpp:249:18:virtual void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+Drawable.hpp:293:13:int16_t touchgfx::Drawable::getWidth() const	16	static
+Drawable.hpp:307:13:int16_t touchgfx::Drawable::getHeight() const	16	static
+Drawable.hpp:323:18:virtual void touchgfx::Drawable::setX(int16_t)	16	static
+Drawable.hpp:339:18:virtual void touchgfx::Drawable::setY(int16_t)	16	static
+Drawable.hpp:356:18:virtual void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+Drawable.hpp:373:18:virtual void touchgfx::Drawable::setWidth(int16_t)	16	static
+Drawable.hpp:389:18:virtual void touchgfx::Drawable::setHeight(int16_t)	16	static
+Drawable.hpp:404:18:virtual void touchgfx::Drawable::childGeometryChanged()	16	static
+Drawable.hpp:416:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	16	static
+Drawable.hpp:428:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	16	static
+Drawable.hpp:440:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	16	static
+Drawable.hpp:453:18:virtual void touchgfx::Drawable::handleTickEvent()	16	static
+Drawable.hpp:564:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	16	static
+Container.hpp:202:22:virtual uint16_t touchgfx::Container::getType() const	16	static
+CWRUtil.hpp:71:9:touchgfx::CWRUtil::Q5::Q5()	16	static
+CWRUtil.hpp:83:18:touchgfx::CWRUtil::Q5::Q5(int)	16	static
+CWRUtil.hpp:96:9:touchgfx::CWRUtil::Q5::Q5(touchgfx::CWRUtil::Q10)	16	static
+CWRUtil.hpp:107:9:touchgfx::CWRUtil::Q5::operator int() const	16	static
+CWRUtil.hpp:137:12:touchgfx::CWRUtil::Q5 touchgfx::CWRUtil::Q5::operator+(const touchgfx::CWRUtil::Q5&) const	24	static
+CWRUtil.hpp:153:12:touchgfx::CWRUtil::Q5 touchgfx::CWRUtil::Q5::operator-(const touchgfx::CWRUtil::Q5&) const	24	static
+CWRUtil.hpp:172:13:touchgfx::CWRUtil::Q10 touchgfx::CWRUtil::Q5::operator*(const touchgfx::CWRUtil::Q5&) const	24	static
+CWRUtil.hpp:244:12:touchgfx::CWRUtil::Q5 touchgfx::CWRUtil::Q5::operator/(touchgfx::CWRUtil::Q5) const	24	static
+CWRUtil.hpp:311:18:touchgfx::CWRUtil::Q10::Q10(int)	16	static
+CWRUtil.hpp:322:9:touchgfx::CWRUtil::Q10::operator int() const	16	static
+CanvasWidget.hpp:97:18:virtual void touchgfx::CanvasWidget::setAlpha(uint8_t)	16	static
+CanvasWidget.hpp:111:21:virtual uint8_t touchgfx::CanvasWidget::getAlpha() const	16	static
+Line.hpp:331:10:void touchgfx::Line::setLineWidth(touchgfx::CWRUtil::Q5)	24	static
+LineProgress.cpp:20:1:touchgfx::LineProgress::LineProgress()	32	static
+LineProgress.cpp:27:1:touchgfx::LineProgress::~LineProgress()	16	static
+LineProgress.cpp:27:1:virtual touchgfx::LineProgress::~LineProgress()	16	static
+LineProgress.cpp:31:6:virtual void touchgfx::LineProgress::setProgressIndicatorPosition(int16_t, int16_t, int16_t, int16_t)	40	static
+LineProgress.cpp:38:6:virtual void touchgfx::LineProgress::setPainter(touchgfx::AbstractPainter&)	16	static
+LineProgress.cpp:43:6:virtual void touchgfx::LineProgress::setStart(int, int)	40	static
+LineProgress.cpp:50:6:virtual void touchgfx::LineProgress::getStart(int&, int&) const	24	static
+LineProgress.cpp:56:6:virtual void touchgfx::LineProgress::setEnd(int, int)	40	static
+LineProgress.cpp:62:6:virtual void touchgfx::LineProgress::getEnd(int&, int&) const	24	static
+LineProgress.cpp:68:6:virtual void touchgfx::LineProgress::setLineWidth(int)	16	static
+LineProgress.cpp:73:5:virtual int touchgfx::LineProgress::getLineWidth() const	24	static
+LineProgress.cpp:80:6:virtual void touchgfx::LineProgress::setLineEndingStyle(touchgfx::Line::LINE_ENDING_STYLE)	16	static
+LineProgress.cpp:85:35:virtual touchgfx::Line::LINE_ENDING_STYLE touchgfx::LineProgress::getLineEndingStyle() const	16	static
+LineProgress.cpp:90:6:virtual void touchgfx::LineProgress::setAlpha(uint8_t)	16	static
+LineProgress.cpp:95:9:virtual uint8_t touchgfx::LineProgress::getAlpha() const	16	static
+LineProgress.cpp:100:6:virtual void touchgfx::LineProgress::setValue(int)	72	static
+CWRUtil.hpp:263:11:T touchgfx::CWRUtil::Q5::to() const [with T = int]	16	static
+Line.hpp:115:10:void touchgfx::Line::setStart(T, T) [with T = int]	48	static
+Line.hpp:313:10:void touchgfx::Line::setLineWidth(T) [with T = int]	24	static
+Line.hpp:409:10:void touchgfx::Line::getLineWidth(T&) const [with T = int]	16	static
+Line.hpp:46:7:touchgfx::Line::~Line()	16	static
+Line.hpp:46:7:virtual touchgfx::Line::~Line()	16	static

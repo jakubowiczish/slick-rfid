@@ -1,0 +1,6 @@
+TouchController.hpp:40:13:touchgfx::TouchController::~TouchController()	16	static
+TouchController.hpp:40:13:virtual touchgfx::TouchController::~TouchController()	16	static
+OTM8009TouchController.hpp:48:13:OTM8009TouchController::~OTM8009TouchController()	16	static
+OTM8009TouchController.hpp:48:13:virtual OTM8009TouchController::~OTM8009TouchController()	16	static
+OTM8009TouchController.cpp:15:6:virtual void OTM8009TouchController::init()	24	static
+OTM8009TouchController.cpp:24:6:virtual bool OTM8009TouchController::sampleTouch(int32_t&, int32_t&)	40	static

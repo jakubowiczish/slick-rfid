@@ -1,0 +1,37 @@
+ClickEvent.hpp:85:13:int16_t touchgfx::ClickEvent::getX() const	16	static
+ClickEvent.hpp:99:13:int16_t touchgfx::ClickEvent::getY() const	16	static
+ClickEvent.hpp:155:20:touchgfx::ClickEvent::ClickEventType touchgfx::ClickEvent::getType() const	16	static
+Drawable.hpp:76:13:touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:76:13:virtual touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:249:18:virtual void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+Drawable.hpp:293:13:int16_t touchgfx::Drawable::getWidth() const	16	static
+Drawable.hpp:307:13:int16_t touchgfx::Drawable::getHeight() const	16	static
+Drawable.hpp:323:18:virtual void touchgfx::Drawable::setX(int16_t)	16	static
+Drawable.hpp:339:18:virtual void touchgfx::Drawable::setY(int16_t)	16	static
+Drawable.hpp:356:18:virtual void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+Drawable.hpp:404:18:virtual void touchgfx::Drawable::childGeometryChanged()	16	static
+Drawable.hpp:416:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	16	static
+Drawable.hpp:564:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	16	static
+Container.hpp:64:13:touchgfx::Container::~Container()	16	static
+Container.hpp:64:13:virtual touchgfx::Container::~Container()	16	static
+Container.hpp:202:22:virtual uint16_t touchgfx::Container::getType() const	16	static
+DrawableList.hpp:195:13:touchgfx::DrawableList::~DrawableList()	16	static
+DrawableList.hpp:195:13:virtual touchgfx::DrawableList::~DrawableList()	16	static
+ScrollBase.hpp:56:13:touchgfx::ScrollBase::~ScrollBase()	16	static
+ScrollBase.hpp:56:13:virtual touchgfx::ScrollBase::~ScrollBase()	16	static
+ScrollBase.hpp:497:18:virtual void touchgfx::ScrollBase::initialize()	16	static
+ScrollList.hpp:52:13:touchgfx::ScrollList::~ScrollList()	16	static
+ScrollList.hpp:52:13:virtual touchgfx::ScrollList::~ScrollList()	16	static
+ScrollList.cpp:20:1:touchgfx::ScrollList::ScrollList()	16	static
+ScrollList.cpp:28:6:virtual void touchgfx::ScrollList::setDrawables(touchgfx::DrawableListItemsInterface&, touchgfx::GenericCallback<touchgfx::DrawableListItemsInterface*, short int, short int>&)	24	static
+ScrollList.cpp:36:6:void touchgfx::ScrollList::setWindowSize(int16_t)	32	static
+ScrollList.cpp:42:6:void touchgfx::ScrollList::setPadding(int16_t, int16_t)	24	static
+ScrollList.cpp:51:9:int16_t touchgfx::ScrollList::getPaddingBefore() const	16	static
+ScrollList.cpp:56:9:int16_t touchgfx::ScrollList::getPaddingAfter() const	16	static
+ScrollList.cpp:61:6:void touchgfx::ScrollList::setSnapping(bool)	32	static
+ScrollList.cpp:70:6:bool touchgfx::ScrollList::getSnapping() const	16	static
+ScrollList.cpp:75:9:virtual int32_t touchgfx::ScrollList::getPositionForItem(int16_t)	72	static
+ScrollList.cpp:148:6:virtual void touchgfx::ScrollList::handleClickEvent(const touchgfx::ClickEvent&)	48	static
+ScrollList.cpp:206:9:virtual int32_t touchgfx::ScrollList::getNearestAlignedOffset(int32_t) const	16	static
+ScrollList.cpp:223:9:virtual int32_t touchgfx::ScrollList::keepOffsetInsideLimits(int32_t, int16_t) const	40	static
+Utils.hpp:129:3:T touchgfx::abs(T) [with T = long int]	16	static

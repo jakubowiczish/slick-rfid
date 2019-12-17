@@ -1,0 +1,51 @@
+Types.hpp:173:5:touchgfx::Rect::Rect()	16	static
+Types.hpp:193:5:touchgfx::Rect::Rect(int16_t, int16_t, int16_t, int16_t)	24	static
+Types.hpp:215:20:int16_t touchgfx::Rect::right() const	16	static
+Types.hpp:229:20:int16_t touchgfx::Rect::bottom() const	16	static
+Types.hpp:263:10:bool touchgfx::Rect::intersect(const touchgfx::Rect&) const	24	static
+Types.hpp:302:10:touchgfx::Rect touchgfx::Rect::operator&(const touchgfx::Rect&) const	24	static
+Types.hpp:319:10:void touchgfx::Rect::operator&=(const touchgfx::Rect&)	32	static
+Bitmap.hpp:167:14:touchgfx::Bitmap::Bitmap(touchgfx::BitmapId)	16	static
+Drawable.hpp:60:5:touchgfx::Drawable::Drawable()	24	static
+Drawable.hpp:76:13:touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:76:13:virtual touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:205:17:const touchgfx::Rect& touchgfx::Drawable::getRect() const	16	static
+Drawable.hpp:249:18:virtual void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+Drawable.hpp:293:13:int16_t touchgfx::Drawable::getWidth() const	16	static
+Drawable.hpp:307:13:int16_t touchgfx::Drawable::getHeight() const	16	static
+Drawable.hpp:323:18:virtual void touchgfx::Drawable::setX(int16_t)	16	static
+Drawable.hpp:339:18:virtual void touchgfx::Drawable::setY(int16_t)	16	static
+Drawable.hpp:356:18:virtual void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+Drawable.hpp:373:18:virtual void touchgfx::Drawable::setWidth(int16_t)	16	static
+Drawable.hpp:389:18:virtual void touchgfx::Drawable::setHeight(int16_t)	16	static
+Drawable.hpp:404:18:virtual void touchgfx::Drawable::childGeometryChanged()	16	static
+Drawable.hpp:416:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	16	static
+Drawable.hpp:428:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	16	static
+Drawable.hpp:440:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	16	static
+Drawable.hpp:453:18:virtual void touchgfx::Drawable::handleTickEvent()	16	static
+Drawable.hpp:500:10:bool touchgfx::Drawable::isVisible() const	16	static
+Drawable.hpp:516:10:bool touchgfx::Drawable::isTouchable() const	16	static
+Drawable.hpp:564:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	16	static
+Drawable.hpp:662:10:void touchgfx::Drawable::resetDrawChainCache()	16	static
+Drawable.hpp:748:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	24	static
+Widget.hpp:44:5:touchgfx::Widget::Widget()	16	static
+Widget.hpp:53:13:touchgfx::Widget::~Widget()	16	static
+Widget.hpp:53:13:virtual touchgfx::Widget::~Widget()	16	static
+Widget.hpp:74:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	24	static
+Widget.hpp:91:22:virtual uint16_t touchgfx::Widget::getType() const	16	static
+ScalableImage.hpp:114:18:virtual void touchgfx::ScalableImage::setAlpha(uint8_t)	16	static
+ScalableImage.hpp:128:21:virtual uint8_t touchgfx::ScalableImage::getAlpha() const	16	static
+ScalableImage.hpp:190:22:virtual uint16_t touchgfx::ScalableImage::getType() const	16	static
+TextureMapTypes.hpp:169:18:touchgfx::fixed28_4 touchgfx::floatToFixed28_4(float)	16	static
+HAL.hpp:115:17:static touchgfx::HAL* touchgfx::HAL::getInstance()	4	static
+HAL.hpp:296:17:static touchgfx::LCD& touchgfx::HAL::lcd()	4	static
+ScalableImage.cpp:23:1:touchgfx::ScalableImage::ScalableImage()	16	static
+ScalableImage.cpp:30:1:touchgfx::ScalableImage::~ScalableImage()	16	static
+ScalableImage.cpp:30:1:virtual touchgfx::ScalableImage::~ScalableImage()	16	static
+ScalableImage.cpp:34:6:virtual void touchgfx::ScalableImage::setBitmap(const touchgfx::Bitmap&)	24	static
+ScalableImage.cpp:41:6:virtual void touchgfx::ScalableImage::setScalingAlgorithm(touchgfx::ScalableImage::ScalingAlgorithm)	16	static
+ScalableImage.cpp:46:33:virtual touchgfx::ScalableImage::ScalingAlgorithm touchgfx::ScalableImage::getScalingAlgorithm()	16	static
+ScalableImage.cpp:51:6:void touchgfx::ScalableImage::drawTriangle(const touchgfx::Rect&, uint16_t*, const float*, const float*, const float*, const float*, const float*) const	272	static
+ScalableImage.cpp:101:18:touchgfx::RenderingVariant touchgfx::ScalableImage::lookupRenderVariant() const	24	static
+ScalableImage.cpp:115:6:virtual void touchgfx::ScalableImage::draw(const touchgfx::Rect&) const	168	static
+ScalableImage.cpp:200:6:virtual touchgfx::Rect touchgfx::ScalableImage::getSolidRect() const	48	static

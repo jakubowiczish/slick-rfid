@@ -1,0 +1,52 @@
+
+{
+  "Application": {
+    "Screens": [
+      {
+       "Components": [],
+        "Interactions": [],
+        "Name": "Screen1"
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "MyApplication",
+    "Resolution": {
+      "Width": 480,
+      "Height": 272
+    },
+    "StartupScreenName": "Screen1",
+    "SelectedColorDepth": 24,    
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/TouchGFX/touchgfx/",
+    "UIPath": ".",
+    "ApplicationTemplate": {
+      "Name": "Simulator",
+      "Version": "1.0.0",
+      "Description": "STM32CubeMX Generated Simulator Application Template",
+      "NativeResolution": {
+        "Width": 480,
+        "Height": 272
+      },
+      "AvailableColorDepths": [
+        24
+      ],
+      "AvailableImageFormats": {
+        "24": {
+          "Opaque": "RGB888",
+          "NonOpaque": "ARGB8888"
+        }
+      },
+      "AvailableResolutions": [],
+      "PhysicalButtons": [],
+      "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j10",
+
+      "PostGenerateCommand": "touchgfx update_project --project-file=../.cproject ",      
+      "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j10",
+      "RunSimulatorCommand": "build\\bin\\simulator.exe",
+      "CompileTargetCommand": "",
+      "FlashTargetCommand": ""
+    }
+  },
+  "Version": "4.10.0"
+}

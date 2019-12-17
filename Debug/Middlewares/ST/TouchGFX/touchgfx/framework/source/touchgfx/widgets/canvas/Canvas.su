@@ -1,0 +1,51 @@
+Types.hpp:193:5:touchgfx::Rect::Rect(int16_t, int16_t, int16_t, int16_t)	24	static
+Types.hpp:215:20:int16_t touchgfx::Rect::right() const	16	static
+Types.hpp:229:20:int16_t touchgfx::Rect::bottom() const	16	static
+Types.hpp:263:10:bool touchgfx::Rect::intersect(const touchgfx::Rect&) const	24	static
+Types.hpp:302:10:touchgfx::Rect touchgfx::Rect::operator&(const touchgfx::Rect&) const	24	static
+Types.hpp:319:10:void touchgfx::Rect::operator&=(const touchgfx::Rect&)	32	static
+Drawable.hpp:205:17:const touchgfx::Rect& touchgfx::Drawable::getRect() const	16	static
+Drawable.hpp:293:13:int16_t touchgfx::Drawable::getWidth() const	16	static
+Drawable.hpp:307:13:int16_t touchgfx::Drawable::getHeight() const	16	static
+Cell.hpp:114:9:int touchgfx::Cell::packedCoord() const	16	static
+Outline.hpp:109:14:unsigned int touchgfx::Outline::getNumCells() const	16	static
+Outline.hpp:136:10:void touchgfx::Outline::setMaxRenderY(int)	16	static
+Outline.hpp:151:10:bool touchgfx::Outline::wasOutlineTooComplex()	16	static
+RenderingBuffer.hpp:141:19:unsigned char touchgfx::RenderingBuffer::getXAdjust() const	16	static
+RenderingBuffer.hpp:155:14:unsigned int touchgfx::RenderingBuffer::getWidth() const	16	static
+RenderingBuffer.hpp:169:14:unsigned int touchgfx::RenderingBuffer::getHeight() const	16	static
+RenderingBuffer.hpp:202:20:unsigned char* touchgfx::RenderingBuffer::row(unsigned int)	16	static
+HAL.hpp:115:17:static touchgfx::HAL* touchgfx::HAL::getInstance()	4	static
+HAL.hpp:296:17:static touchgfx::LCD& touchgfx::HAL::lcd()	4	static
+Scanline.hpp:127:9:touchgfx::Scanline::iterator::iterator(const touchgfx::Scanline&)	16	static
+Scanline.hpp:143:13:int touchgfx::Scanline::iterator::next()	16	static
+Scanline.hpp:159:13:int touchgfx::Scanline::iterator::getNumPix() const	16	static
+Scanline.hpp:173:24:const uint8_t* touchgfx::Scanline::iterator::getCovers() const	16	static
+Scanline.hpp:203:13:touchgfx::Scanline::~Scanline()	16	static
+Scanline.hpp:203:13:virtual touchgfx::Scanline::~Scanline()	16	static
+Scanline.hpp:282:9:int touchgfx::Scanline::getY() const	16	static
+Scanline.hpp:296:14:unsigned int touchgfx::Scanline::getNumSpans() const	16	static
+Renderer.hpp:60:5:touchgfx::Renderer::Renderer(touchgfx::RenderingBuffer&, touchgfx::AbstractPainter&)	24	static
+Renderer.hpp:88:10:void touchgfx::Renderer::render(const touchgfx::Scanline&)	88	static
+Rasterizer.hpp:103:5:touchgfx::Rasterizer::Rasterizer()	16	static
+Rasterizer.hpp:115:10:void touchgfx::Rasterizer::reset()	16	static
+Rasterizer.hpp:144:10:void touchgfx::Rasterizer::moveTo(int, int)	24	static
+Rasterizer.hpp:164:10:void touchgfx::Rasterizer::lineTo(int, int)	24	static
+Rasterizer.hpp:185:14:unsigned int touchgfx::Rasterizer::calculateAlpha(int) const	24	static
+Rasterizer.hpp:322:10:void touchgfx::Rasterizer::setMaxRenderY(int)	16	static
+Rasterizer.hpp:336:10:bool touchgfx::Rasterizer::wasOutlineTooComplex()	16	static
+CWRUtil.hpp:71:9:touchgfx::CWRUtil::Q5::Q5()	16	static
+CWRUtil.hpp:83:18:touchgfx::CWRUtil::Q5::Q5(int)	16	static
+CWRUtil.hpp:107:9:touchgfx::CWRUtil::Q5::operator int() const	16	static
+CWRUtil.hpp:153:12:touchgfx::CWRUtil::Q5 touchgfx::CWRUtil::Q5::operator-(const touchgfx::CWRUtil::Q5&) const	24	static
+Rasterizer.hpp:58:7:touchgfx::Rasterizer::~Rasterizer()	16	static
+Canvas.cpp:20:1:touchgfx::Canvas::Canvas(const touchgfx::CanvasWidget*, const touchgfx::Rect&)	112	static
+Canvas.cpp:91:1:touchgfx::Canvas::~Canvas()	16	static
+Canvas.cpp:91:1:virtual touchgfx::Canvas::~Canvas()	16	static
+Canvas.cpp:96:6:void touchgfx::Canvas::moveTo(touchgfx::CWRUtil::Q5, touchgfx::CWRUtil::Q5)	48	static
+Canvas.cpp:134:6:void touchgfx::Canvas::lineTo(touchgfx::CWRUtil::Q5, touchgfx::CWRUtil::Q5)	48	static
+Canvas.cpp:180:6:bool touchgfx::Canvas::render()	32	static
+Canvas.cpp:214:9:uint8_t touchgfx::Canvas::isOutside(const touchgfx::CWRUtil::Q5&, const touchgfx::CWRUtil::Q5&, const touchgfx::CWRUtil::Q5&, const touchgfx::CWRUtil::Q5&) const	40	static
+Canvas.cpp:238:6:void touchgfx::Canvas::transformFrameBufferToDisplay(touchgfx::CWRUtil::Q5&, touchgfx::CWRUtil::Q5&) const	40	static
+Canvas.cpp:252:6:void touchgfx::Canvas::close()	24	static
+Rasterizer.hpp:222:10:bool touchgfx::Rasterizer::render(Renderer&) [with Renderer = touchgfx::Renderer]	104	static

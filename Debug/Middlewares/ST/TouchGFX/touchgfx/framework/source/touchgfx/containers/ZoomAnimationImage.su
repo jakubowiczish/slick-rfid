@@ -1,0 +1,66 @@
+Types.hpp:173:5:touchgfx::Rect::Rect()	16	static
+Types.hpp:193:5:touchgfx::Rect::Rect(int16_t, int16_t, int16_t, int16_t)	24	static
+Bitmap.hpp:167:14:touchgfx::Bitmap::Bitmap(touchgfx::BitmapId)	16	static
+Drawable.hpp:60:5:touchgfx::Drawable::Drawable()	24	static
+Drawable.hpp:76:13:touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:76:13:virtual touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:249:18:virtual void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+Drawable.hpp:265:13:int16_t touchgfx::Drawable::getX() const	16	static
+Drawable.hpp:279:13:int16_t touchgfx::Drawable::getY() const	16	static
+Drawable.hpp:293:13:int16_t touchgfx::Drawable::getWidth() const	16	static
+Drawable.hpp:307:13:int16_t touchgfx::Drawable::getHeight() const	16	static
+Drawable.hpp:323:18:virtual void touchgfx::Drawable::setX(int16_t)	16	static
+Drawable.hpp:339:18:virtual void touchgfx::Drawable::setY(int16_t)	16	static
+Drawable.hpp:356:18:virtual void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+Drawable.hpp:373:18:virtual void touchgfx::Drawable::setWidth(int16_t)	16	static
+Drawable.hpp:389:18:virtual void touchgfx::Drawable::setHeight(int16_t)	16	static
+Drawable.hpp:404:18:virtual void touchgfx::Drawable::childGeometryChanged()	16	static
+Drawable.hpp:416:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	16	static
+Drawable.hpp:428:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	16	static
+Drawable.hpp:440:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	16	static
+Drawable.hpp:453:18:virtual void touchgfx::Drawable::handleTickEvent()	16	static
+Drawable.hpp:469:10:void touchgfx::Drawable::setVisible(bool)	16	static
+Drawable.hpp:500:10:bool touchgfx::Drawable::isVisible() const	16	static
+Drawable.hpp:516:10:bool touchgfx::Drawable::isTouchable() const	16	static
+Drawable.hpp:564:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	16	static
+Drawable.hpp:662:10:void touchgfx::Drawable::resetDrawChainCache()	16	static
+Drawable.hpp:748:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	24	static
+Container.hpp:52:5:touchgfx::Container::Container()	16	static
+Container.hpp:64:13:touchgfx::Container::~Container()	16	static
+Container.hpp:64:13:virtual touchgfx::Container::~Container()	16	static
+Widget.hpp:44:5:touchgfx::Widget::Widget()	16	static
+Widget.hpp:53:13:touchgfx::Widget::~Widget()	16	static
+Widget.hpp:53:13:virtual touchgfx::Widget::~Widget()	16	static
+Widget.hpp:74:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	24	static
+Widget.hpp:91:22:virtual uint16_t touchgfx::Widget::getType() const	16	static
+Image.hpp:50:5:touchgfx::Image::Image(const touchgfx::Bitmap&)	16	static
+Image.hpp:78:10:void touchgfx::Image::setAlpha(uint8_t)	16	static
+Image.hpp:118:13:uint8_t touchgfx::Image::getAlpha() const	16	static
+ScalableImage.hpp:114:18:virtual void touchgfx::ScalableImage::setAlpha(uint8_t)	16	static
+ZoomAnimationImage.hpp:384:22:virtual uint16_t touchgfx::ZoomAnimationImage::getType() const	16	static
+ZoomAnimationImage.cpp:20:1:touchgfx::ZoomAnimationImage::ZoomAnimationImage()	32	static
+ZoomAnimationImage.cpp:54:1:touchgfx::ZoomAnimationImage::~ZoomAnimationImage()	16	static
+ZoomAnimationImage.cpp:54:1:virtual touchgfx::ZoomAnimationImage::~ZoomAnimationImage()	16	static
+ZoomAnimationImage.cpp:58:6:void touchgfx::ZoomAnimationImage::startZoomAnimation(int16_t, int16_t, uint16_t, touchgfx::ZoomAnimationImage::ZoomMode, touchgfx::EasingEquation, touchgfx::EasingEquation)	40	static
+ZoomAnimationImage.cpp:65:6:void touchgfx::ZoomAnimationImage::startZoomAndMoveAnimation(int16_t, int16_t, int16_t, int16_t, uint16_t, touchgfx::ZoomAnimationImage::ZoomMode, touchgfx::EasingEquation, touchgfx::EasingEquation, touchgfx::EasingEquation, touchgfx::EasingEquation)	40	static
+ZoomAnimationImage.cpp:78:6:void touchgfx::ZoomAnimationImage::cancelZoomAnimation()	16	static
+ZoomAnimationImage.cpp:84:6:virtual void touchgfx::ZoomAnimationImage::handleTickEvent()	40	static
+ZoomAnimationImage.cpp:131:6:void touchgfx::ZoomAnimationImage::setBitmaps(const touchgfx::Bitmap&, const touchgfx::Bitmap&)	32	static
+ZoomAnimationImage.cpp:143:6:virtual void touchgfx::ZoomAnimationImage::setPosition(int16_t, int16_t, int16_t, int16_t)	40	static
+ZoomAnimationImage.cpp:150:6:virtual void touchgfx::ZoomAnimationImage::setWidth(int16_t)	24	static
+ZoomAnimationImage.cpp:155:6:virtual void touchgfx::ZoomAnimationImage::setHeight(int16_t)	24	static
+ZoomAnimationImage.cpp:160:6:virtual void touchgfx::ZoomAnimationImage::setDimension(int16_t, int16_t)	16	static
+ZoomAnimationImage.cpp:168:6:virtual void touchgfx::ZoomAnimationImage::setScalingMode(touchgfx::ScalableImage::ScalingAlgorithm)	16	static
+ZoomAnimationImage.cpp:173:33:virtual touchgfx::ScalableImage::ScalingAlgorithm touchgfx::ZoomAnimationImage::getScalingMode()	16	static
+ZoomAnimationImage.cpp:178:6:virtual void touchgfx::ZoomAnimationImage::setAlpha(uint8_t)	16	static
+ZoomAnimationImage.cpp:184:9:virtual uint8_t touchgfx::ZoomAnimationImage::getAlpha() const	16	static
+ZoomAnimationImage.cpp:189:6:virtual void touchgfx::ZoomAnimationImage::setAnimationDelay(uint16_t)	16	static
+ZoomAnimationImage.cpp:194:10:virtual uint16_t touchgfx::ZoomAnimationImage::getAnimationDelay() const	16	static
+ZoomAnimationImage.cpp:199:6:virtual bool touchgfx::ZoomAnimationImage::isRunning() const	16	static
+ZoomAnimationImage.cpp:204:6:virtual bool touchgfx::ZoomAnimationImage::isZoomAnimationRunning() const	16	static
+ZoomAnimationImage.cpp:209:6:virtual void touchgfx::ZoomAnimationImage::updateRenderingMethod()	24	static
+ZoomAnimationImage.cpp:238:6:virtual void touchgfx::ZoomAnimationImage::setCurrentState(touchgfx::ZoomAnimationImage::States)	16	static
+ZoomAnimationImage.cpp:244:6:void touchgfx::ZoomAnimationImage::startTimerAndSetParameters(int16_t, int16_t, uint16_t, touchgfx::ZoomAnimationImage::ZoomMode, touchgfx::EasingEquation, touchgfx::EasingEquation)	24	static
+ZoomAnimationImage.cpp:269:6:virtual void touchgfx::ZoomAnimationImage::updateZoomAnimationDeltaXY()	16	static
+Image.hpp:36:7:touchgfx::Image::~Image()	16	static
+Image.hpp:36:7:virtual touchgfx::Image::~Image()	16	static

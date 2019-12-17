@@ -1,0 +1,49 @@
+Types.hpp:173:5:touchgfx::Rect::Rect()	16	static
+Types.hpp:193:5:touchgfx::Rect::Rect(int16_t, int16_t, int16_t, int16_t)	24	static
+Drawable.hpp:60:5:touchgfx::Drawable::Drawable()	24	static
+Drawable.hpp:76:13:touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:76:13:virtual touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:249:18:virtual void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+Drawable.hpp:293:13:int16_t touchgfx::Drawable::getWidth() const	16	static
+Drawable.hpp:307:13:int16_t touchgfx::Drawable::getHeight() const	16	static
+Drawable.hpp:323:18:virtual void touchgfx::Drawable::setX(int16_t)	16	static
+Drawable.hpp:339:18:virtual void touchgfx::Drawable::setY(int16_t)	16	static
+Drawable.hpp:356:18:virtual void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+Drawable.hpp:373:18:virtual void touchgfx::Drawable::setWidth(int16_t)	16	static
+Drawable.hpp:389:18:virtual void touchgfx::Drawable::setHeight(int16_t)	16	static
+Drawable.hpp:404:18:virtual void touchgfx::Drawable::childGeometryChanged()	16	static
+Drawable.hpp:416:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	16	static
+Drawable.hpp:428:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	16	static
+Drawable.hpp:440:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	16	static
+Drawable.hpp:453:18:virtual void touchgfx::Drawable::handleTickEvent()	16	static
+Drawable.hpp:469:10:void touchgfx::Drawable::setVisible(bool)	16	static
+Drawable.hpp:564:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	16	static
+Container.hpp:52:5:touchgfx::Container::Container()	16	static
+Container.hpp:64:13:touchgfx::Container::~Container()	16	static
+Container.hpp:64:13:virtual touchgfx::Container::~Container()	16	static
+Container.hpp:202:22:virtual uint16_t touchgfx::Container::getType() const	16	static
+DrawableList.hpp:195:13:touchgfx::DrawableList::~DrawableList()	16	static
+DrawableList.hpp:195:13:virtual touchgfx::DrawableList::~DrawableList()	16	static
+DrawableList.cpp:20:1:touchgfx::DrawableList::DrawableList()	16	static
+DrawableList.cpp:38:6:virtual void touchgfx::DrawableList::setWidth(int16_t)	16	static
+DrawableList.cpp:44:6:virtual void touchgfx::DrawableList::setHeight(int16_t)	16	static
+DrawableList.cpp:50:6:virtual void touchgfx::DrawableList::setHorizontal(bool)	16	static
+DrawableList.cpp:59:6:virtual bool touchgfx::DrawableList::getHorizontal() const	16	static
+DrawableList.cpp:64:6:virtual void touchgfx::DrawableList::setCircular(bool)	16	static
+DrawableList.cpp:73:6:virtual bool touchgfx::DrawableList::getCircular() const	16	static
+DrawableList.cpp:78:6:void touchgfx::DrawableList::setDrawableSize(int16_t, int16_t)	16	static
+DrawableList.cpp:84:6:virtual void touchgfx::DrawableList::setDrawables(touchgfx::DrawableListItemsInterface&, int16_t, touchgfx::GenericCallback<touchgfx::DrawableListItemsInterface*, short int, short int>&)	24	static
+DrawableList.cpp:95:9:int16_t touchgfx::DrawableList::getNumberOfDrawables() const	16	static
+DrawableList.cpp:100:9:virtual int16_t touchgfx::DrawableList::getItemSize() const	16	static
+DrawableList.cpp:105:9:virtual int16_t touchgfx::DrawableList::getDrawableSize() const	16	static
+DrawableList.cpp:110:9:virtual int16_t touchgfx::DrawableList::getDrawableMargin() const	16	static
+DrawableList.cpp:115:6:void touchgfx::DrawableList::setNumberOfItems(int16_t)	16	static
+DrawableList.cpp:121:9:int16_t touchgfx::DrawableList::getNumberOfItems() const	16	static
+DrawableList.cpp:126:9:int16_t touchgfx::DrawableList::getRequiredNumberOfDrawables() const	24	static
+DrawableList.cpp:148:6:void touchgfx::DrawableList::setOffset(int32_t)	72	static
+DrawableList.cpp:271:9:int32_t touchgfx::DrawableList::getOffset() const	16	static
+DrawableList.cpp:276:9:int16_t touchgfx::DrawableList::getItemIndex(int16_t) const	24	static
+DrawableList.cpp:294:9:int16_t touchgfx::DrawableList::getDrawableIndices(int16_t, int16_t*, int16_t) const	32	static
+DrawableList.cpp:309:9:int16_t touchgfx::DrawableList::getDrawableIndex(int16_t, int16_t) const	24	static
+DrawableList.cpp:335:6:void touchgfx::DrawableList::refreshDrawables()	40	static
+DrawableList.cpp:368:6:void touchgfx::DrawableList::itemChanged(int16_t)	32	static

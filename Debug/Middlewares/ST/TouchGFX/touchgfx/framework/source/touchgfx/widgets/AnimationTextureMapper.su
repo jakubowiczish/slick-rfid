@@ -1,0 +1,63 @@
+Drawable.hpp:249:18:virtual void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+Drawable.hpp:323:18:virtual void touchgfx::Drawable::setX(int16_t)	16	static
+Drawable.hpp:339:18:virtual void touchgfx::Drawable::setY(int16_t)	16	static
+Drawable.hpp:356:18:virtual void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+Drawable.hpp:373:18:virtual void touchgfx::Drawable::setWidth(int16_t)	16	static
+Drawable.hpp:389:18:virtual void touchgfx::Drawable::setHeight(int16_t)	16	static
+Drawable.hpp:404:18:virtual void touchgfx::Drawable::childGeometryChanged()	16	static
+Drawable.hpp:416:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	16	static
+Drawable.hpp:428:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	16	static
+Drawable.hpp:440:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	16	static
+Drawable.hpp:500:10:bool touchgfx::Drawable::isVisible() const	16	static
+Drawable.hpp:516:10:bool touchgfx::Drawable::isTouchable() const	16	static
+Drawable.hpp:564:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	16	static
+Drawable.hpp:662:10:void touchgfx::Drawable::resetDrawChainCache()	16	static
+Drawable.hpp:748:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	24	static
+Widget.hpp:74:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	24	static
+TextureMapper.hpp:149:18:virtual void touchgfx::TextureMapper::setRenderingAlgorithm(touchgfx::TextureMapper::RenderingAlgorithm)	16	static
+TextureMapper.hpp:163:32:virtual touchgfx::TextureMapper::RenderingAlgorithm touchgfx::TextureMapper::getRenderingAlgorithm() const	16	static
+TextureMapper.hpp:220:18:virtual void touchgfx::TextureMapper::updateXAngle(float)	16	static
+TextureMapper.hpp:234:18:virtual void touchgfx::TextureMapper::updateYAngle(float)	16	static
+TextureMapper.hpp:248:18:virtual void touchgfx::TextureMapper::updateZAngle(float)	16	static
+TextureMapper.hpp:262:19:virtual float touchgfx::TextureMapper::getXAngle() const	16	static
+TextureMapper.hpp:276:19:virtual float touchgfx::TextureMapper::getYAngle() const	16	static
+TextureMapper.hpp:290:19:virtual float touchgfx::TextureMapper::getZAngle() const	16	static
+TextureMapper.hpp:315:19:virtual float touchgfx::TextureMapper::getScale() const	16	static
+TextureMapper.hpp:331:18:virtual void touchgfx::TextureMapper::setOrigo(float, float, float)	24	static
+TextureMapper.hpp:349:18:virtual void touchgfx::TextureMapper::setOrigo(float, float)	24	static
+TextureMapper.hpp:365:19:virtual float touchgfx::TextureMapper::getOrigoX() const	16	static
+TextureMapper.hpp:379:19:virtual float touchgfx::TextureMapper::getOrigoY() const	16	static
+TextureMapper.hpp:393:19:virtual float touchgfx::TextureMapper::getOrigoZ() const	16	static
+TextureMapper.hpp:408:18:virtual void touchgfx::TextureMapper::setCamera(float, float)	24	static
+TextureMapper.hpp:424:19:virtual float touchgfx::TextureMapper::getCameraX() const	16	static
+TextureMapper.hpp:438:19:virtual float touchgfx::TextureMapper::getCameraY() const	16	static
+TextureMapper.hpp:453:18:virtual void touchgfx::TextureMapper::setCameraDistance(float)	16	static
+TextureMapper.hpp:468:19:virtual float touchgfx::TextureMapper::getCameraDistance() const	16	static
+TextureMapper.hpp:484:18:virtual void touchgfx::TextureMapper::setBitmapPosition(float, float)	24	static
+TextureMapper.hpp:502:18:virtual void touchgfx::TextureMapper::setBitmapPosition(int, int)	24	static
+TextureMapper.hpp:516:19:virtual float touchgfx::TextureMapper::getBitmapPositionX() const	16	static
+TextureMapper.hpp:530:19:virtual float touchgfx::TextureMapper::getBitmapPositionY() const	16	static
+TextureMapper.hpp:544:19:virtual float touchgfx::TextureMapper::getX0() const	16	static
+TextureMapper.hpp:558:19:virtual float touchgfx::TextureMapper::getX1() const	16	static
+TextureMapper.hpp:572:19:virtual float touchgfx::TextureMapper::getX2() const	16	static
+TextureMapper.hpp:586:19:virtual float touchgfx::TextureMapper::getX3() const	16	static
+TextureMapper.hpp:600:19:virtual float touchgfx::TextureMapper::getY0() const	16	static
+TextureMapper.hpp:614:19:virtual float touchgfx::TextureMapper::getY1() const	16	static
+TextureMapper.hpp:628:19:virtual float touchgfx::TextureMapper::getY2() const	16	static
+TextureMapper.hpp:642:19:virtual float touchgfx::TextureMapper::getY3() const	16	static
+TextureMapper.hpp:656:19:virtual float touchgfx::TextureMapper::getZ0() const	16	static
+TextureMapper.hpp:670:19:virtual float touchgfx::TextureMapper::getZ1() const	16	static
+TextureMapper.hpp:684:19:virtual float touchgfx::TextureMapper::getZ2() const	16	static
+TextureMapper.hpp:698:19:virtual float touchgfx::TextureMapper::getZ3() const	16	static
+TextureMapper.hpp:712:22:virtual uint16_t touchgfx::TextureMapper::getType() const	16	static
+AnimationTextureMapper.cpp:20:1:touchgfx::AnimationTextureMapper::AnimationTextureMapper()	24	static
+AnimationTextureMapper.cpp:33:1:touchgfx::AnimationTextureMapper::~AnimationTextureMapper()	16	static
+AnimationTextureMapper.cpp:33:1:virtual touchgfx::AnimationTextureMapper::~AnimationTextureMapper()	16	static
+AnimationTextureMapper.cpp:37:6:void touchgfx::AnimationTextureMapper::setTextureMapperAnimationStepAction(touchgfx::GenericCallback<const touchgfx::AnimationTextureMapper&>&)	16	static
+AnimationTextureMapper.cpp:42:6:void touchgfx::AnimationTextureMapper::setTextureMapperAnimationEndedAction(touchgfx::GenericCallback<const touchgfx::AnimationTextureMapper&>&)	16	static
+AnimationTextureMapper.cpp:47:6:virtual bool touchgfx::AnimationTextureMapper::isTextureMapperAnimationRunning() const	16	static
+AnimationTextureMapper.cpp:52:6:virtual void touchgfx::AnimationTextureMapper::setupAnimation(touchgfx::AnimationTextureMapper::AnimationParameter, float, uint16_t, uint16_t, touchgfx::EasingEquation)	24	static
+AnimationTextureMapper.cpp:61:6:virtual void touchgfx::AnimationTextureMapper::startAnimation()	16	static
+AnimationTextureMapper.cpp:75:6:virtual void touchgfx::AnimationTextureMapper::cancelAnimationTextureMapperAnimation()	24	static
+AnimationTextureMapper.cpp:86:10:virtual uint16_t touchgfx::AnimationTextureMapper::getAnimationStep()	16	static
+AnimationTextureMapper.cpp:91:6:virtual void touchgfx::AnimationTextureMapper::handleTickEvent()	72	static

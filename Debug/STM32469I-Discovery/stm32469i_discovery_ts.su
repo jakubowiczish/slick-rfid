@@ -1,0 +1,4 @@
+stm32469i_discovery_ts.c:162:9:BSP_TS_Init	24	static
+stm32469i_discovery_ts.c:224:9:BSP_TS_ITConfig	32	static
+stm32469i_discovery_ts.c:258:9:BSP_TS_GetState	48	static
+stm32469i_discovery_ts.c:444:13:BSP_TS_INT_MspInit	32	static

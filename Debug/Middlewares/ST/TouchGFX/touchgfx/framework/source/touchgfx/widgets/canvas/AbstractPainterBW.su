@@ -1,0 +1,2 @@
+AbstractPainterBW.hpp:58:18:virtual bool touchgfx::AbstractPainterBW::renderInit()	16	static
+AbstractPainterBW.cpp:20:6:virtual void touchgfx::AbstractPainterBW::render(uint8_t*, int, int, int, unsigned int, const uint8_t*)	40	static

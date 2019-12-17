@@ -1,0 +1,51 @@
+Types.hpp:173:5:touchgfx::Rect::Rect()	16	static
+Types.hpp:193:5:touchgfx::Rect::Rect(int16_t, int16_t, int16_t, int16_t)	24	static
+Types.hpp:215:20:int16_t touchgfx::Rect::right() const	16	static
+Types.hpp:229:20:int16_t touchgfx::Rect::bottom() const	16	static
+Types.hpp:263:10:bool touchgfx::Rect::intersect(const touchgfx::Rect&) const	24	static
+Types.hpp:302:10:touchgfx::Rect touchgfx::Rect::operator&(const touchgfx::Rect&) const	24	static
+Types.hpp:319:10:void touchgfx::Rect::operator&=(const touchgfx::Rect&)	32	static
+Types.hpp:419:10:bool touchgfx::Rect::isEmpty() const	16	static
+Bitmap.hpp:167:14:touchgfx::Bitmap::Bitmap(touchgfx::BitmapId)	16	static
+Bitmap.hpp:180:14:touchgfx::BitmapId touchgfx::Bitmap::getId() const	16	static
+Drawable.hpp:60:5:touchgfx::Drawable::Drawable()	24	static
+Drawable.hpp:76:13:touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:76:13:virtual touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:249:18:virtual void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+Drawable.hpp:293:13:int16_t touchgfx::Drawable::getWidth() const	16	static
+Drawable.hpp:307:13:int16_t touchgfx::Drawable::getHeight() const	16	static
+Drawable.hpp:323:18:virtual void touchgfx::Drawable::setX(int16_t)	16	static
+Drawable.hpp:339:18:virtual void touchgfx::Drawable::setY(int16_t)	16	static
+Drawable.hpp:356:18:virtual void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+Drawable.hpp:373:18:virtual void touchgfx::Drawable::setWidth(int16_t)	16	static
+Drawable.hpp:389:18:virtual void touchgfx::Drawable::setHeight(int16_t)	16	static
+Drawable.hpp:404:18:virtual void touchgfx::Drawable::childGeometryChanged()	16	static
+Drawable.hpp:416:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	16	static
+Drawable.hpp:428:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	16	static
+Drawable.hpp:440:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	16	static
+Drawable.hpp:453:18:virtual void touchgfx::Drawable::handleTickEvent()	16	static
+Drawable.hpp:483:10:void touchgfx::Drawable::setTouchable(bool)	16	static
+Drawable.hpp:500:10:bool touchgfx::Drawable::isVisible() const	16	static
+Drawable.hpp:516:10:bool touchgfx::Drawable::isTouchable() const	16	static
+Drawable.hpp:564:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	16	static
+Drawable.hpp:662:10:void touchgfx::Drawable::resetDrawChainCache()	16	static
+Drawable.hpp:748:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	24	static
+Widget.hpp:44:5:touchgfx::Widget::Widget()	16	static
+Widget.hpp:53:13:touchgfx::Widget::~Widget()	16	static
+Widget.hpp:53:13:virtual touchgfx::Widget::~Widget()	16	static
+Widget.hpp:74:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	24	static
+Widget.hpp:91:22:virtual uint16_t touchgfx::Widget::getType() const	16	static
+AbstractButton.hpp:47:5:touchgfx::AbstractButton::AbstractButton()	16	static
+AbstractButton.hpp:95:18:virtual bool touchgfx::AbstractButton::getPressedState() const	16	static
+AbstractButton.hpp:35:7:touchgfx::AbstractButton::~AbstractButton()	16	static
+AbstractButton.hpp:35:7:virtual touchgfx::AbstractButton::~AbstractButton()	16	static
+Button.hpp:45:5:touchgfx::Button::Button()	16	static
+Button.hpp:54:13:touchgfx::Button::~Button()	16	static
+Button.hpp:54:13:virtual touchgfx::Button::~Button()	16	static
+ButtonWithIcon.hpp:167:22:virtual uint16_t touchgfx::ButtonWithIcon::getType() const	16	static
+HAL.hpp:296:17:static touchgfx::LCD& touchgfx::HAL::lcd()	4	static
+ButtonWithIcon.cpp:21:1:touchgfx::ButtonWithIcon::ButtonWithIcon()	16	static
+ButtonWithIcon.cpp:28:6:virtual void touchgfx::ButtonWithIcon::setBitmaps(const touchgfx::Bitmap&, const touchgfx::Bitmap&, const touchgfx::Bitmap&, const touchgfx::Bitmap&)	32	static
+ButtonWithIcon.cpp:40:6:virtual void touchgfx::ButtonWithIcon::draw(const touchgfx::Rect&) const	80	static
+ButtonWithIcon.hpp:32:7:touchgfx::ButtonWithIcon::~ButtonWithIcon()	16	static
+ButtonWithIcon.hpp:32:7:virtual touchgfx::ButtonWithIcon::~ButtonWithIcon()	16	static

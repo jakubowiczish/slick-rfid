@@ -1,0 +1,10 @@
+dbgu.c:33:6:debug_shdn	16	static
+dbgu.c:45:6:debug_init	16	static
+dbgu.c:51:6:debug_chr	16	static
+dbgu.c:66:6:debug_inkey	16	static
+dbgu.c:81:6:debug_waitkey	16	static
+dbgu.c:100:6:debug_msg	16	static
+dbgu.c:108:6:debug_txt	16	static
+dbgu.c:115:6:debug_txt_limit	16	static
+dbgu.c:127:6:debug_ascii	16	static
+dbgu.c:157:6:debug_dump	32	static

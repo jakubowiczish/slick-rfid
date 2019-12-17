@@ -1,0 +1,42 @@
+Drawable.hpp:76:13:touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:76:13:virtual touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:249:18:virtual void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+Drawable.hpp:293:13:int16_t touchgfx::Drawable::getWidth() const	16	static
+Drawable.hpp:307:13:int16_t touchgfx::Drawable::getHeight() const	16	static
+Drawable.hpp:323:18:virtual void touchgfx::Drawable::setX(int16_t)	16	static
+Drawable.hpp:339:18:virtual void touchgfx::Drawable::setY(int16_t)	16	static
+Drawable.hpp:356:18:virtual void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+Drawable.hpp:404:18:virtual void touchgfx::Drawable::childGeometryChanged()	16	static
+Drawable.hpp:564:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	16	static
+Container.hpp:64:13:touchgfx::Container::~Container()	16	static
+Container.hpp:64:13:virtual touchgfx::Container::~Container()	16	static
+Container.hpp:202:22:virtual uint16_t touchgfx::Container::getType() const	16	static
+DrawableList.hpp:195:13:touchgfx::DrawableList::~DrawableList()	16	static
+DrawableList.hpp:195:13:virtual touchgfx::DrawableList::~DrawableList()	16	static
+ScrollBase.hpp:56:13:touchgfx::ScrollBase::~ScrollBase()	16	static
+ScrollBase.hpp:56:13:virtual touchgfx::ScrollBase::~ScrollBase()	16	static
+ScrollBase.hpp:497:18:virtual void touchgfx::ScrollBase::initialize()	16	static
+ScrollWheelBase.hpp:53:13:touchgfx::ScrollWheelBase::~ScrollWheelBase()	16	static
+ScrollWheelBase.hpp:53:13:virtual touchgfx::ScrollWheelBase::~ScrollWheelBase()	16	static
+ScrollWheelWithSelectionStyle.hpp:55:13:touchgfx::ScrollWheelWithSelectionStyle::~ScrollWheelWithSelectionStyle()	16	static
+ScrollWheelWithSelectionStyle.hpp:55:13:virtual touchgfx::ScrollWheelWithSelectionStyle::~ScrollWheelWithSelectionStyle()	16	static
+ScrollWheelWithSelectionStyle.hpp:304:18:virtual void touchgfx::ScrollWheelWithSelectionStyle::initialize()	16	static
+ScrollWheelWithSelectionStyle.cpp:20:1:touchgfx::ScrollWheelWithSelectionStyle::ScrollWheelWithSelectionStyle()	16	static
+ScrollWheelWithSelectionStyle.cpp:36:6:virtual void touchgfx::ScrollWheelWithSelectionStyle::setWidth(int16_t)	16	static
+ScrollWheelWithSelectionStyle.cpp:45:6:virtual void touchgfx::ScrollWheelWithSelectionStyle::setHeight(int16_t)	16	static
+ScrollWheelWithSelectionStyle.cpp:54:6:virtual void touchgfx::ScrollWheelWithSelectionStyle::setHorizontal(bool)	16	static
+ScrollWheelWithSelectionStyle.cpp:62:6:virtual void touchgfx::ScrollWheelWithSelectionStyle::setCircular(bool)	16	static
+ScrollWheelWithSelectionStyle.cpp:69:6:virtual void touchgfx::ScrollWheelWithSelectionStyle::setNumberOfItems(int16_t)	16	static
+ScrollWheelWithSelectionStyle.cpp:79:6:virtual void touchgfx::ScrollWheelWithSelectionStyle::setSelectedItemOffset(int16_t)	16	static
+ScrollWheelWithSelectionStyle.cpp:85:6:virtual void touchgfx::ScrollWheelWithSelectionStyle::setSelectedItemExtraSize(int16_t, int16_t)	16	static
+ScrollWheelWithSelectionStyle.cpp:92:9:virtual int16_t touchgfx::ScrollWheelWithSelectionStyle::getSelectedItemExtraSizeBefore() const	16	static
+ScrollWheelWithSelectionStyle.cpp:97:9:virtual int16_t touchgfx::ScrollWheelWithSelectionStyle::getSelectedItemExtraSizeAfter() const	16	static
+ScrollWheelWithSelectionStyle.cpp:102:6:virtual void touchgfx::ScrollWheelWithSelectionStyle::setSelectedItemMargin(int16_t, int16_t)	16	static
+ScrollWheelWithSelectionStyle.cpp:109:9:virtual int16_t touchgfx::ScrollWheelWithSelectionStyle::getSelectedItemMarginBefore() const	16	static
+ScrollWheelWithSelectionStyle.cpp:114:9:virtual int16_t touchgfx::ScrollWheelWithSelectionStyle::getSelectedItemMarginAfter() const	16	static
+ScrollWheelWithSelectionStyle.cpp:119:6:virtual void touchgfx::ScrollWheelWithSelectionStyle::setSelectedItemPosition(int16_t, int16_t, int16_t, int16_t, int16_t)	24	static
+ScrollWheelWithSelectionStyle.cpp:126:6:virtual void touchgfx::ScrollWheelWithSelectionStyle::setDrawableSize(int16_t, int16_t)	16	static
+ScrollWheelWithSelectionStyle.cpp:139:6:virtual void touchgfx::ScrollWheelWithSelectionStyle::setDrawables(touchgfx::DrawableListItemsInterface&, touchgfx::GenericCallback<touchgfx::DrawableListItemsInterface*, short int, short int>&, touchgfx::DrawableListItemsInterface&, touchgfx::GenericCallback<touchgfx::DrawableListItemsInterface*, short int, short int>&)	24	static
+ScrollWheelWithSelectionStyle.cpp:155:6:virtual void touchgfx::ScrollWheelWithSelectionStyle::setOffset(int32_t)	16	static
+ScrollWheelWithSelectionStyle.cpp:162:6:virtual void touchgfx::ScrollWheelWithSelectionStyle::itemChanged(int)	16	static
+ScrollWheelWithSelectionStyle.cpp:169:6:void touchgfx::ScrollWheelWithSelectionStyle::refreshDrawableListsLayout()	48	static

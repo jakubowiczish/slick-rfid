@@ -1,0 +1,44 @@
+Types.hpp:193:5:touchgfx::Rect::Rect(int16_t, int16_t, int16_t, int16_t)	24	static
+Types.hpp:215:20:int16_t touchgfx::Rect::right() const	16	static
+Types.hpp:229:20:int16_t touchgfx::Rect::bottom() const	16	static
+Types.hpp:246:10:bool touchgfx::Rect::intersect(int16_t, int16_t) const	16	static
+Types.hpp:263:10:bool touchgfx::Rect::intersect(const touchgfx::Rect&) const	24	static
+Types.hpp:302:10:touchgfx::Rect touchgfx::Rect::operator&(const touchgfx::Rect&) const	24	static
+Types.hpp:319:10:void touchgfx::Rect::operator&=(const touchgfx::Rect&)	32	static
+Types.hpp:351:10:void touchgfx::Rect::expandToFit(const touchgfx::Rect&)	32	static
+Types.hpp:419:10:bool touchgfx::Rect::isEmpty() const	16	static
+Drawable.hpp:76:13:touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:76:13:virtual touchgfx::Drawable::~Drawable()	16	static
+Drawable.hpp:205:17:const touchgfx::Rect& touchgfx::Drawable::getRect() const	16	static
+Drawable.hpp:249:18:virtual void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
+Drawable.hpp:265:13:int16_t touchgfx::Drawable::getX() const	16	static
+Drawable.hpp:279:13:int16_t touchgfx::Drawable::getY() const	16	static
+Drawable.hpp:323:18:virtual void touchgfx::Drawable::setX(int16_t)	16	static
+Drawable.hpp:339:18:virtual void touchgfx::Drawable::setY(int16_t)	16	static
+Drawable.hpp:356:18:virtual void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+Drawable.hpp:373:18:virtual void touchgfx::Drawable::setWidth(int16_t)	16	static
+Drawable.hpp:389:18:virtual void touchgfx::Drawable::setHeight(int16_t)	16	static
+Drawable.hpp:404:18:virtual void touchgfx::Drawable::childGeometryChanged()	16	static
+Drawable.hpp:416:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	16	static
+Drawable.hpp:428:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	16	static
+Drawable.hpp:440:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	16	static
+Drawable.hpp:453:18:virtual void touchgfx::Drawable::handleTickEvent()	16	static
+Drawable.hpp:500:10:bool touchgfx::Drawable::isVisible() const	16	static
+Drawable.hpp:516:10:bool touchgfx::Drawable::isTouchable() const	16	static
+Drawable.hpp:564:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	16	static
+Container.hpp:64:13:touchgfx::Container::~Container()	16	static
+Container.hpp:64:13:virtual touchgfx::Container::~Container()	16	static
+Container.hpp:202:22:virtual uint16_t touchgfx::Container::getType() const	16	static
+Container.cpp:21:6:virtual bool touchgfx::Container::contains(const touchgfx::Drawable&)	24	static
+Container.cpp:33:6:virtual void touchgfx::Container::add(touchgfx::Drawable&)	24	static
+Container.cpp:62:6:virtual void touchgfx::Container::remove(touchgfx::Drawable&)	24	static
+Container.cpp:104:6:virtual void touchgfx::Container::removeAll()	24	static
+Container.cpp:115:6:virtual void touchgfx::Container::unlink()	16	static
+Container.cpp:120:6:virtual void touchgfx::Container::draw(const touchgfx::Rect&) const	40	static
+Container.cpp:151:6:virtual void touchgfx::Container::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	40	static
+Container.cpp:176:6:virtual touchgfx::Rect touchgfx::Container::getSolidRect() const	24	static
+Container.cpp:181:6:virtual touchgfx::Rect touchgfx::Container::getContainedArea() const	32	static
+Container.cpp:193:6:virtual void touchgfx::Container::moveChildrenRelative(int16_t, int16_t)	24	static
+Container.cpp:203:6:virtual void touchgfx::Container::forEachChild(touchgfx::GenericCallback<touchgfx::Drawable&>*)	24	static
+Container.cpp:213:6:virtual void touchgfx::Container::insert(touchgfx::Drawable*, touchgfx::Drawable&)	32	static
+Container.cpp:245:6:virtual void touchgfx::Container::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	40	static
