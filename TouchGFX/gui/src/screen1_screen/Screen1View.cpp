@@ -10,15 +10,27 @@ Screen1View::Screen1View() {
 
 void Screen1View::setupScreen() {
 	Screen1ViewBase::setupScreen();
-	uidTextField.setVisible(false);
 }
 
 void Screen1View::tearDownScreen() {
 	Screen1ViewBase::tearDownScreen();
 }
 
-void Screen1View::set_uid_text(uint8_t uid_tab[], uint8_t size) {
-	Unicode::snprintf(uidTextFieldBuffer, UIDTEXTFIELD_SIZE, "%d %d %d %d", uid_tab[0], uid_tab[1], uid_tab[2], uid_tab[3]);
+void Screen1View::setUidText(uint8_t uid_tab[]) {
+	Unicode::snprintf(uidTextFieldBuffer, UIDTEXTFIELD_SIZE, "%d %d %d %d",
+			uid_tab[0], uid_tab[1], uid_tab[2], uid_tab[3]);
+
 	uidTextField.setVisible(true);
 	uidTextField.invalidate();
+	avatarChoiceTextField.setVisible(true);
+	avatarChoiceTextField.invalidate();
+	szczygi.setVisible(true);
+	rafal.setVisible(true);
+	zajma.setVisible(true);
+	dybczak.setVisible(true);
+	plotnik.setVisible(true);
+}
+
+void Screen1View::chooseAvatar(uint8_t uid_tab[]) {
+
 }

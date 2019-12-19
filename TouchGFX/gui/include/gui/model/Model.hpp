@@ -1,6 +1,7 @@
 #ifndef MODEL_HPP
 #define MODEL_HPP
 #include "stdint.h"
+#include <string>
 
 class ModelListener;
 
@@ -42,6 +43,7 @@ protected:
 
 private:
 	uint8_t uid_tab_buffer[10];
+	std::string saved_uids[20];
 };
 
 #endif /* MODEL_HPP */

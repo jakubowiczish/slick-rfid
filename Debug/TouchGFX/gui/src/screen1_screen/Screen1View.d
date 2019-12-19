@@ -51,6 +51,8 @@ TouchGFX/gui/src/screen1_screen/Screen1View.o: \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/FontManager.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/TypedText.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/Texts.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/term_io.h \
  C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/dbgu.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -202,6 +204,10 @@ TouchGFX/gui/src/screen1_screen/Screen1View.o: \
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/TypedText.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/Texts.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 
 C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/term_io.h:
 

@@ -12,25 +12,28 @@
  *
  * Add the virtual functions Model should be able to call on the active presenter to this class.
  */
-class ModelListener
-{
+class ModelListener {
 public:
-    ModelListener() : model(0) {}
+	ModelListener() :
+			model(0) {
+	}
 
-    virtual ~ModelListener() {}
+	virtual ~ModelListener() {
+	}
 
-    /**
-     * Sets the model pointer to point to the Model object. Called automatically
-     * when switching screen.
-     */
-    void bind(Model* m)
-    {
-        model = m;
-    }
+	/**
+	 * Sets the model pointer to point to the Model object. Called automatically
+	 * when switching screen.
+	 */
+	void bind(Model *m) {
+		model = m;
+	}
 
-    virtual void notify_new_card_present(uint8_t uid_tab[], uint8_t size) {}
+	virtual void notifyThatNewCardIsPresent(uint8_t uid_tab[]) {}
+
+	virtual void handleAvatarChoice(uint8_t uid_tab[]) {}
 protected:
-    Model* model;
+	Model *model;
 };
 
 #endif /* MODELLISTENER_HPP */

@@ -45,6 +45,7 @@ MVPApplication.hpp:70:13:touchgfx::MVPApplication::~MVPApplication()	16	static
 MVPApplication.hpp:70:13:virtual touchgfx::MVPApplication::~MVPApplication()	16	static
 MVPApplication.hpp:79:18:virtual void touchgfx::MVPApplication::handlePendingScreenTransition()	16	static
 MVPApplication.hpp:97:10:void touchgfx::MVPApplication::evaluatePendingScreenTransition()	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
 FrontendApplicationBase.hpp:16:13:FrontendApplicationBase::~FrontendApplicationBase()	16	static
 FrontendApplicationBase.hpp:16:13:virtual FrontendApplicationBase::~FrontendApplicationBase()	16	static
 FrontendApplication.hpp:14:13:FrontendApplication::~FrontendApplication()	16	static
@@ -56,6 +57,7 @@ FrontendHeap.hpp:56:29:void __tcf_0()	8	static
 FrontendHeap.hpp:54:26:static FrontendHeap& FrontendHeap::getInstance()	8	static
 FrontendHeapBase.hpp:31:7:FrontendHeapBase::~FrontendHeapBase()	16	static
 FrontendHeapBase.hpp:31:7:virtual FrontendHeapBase::~FrontendHeapBase()	16	static
+Model.hpp:20:7:Model::~Model()	24	static
 FrontendHeap.hpp:67:5:FrontendHeap::FrontendHeap()	32	static
 LCD24bpp.hpp:49:13:touchgfx::LCD24bpp::~LCD24bpp()	16	static
 LCD24bpp.hpp:49:13:virtual touchgfx::LCD24bpp::~LCD24bpp()	16	static

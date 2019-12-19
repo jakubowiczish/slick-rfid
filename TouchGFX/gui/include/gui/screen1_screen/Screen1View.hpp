@@ -11,7 +11,8 @@ public:
     virtual ~Screen1View() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
-    void set_uid_text(uint8_t uid_tab[], uint8_t size);
+    void setUidText(uint8_t uid_tab[]);
+    void chooseAvatar(uint8_t uid_tab[]);
 protected:
 
 };

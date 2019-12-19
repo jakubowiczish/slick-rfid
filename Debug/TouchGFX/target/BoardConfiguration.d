@@ -57,6 +57,8 @@ TouchGFX/target/BoardConfiguration.o: \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  ../TouchGFX/generated/images/include/BitmapDatabase.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/BoardConfiguration.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/GPIO.hpp \
@@ -227,6 +229,10 @@ TouchGFX/target/BoardConfiguration.o: \
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 
 ../TouchGFX/generated/images/include/BitmapDatabase.hpp:
 

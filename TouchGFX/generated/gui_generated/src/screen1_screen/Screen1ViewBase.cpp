@@ -13,15 +13,43 @@ Screen1ViewBase::Screen1ViewBase()
     backgroundImage.setScalingAlgorithm(touchgfx::ScalableImage::BILINEAR_INTERPOLATION);
     backgroundImage.setAlpha(171);
 
-    uidTextField.setPosition(111, 106, 614, 80);
+    uidTextField.setPosition(7, 340, 786, 80);
+    uidTextField.setVisible(false);
     uidTextField.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 246, 0));
     uidTextField.setLinespacing(0);
     Unicode::snprintf(uidTextFieldBuffer, UIDTEXTFIELD_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID4).getText());
     uidTextField.setWildcard(uidTextFieldBuffer);
     uidTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID3));
 
+    avatarChoiceTextField.setPosition(16, 202, 751, 76);
+    avatarChoiceTextField.setVisible(false);
+    avatarChoiceTextField.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 19, 255));
+    avatarChoiceTextField.setLinespacing(0);
+    avatarChoiceTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID6));
+
+    szczygi.setXY(0, 0);
+    szczygi.setBitmaps(touchgfx::Bitmap(BITMAP_SZCZYGI_ID), touchgfx::Bitmap(BITMAP_SZCZYGI_ID));
+
+    dybczak.setXY(166, 0);
+    dybczak.setBitmaps(touchgfx::Bitmap(BITMAP_DYBCZAK_ID), touchgfx::Bitmap(BITMAP_DYBCZAK_ID));
+
+    rafal.setXY(338, 0);
+    rafal.setBitmaps(touchgfx::Bitmap(BITMAP_RAV_ID), touchgfx::Bitmap(BITMAP_RAV_ID));
+
+    zajma.setXY(514, 0);
+    zajma.setBitmaps(touchgfx::Bitmap(BITMAP_ZAJMA_ID), touchgfx::Bitmap(BITMAP_ZAJMA_ID));
+
+    plotnik.setXY(675, 0);
+    plotnik.setBitmaps(touchgfx::Bitmap(BITMAP_PLOTNIK_ID), touchgfx::Bitmap(BITMAP_PLOTNIK_ID));
+
     add(backgroundImage);
     add(uidTextField);
+    add(avatarChoiceTextField);
+    add(szczygi);
+    add(dybczak);
+    add(rafal);
+    add(zajma);
+    add(plotnik);
 }
 
 void Screen1ViewBase::setupScreen()

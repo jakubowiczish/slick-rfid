@@ -24,11 +24,11 @@ public:
 	 */
 	virtual void deactivate();
 
-	virtual ~Screen1Presenter() {
-	};
+	virtual ~Screen1Presenter() {};
 
-	virtual void notify_new_card_present(uint8_t tab[], uint8_t size);
+	virtual void notifyThatNewCardIsPresent(uint8_t tab[]);
 
+	virtual void handleAvatarChoice(uint8_t uid_tab[]);
 private:
 	Screen1Presenter();
 

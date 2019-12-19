@@ -27,14 +27,15 @@ MVPApplication.hpp:79:18:virtual void touchgfx::MVPApplication::handlePendingScr
 MVPApplication.hpp:97:10:void touchgfx::MVPApplication::evaluatePendingScreenTransition()	16	static
 MVPApplication.hpp:116:20:void touchgfx::prepareTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::Transition**)	24	static
 MVPApplication.hpp:155:20:void touchgfx::finalizeTransition(touchgfx::Screen*, touchgfx::Presenter*, touchgfx::Transition*)	24	static
-Model.hpp:27:7:void Model::bind(ModelListener*)	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+Model.hpp:28:7:void Model::bind(ModelListener*)	16	static
 FrontendApplicationBase.hpp:16:13:FrontendApplicationBase::~FrontendApplicationBase()	16	static
 FrontendApplicationBase.hpp:16:13:virtual FrontendApplicationBase::~FrontendApplicationBase()	16	static
 NoTransition.hpp:43:5:touchgfx::NoTransition::NoTransition()	16	static
 NoTransition.hpp:52:13:touchgfx::NoTransition::~NoTransition()	16	static
 NoTransition.hpp:52:13:virtual touchgfx::NoTransition::~NoTransition()	16	static
 NoTransition.hpp:61:18:virtual void touchgfx::NoTransition::handleTickEvent()	16	static
-ModelListener.hpp:26:10:void ModelListener::bind(Model*)	16	static
+ModelListener.hpp:28:7:void ModelListener::bind(Model*)	16	static
 FrontendApplicationBase.cpp:17:1:FrontendApplicationBase::FrontendApplicationBase(Model&, FrontendHeap&)	24	static
 Callback.hpp:225:7:constexpr touchgfx::GenericCallback<void>& touchgfx::GenericCallback<void>::operator=(const touchgfx::GenericCallback<void>&)	16	static
 Callback.hpp:557:8:constexpr touchgfx::Callback<FrontendApplicationBase>& touchgfx::Callback<FrontendApplicationBase>::operator=(touchgfx::Callback<FrontendApplicationBase>&&)	16	static

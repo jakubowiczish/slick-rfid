@@ -13,6 +13,7 @@ void Model::tick() {
 		uint8_t sak;
 
 		rfid_status_t status = rfid_select_tag(uid_tab_buffer, &size, &sak);
-		modelListener->notify_new_card_present(uid_tab_buffer, size);
+		modelListener->notifyThatNewCardIsPresent(uid_tab_buffer);
+		modelListener->handleAvatarChoice(uid_tab_buffer);
 	}
 }

@@ -15,6 +15,7 @@ MVPApplication.hpp:70:13:touchgfx::MVPApplication::~MVPApplication()	16	static
 MVPApplication.hpp:70:13:virtual touchgfx::MVPApplication::~MVPApplication()	16	static
 MVPApplication.hpp:79:18:virtual void touchgfx::MVPApplication::handlePendingScreenTransition()	16	static
 MVPApplication.hpp:97:10:void touchgfx::MVPApplication::evaluatePendingScreenTransition()	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
 FrontendApplicationBase.hpp:16:13:FrontendApplicationBase::~FrontendApplicationBase()	16	static
 FrontendApplicationBase.hpp:16:13:virtual FrontendApplicationBase::~FrontendApplicationBase()	16	static
 FrontendApplication.hpp:14:13:FrontendApplication::~FrontendApplication()	16	static

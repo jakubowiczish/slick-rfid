@@ -30,6 +30,7 @@ Screen.hpp:140:18:virtual void touchgfx::Screen::afterTransition()	16	static
 Screen.hpp:153:18:virtual void touchgfx::Screen::tearDownScreen()	16	static
 Screen.hpp:198:18:virtual void touchgfx::Screen::handleTickEvent()	16	static
 Screen.hpp:213:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
 Widget.hpp:53:13:touchgfx::Widget::~Widget()	16	static
 Widget.hpp:53:13:virtual touchgfx::Widget::~Widget()	16	static
 Widget.hpp:74:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	24	static
@@ -53,19 +54,23 @@ TextAreaWithWildcard.hpp:102:21:virtual int16_t touchgfx::TextAreaWithOneWildcar
 TextAreaWithWildcard.hpp:117:18:virtual void touchgfx::TextAreaWithOneWildcard::draw(const touchgfx::Rect&) const	96	static
 TextAreaWithWildcard.hpp:168:22:virtual uint16_t touchgfx::TextAreaWithOneWildcard::getTextWidth() const	32	static
 TextAreaWithWildcard.hpp:182:22:virtual uint16_t touchgfx::TextAreaWithOneWildcard::getType() const	16	static
+AbstractButton.hpp:35:7:touchgfx::AbstractButton::~AbstractButton()	16	static
+AbstractButton.hpp:35:7:virtual touchgfx::AbstractButton::~AbstractButton()	16	static
+Button.hpp:54:13:touchgfx::Button::~Button()	16	static
+Button.hpp:54:13:virtual touchgfx::Button::~Button()	16	static
 View.hpp:39:7:touchgfx::View<Screen1Presenter>::~View()	16	static
 View.hpp:39:7:virtual touchgfx::View<Screen1Presenter>::~View()	16	static
-Screen1ViewBase.hpp:17:13:Screen1ViewBase::~Screen1ViewBase()	16	static
-Screen1ViewBase.hpp:17:13:virtual Screen1ViewBase::~Screen1ViewBase()	16	static
+Screen1ViewBase.hpp:19:13:Screen1ViewBase::~Screen1ViewBase()	16	static
+Screen1ViewBase.hpp:19:13:virtual Screen1ViewBase::~Screen1ViewBase()	16	static
 Screen1View.hpp:11:13:Screen1View::~Screen1View()	16	static
 Screen1View.hpp:11:13:virtual Screen1View::~Screen1View()	16	static
-gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
 Screen1View.cpp:7:1:Screen1View::Screen1View()	16	static
 Screen1View.cpp:11:6:virtual void Screen1View::setupScreen()	16	static
-Screen1View.cpp:16:6:virtual void Screen1View::tearDownScreen()	16	static
-Screen1View.cpp:20:6:void Screen1View::set_uid_text(uint8_t*, uint8_t)	48	static
+Screen1View.cpp:15:6:virtual void Screen1View::tearDownScreen()	16	static
+Screen1View.cpp:19:6:void Screen1View::setUidText(uint8_t*)	40	static
+Screen1View.cpp:34:6:void Screen1View::chooseAvatar(uint8_t*)	16	static
 TextAreaWithWildcard.hpp:76:7:touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	16	static
 TextAreaWithWildcard.hpp:76:7:virtual touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	16	static
-Screen1View.cpp:24:1:void __static_initialization_and_destruction_0(int, int)	16	static
-Screen1View.cpp:24:1:cpp)	8	static
-Screen1View.cpp:24:1:cpp)	8	static
+Screen1View.cpp:36:1:void __static_initialization_and_destruction_0(int, int)	16	static
+Screen1View.cpp:36:1:cpp)	8	static
+Screen1View.cpp:36:1:cpp)	8	static
