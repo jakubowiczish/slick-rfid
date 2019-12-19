@@ -8,8 +8,7 @@
 #include <mvp/View.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <touchgfx/widgets/ScalableImage.hpp>
-#include <touchgfx/widgets/Button.hpp>
-#include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -27,20 +26,15 @@ protected:
      * Member Declarations
      */
     touchgfx::ScalableImage backgroundImage;
-    touchgfx::Button actionButton;
-    touchgfx::TextArea uidTextField;
+    touchgfx::TextAreaWithOneWildcard uidTextField;
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t UIDTEXTFIELD_SIZE = 30;
+    touchgfx::Unicode::UnicodeChar uidTextFieldBuffer[UIDTEXTFIELD_SIZE];
 
 private:
-
-    /*
-     * Callback Declarations
-     */
-    touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButton&> buttonCallback;
-
-    /*
-     * Callback Handler Declarations
-     */
-    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

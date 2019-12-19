@@ -11,7 +11,9 @@ public:
     virtual ~Screen1View() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+    void set_uid_text(uint8_t uid_tab[], uint8_t size);
 protected:
+
 };
 
 #endif // SCREEN1VIEW_HPP

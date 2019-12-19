@@ -27,7 +27,7 @@ MVPApplication.hpp:79:18:virtual void touchgfx::MVPApplication::handlePendingScr
 MVPApplication.hpp:97:10:void touchgfx::MVPApplication::evaluatePendingScreenTransition()	16	static
 MVPApplication.hpp:116:20:void touchgfx::prepareTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::Transition**)	24	static
 MVPApplication.hpp:155:20:void touchgfx::finalizeTransition(touchgfx::Screen*, touchgfx::Presenter*, touchgfx::Transition*)	24	static
-Model.hpp:27:10:void Model::bind(ModelListener*)	16	static
+Model.hpp:27:7:void Model::bind(ModelListener*)	16	static
 FrontendApplicationBase.hpp:16:13:FrontendApplicationBase::~FrontendApplicationBase()	16	static
 FrontendApplicationBase.hpp:16:13:virtual FrontendApplicationBase::~FrontendApplicationBase()	16	static
 NoTransition.hpp:43:5:touchgfx::NoTransition::NoTransition()	16	static

@@ -46,15 +46,14 @@ TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o: \
  ../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp \
  ../TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp \
  ../TouchGFX/gui/include/gui/model/ModelListener.hpp \
- ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
- ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/FontManager.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/TypedText.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/Texts.hpp \
- ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
- ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  ../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp
 
 ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
@@ -149,11 +148,13 @@ TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o: \
 
 ../TouchGFX/gui/include/gui/model/ModelListener.hpp:
 
-../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp:
 
-../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
@@ -162,9 +163,5 @@ TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o: \
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/TypedText.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/Texts.hpp:
-
-../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp:
-
-../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 
 ../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp:

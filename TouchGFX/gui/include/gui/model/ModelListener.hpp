@@ -27,6 +27,8 @@ public:
     {
         model = m;
     }
+
+    virtual void notify_new_card_present(uint8_t uid_tab[], uint8_t size) {}
 protected:
     Model* model;
 };

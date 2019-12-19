@@ -5,7 +5,7 @@
         "Components": [
           {
             "Filename": "CapalaReal.png",
-            "Alpha": 200,
+            "Alpha": 171,
             "ScalingAlgorithm": "Bilinear Interpolation",
             "Name": "backgroundImage",
             "X": -270,
@@ -20,24 +20,7 @@
             "Moveable": false
           },
           {
-            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
-            "Alpha": 255,
-            "Style": "Style4",
-            "Name": "actionButton",
-            "X": 333,
-            "Y": 368,
-            "Width": 170,
-            "Height": 60,
-            "Type": "Button",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "TextId": "SingleUseId1",
+            "TextId": "SingleUseId3",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
@@ -47,6 +30,11 @@
             "Alpha": 255,
             "AutoSize": false,
             "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId4",
+              "UseBuffer": true,
+              "BufferSize": 30
+            },
             "Name": "uidTextField",
             "X": 111,
             "Y": 106,
@@ -60,21 +48,7 @@
             "Moveable": false
           }
         ],
-        "Interactions": [
-          {
-            "InteractionName": "onButtonClickInteraction",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "TriggerComponent": "actionButton",
-              "Type": "TriggerClicked"
-            },
-            "Action": {
-              "TextId": "SingleUseId2",
-              "ActionComponent": "uidTextField",
-              "Type": "ActionSetText"
-            }
-          }
-        ],
+        "Interactions": [],
         "Name": "Screen1",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0
@@ -83,11 +57,15 @@
     "CustomContainerDefinitions": [],
     "TextEntries": [
       {
-        "TextEntryId": "SingleUseId1",
+        "TextEntryId": "uid_resource",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId3",
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId2",
+        "TextEntryId": "SingleUseId4",
         "IsResource": false
       }
     ],

@@ -8,30 +8,31 @@ using namespace touchgfx;
 
 class Screen1View;
 
-class Screen1Presenter : public touchgfx::Presenter, public ModelListener
-{
+class Screen1Presenter: public touchgfx::Presenter, public ModelListener {
 public:
-    Screen1Presenter(Screen1View& v);
+	Screen1Presenter(Screen1View &v);
 
-    /**
-     * The activate function is called automatically when this screen is "switched in"
-     * (ie. made active). Initialization logic can be placed here.
-     */
-    virtual void activate();
+	/**
+	 * The activate function is called automatically when this screen is "switched in"
+	 * (ie. made active). Initialization logic can be placed here.
+	 */
+	virtual void activate();
 
-    /**
-     * The deactivate function is called automatically when this screen is "switched out"
-     * (ie. made inactive). Teardown functionality can be placed here.
-     */
-    virtual void deactivate();
+	/**
+	 * The deactivate function is called automatically when this screen is "switched out"
+	 * (ie. made inactive). Teardown functionality can be placed here.
+	 */
+	virtual void deactivate();
 
-    virtual ~Screen1Presenter() {};
+	virtual ~Screen1Presenter() {
+	};
+
+	virtual void notify_new_card_present(uint8_t tab[], uint8_t size);
 
 private:
-    Screen1Presenter();
+	Screen1Presenter();
 
-    Screen1View& view;
+	Screen1View &view;
 };
-
 
 #endif // SCREEN1PRESENTER_HPP

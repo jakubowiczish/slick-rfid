@@ -207,9 +207,9 @@ void initialize_rfid() {
 void main_task(void *p) {
 	initialize_rfid();
 
-	xTaskCreate(card_read_task, NULL, configMINIMAL_STACK_SIZE+20, NULL, 2, NULL);
+	//xTaskCreate(card_read_task, NULL, configMINIMAL_STACK_SIZE+20, NULL, 2, NULL);
 
-	xTaskCreate(test_print, NULL, configMINIMAL_STACK_SIZE+20, NULL, 2, NULL);
+//	xTaskCreate(test_print, NULL, configMINIMAL_STACK_SIZE+20, NULL, 2, NULL);
 
   /* init code for FATFS */
   MX_FATFS_Init();

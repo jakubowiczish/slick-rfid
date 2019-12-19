@@ -6,41 +6,25 @@
 #include <texts/TextKeysAndLanguages.hpp>
 #include <touchgfx/Color.hpp>
 
-Screen1ViewBase::Screen1ViewBase() :
-    buttonCallback(this, &Screen1ViewBase::buttonCallbackHandler)
+Screen1ViewBase::Screen1ViewBase()
 {
     backgroundImage.setBitmap(touchgfx::Bitmap(BITMAP_CAPALAREAL_ID));
     backgroundImage.setPosition(-270, 0, 1569, 480);
     backgroundImage.setScalingAlgorithm(touchgfx::ScalableImage::BILINEAR_INTERPOLATION);
-    backgroundImage.setAlpha(200);
-
-    actionButton.setXY(333, 368);
-    actionButton.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
-    actionButton.setAction(buttonCallback);
+    backgroundImage.setAlpha(171);
 
     uidTextField.setPosition(111, 106, 614, 80);
     uidTextField.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 246, 0));
     uidTextField.setLinespacing(0);
-    uidTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID1));
+    Unicode::snprintf(uidTextFieldBuffer, UIDTEXTFIELD_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID4).getText());
+    uidTextField.setWildcard(uidTextFieldBuffer);
+    uidTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID3));
 
     add(backgroundImage);
-    add(actionButton);
     add(uidTextField);
 }
 
 void Screen1ViewBase::setupScreen()
 {
 
-}
-
-void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
-{
-    if (&src == &actionButton)
-    {
-        //onButtonClickInteraction
-        //When actionButton clicked set text uidTextField
-        //Set uidTextField text to CAPAŁA TO KROL STM
-        uidTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID2));
-        uidTextField.invalidate();
-    }
 }

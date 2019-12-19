@@ -1,6 +1,6 @@
 main.cpp:105:5:int main()	16	static
 main.cpp:200:6:void initialize_rfid()	16	static
-main.cpp:207:6:void main_task(void*)	24	static
+main.cpp:207:6:void main_task(void*)	16	static
 main.cpp:231:6:void card_read_task(void*)	24	static
 main.cpp:241:6:void test_print(void*)	16	static
 main.cpp:252:6:void SystemClock_Config()	152	static

@@ -1,5 +1,6 @@
 #ifndef MODEL_HPP
 #define MODEL_HPP
+#include "stdint.h"
 
 class ModelListener;
 
@@ -15,31 +16,32 @@ class ModelListener;
  * pointer, which is automatically configured to point to the current presenter.
  * Conversely, the current presenter can trigger events in the backend through the Model.
  */
-class Model
-{
+class Model {
 public:
-    Model();
+	Model();
 
-    /**
-     * Sets the modelListener to point to the currently active presenter. Called automatically
-     * when switching screen.
-     */
-    void bind(ModelListener* listener)
-    {
-        modelListener = listener;
-    }
+	/**
+	 * Sets the modelListener to point to the currently active presenter. Called automatically
+	 * when switching screen.
+	 */
+	void bind(ModelListener *listener) {
+		modelListener = listener;
+	}
 
-    /**
-     * This function will be called automatically every frame. Can be used to e.g. sample hardware
-     * peripherals or read events from the surrounding system and inject events to the GUI through
-     * the ModelListener interface.
-     */
-    void tick();
+	/**
+	 * This function will be called automatically every frame. Can be used to e.g. sample hardware
+	 * peripherals or read events from the surrounding system and inject events to the GUI through
+	 * the ModelListener interface.
+	 */
+	void tick();
 protected:
-    /**
-     * Pointer to the currently active presenter.
-     */
-    ModelListener* modelListener;
+	/**
+	 * Pointer to the currently active presenter.
+	 */
+	ModelListener *modelListener;
+
+private:
+	uint8_t uid_tab_buffer[10];
 };
 
 #endif /* MODEL_HPP */
