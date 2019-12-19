@@ -10,6 +10,7 @@ Screen1View::Screen1View() {
 
 void Screen1View::setupScreen() {
 	Screen1ViewBase::setupScreen();
+	uidTextField.setVisible(false);
 }
 
 void Screen1View::tearDownScreen() {
@@ -17,21 +18,7 @@ void Screen1View::tearDownScreen() {
 }
 
 void Screen1View::set_uid_text(uint8_t uid_tab[], uint8_t size) {
-	std::ostringstream os;
-	for (int i = 0; i < size; ++i) {
-//		xprintf("%d \r\n", i);
-		os << uid_tab[i];
-	}
-
-	std::string str(os.str());
-
-//	int n = str.length();
-//	char char_arr[n + 1];
-//
-//	strcpy(char_arr, str.c_str());
-
-//	xprintf(char_arr);
-
-	Unicode::snprintf(uidTextFieldBuffer, UIDTEXTFIELD_SIZE, "%s", str);
+	Unicode::snprintf(uidTextFieldBuffer, UIDTEXTFIELD_SIZE, "%d %d %d %d", uid_tab[0], uid_tab[1], uid_tab[2], uid_tab[3]);
+	uidTextField.setVisible(true);
 	uidTextField.invalidate();
 }

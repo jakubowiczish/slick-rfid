@@ -14,6 +14,7 @@ Drawable.hpp:416:18:virtual void touchgfx::Drawable::handleClickEvent(const touc
 Drawable.hpp:428:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	16	static
 Drawable.hpp:440:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	16	static
 Drawable.hpp:453:18:virtual void touchgfx::Drawable::handleTickEvent()	16	static
+Drawable.hpp:469:10:void touchgfx::Drawable::setVisible(bool)	16	static
 Drawable.hpp:500:10:bool touchgfx::Drawable::isVisible() const	16	static
 Drawable.hpp:516:10:bool touchgfx::Drawable::isTouchable() const	16	static
 Drawable.hpp:564:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	16	static
@@ -61,10 +62,10 @@ Screen1View.hpp:11:13:virtual Screen1View::~Screen1View()	16	static
 gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
 Screen1View.cpp:7:1:Screen1View::Screen1View()	16	static
 Screen1View.cpp:11:6:virtual void Screen1View::setupScreen()	16	static
-Screen1View.cpp:15:6:virtual void Screen1View::tearDownScreen()	16	static
-Screen1View.cpp:19:6:void Screen1View::set_uid_text(uint8_t*, uint8_t)	288	static
+Screen1View.cpp:16:6:virtual void Screen1View::tearDownScreen()	16	static
+Screen1View.cpp:20:6:void Screen1View::set_uid_text(uint8_t*, uint8_t)	48	static
 TextAreaWithWildcard.hpp:76:7:touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	16	static
 TextAreaWithWildcard.hpp:76:7:virtual touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	16	static
-Screen1View.cpp:37:1:void __static_initialization_and_destruction_0(int, int)	16	static
-Screen1View.cpp:37:1:cpp)	8	static
-Screen1View.cpp:37:1:cpp)	8	static
+Screen1View.cpp:24:1:void __static_initialization_and_destruction_0(int, int)	16	static
+Screen1View.cpp:24:1:cpp)	8	static
+Screen1View.cpp:24:1:cpp)	8	static
