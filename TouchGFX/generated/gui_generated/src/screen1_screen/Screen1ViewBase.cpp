@@ -80,36 +80,36 @@ void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
     if (&src == &szczygi)
     {
         //szczygi
-        //When szczygi clicked execute C++ code
-        //Execute C++ code
-        szczygiHandler(1);
+        //When szczygi clicked call virtual function
+        //Call szczygiHandler
+        szczygiHandler();
     }
     else if (&src == &dybczak)
     {
         //dybczak
-        //When dybczak clicked execute C++ code
-        //Execute C++ code
-        dybczakHandler(2);
+        //When dybczak clicked call virtual function
+        //Call dybczakHandler
+        dybczakHandler();
     }
     else if (&src == &rafal)
     {
         //rafal
-        //When rafal clicked execute C++ code
-        //Execute C++ code
-        rafalHandler(3);
+        //When rafal clicked call virtual function
+        //Call rafalHandler
+        rafalHandler();
     }
     else if (&src == &zajma)
     {
         //zajma
-        //When zajma clicked execute C++ code
-        //Execute C++ code
-        zajmaHandler(4);
+        //When zajma clicked call virtual function
+        //Call zajmaHandler
+        zajmaHandler();
     }
     else if (&src == &plotnik)
     {
         //plotnik
-        //When plotnik clicked execute C++ code
-        //Execute C++ code
-        plotnikHandler(5);
+        //When plotnik clicked call virtual function
+        //Call plotnikHandler
+        plotnikHandler();
     }
 }

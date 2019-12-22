@@ -40,7 +40,7 @@ public:
 
 	uint8_t getAvatarForUid(std::string uid);
 
-	std::string Model::convertUidToString(uint8_t uid_tab[]);
+	std::string convertUidToString(uint8_t uid_tab[]);
 protected:
 	/**
 	 * Pointer to the currently active presenter.

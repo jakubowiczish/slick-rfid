@@ -28,7 +28,7 @@ public:
 
 	virtual void notifyThatNewCardIsPresent(uint8_t tab[]);
 
-	virtual uint8_t handleAvatarChoice(uint8_t id);
+	virtual void showAvatar(uint8_t id);
 private:
 	Screen1Presenter();
 

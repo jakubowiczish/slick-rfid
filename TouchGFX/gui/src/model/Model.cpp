@@ -21,7 +21,7 @@ void Model::tick() {
 		xprintf("tag read status: %d \r\n", status);
 
 		if (status == MI_OK) {
-			xprintf("card is present");
+			xprintf("card is present \r\n");
 			modelListener->notifyThatNewCardIsPresent(uid_tab_buffer);
 		}
 
@@ -37,15 +37,15 @@ void Model::tick() {
 		bool isWaiting = false;
 
 		if (status == MI_OK) {
-			modelListener->notifyThatNewCardIsPresent(uid_tab_buffer);
+//			modelListener->notifyThatNewCardIsPresent(uid_tab_buffer);
 			isWaiting = true;
 
 			status = rfid_authenticate(MIF_AUTHENTB, 1, key_tab, uid_tab_buffer);
 			xprintf("authenticate status: %d \r\n", status);
 
-			uint8_t cardAvatarId = buffer[1];
-			uint8_t avatarId = modelListener->handleAvatarChoice(cardAvatarId);
-			status = rfid_card_write(blockAddress, buffer, &bufferSize);
+//			uint8_t cardAvatarId = buffer[1];
+//			modelListener->showAvatar(cardAvatarId);
+//			status = rfid_card_write(blockAddress, buffer, bufferSize);
 		}
 	}
 }

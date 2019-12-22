@@ -8,11 +8,11 @@ ModelListener.hpp:17:2:ModelListener::ModelListener()	16	static
 ModelListener.hpp:21:10:ModelListener::~ModelListener()	16	static
 ModelListener.hpp:21:10:virtual ModelListener::~ModelListener()	16	static
 ModelListener.hpp:32:15:virtual void ModelListener::notifyThatNewCardIsPresent(uint8_t*)	16	static
-ModelListener.hpp:34:18:virtual uint8_t ModelListener::handleAvatarChoice(uint8_t)	16	static
+ModelListener.hpp:34:15:virtual void ModelListener::showAvatar(uint8_t)	16	static
 Screen1Presenter.hpp:27:10:Screen1Presenter::~Screen1Presenter()	16	static
 Screen1Presenter.hpp:27:10:virtual Screen1Presenter::~Screen1Presenter()	16	static
 Screen1Presenter.cpp:4:1:Screen1Presenter::Screen1Presenter(Screen1View&)	16	static
 Screen1Presenter.cpp:8:6:virtual void Screen1Presenter::activate()	16	static
 Screen1Presenter.cpp:12:6:virtual void Screen1Presenter::deactivate()	16	static
 Screen1Presenter.cpp:16:6:virtual void Screen1Presenter::notifyThatNewCardIsPresent(uint8_t*)	16	static
-Screen1Presenter.cpp:20:9:virtual uint8_t Screen1Presenter::handleAvatarChoice(uint8_t)	16	static
+Screen1Presenter.cpp:20:6:virtual void Screen1Presenter::showAvatar(uint8_t)	16	static
