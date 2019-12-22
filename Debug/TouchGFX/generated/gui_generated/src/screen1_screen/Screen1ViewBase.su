@@ -86,10 +86,11 @@ Screen1ViewBase.hpp:30:18:virtual void Screen1ViewBase::zajmaHandler()	16	static
 Screen1ViewBase.hpp:35:18:virtual void Screen1ViewBase::rafalHandler()	16	static
 Screen1ViewBase.hpp:40:18:virtual void Screen1ViewBase::dybczakHandler()	16	static
 Screen1ViewBase.hpp:45:18:virtual void Screen1ViewBase::szczygiHandler()	16	static
+Screen1ViewBase.hpp:51:26:FrontendApplication& Screen1ViewBase::application()	16	static
 Color.hpp:54:22:static touchgfx::colortype touchgfx::Color::getColorFrom24BitRGB(uint8_t, uint8_t, uint8_t)	24	static
-Screen1ViewBase.cpp:9:1:Screen1ViewBase::Screen1ViewBase()	104	static
-Screen1ViewBase.cpp:73:6:virtual void Screen1ViewBase::setupScreen()	16	static
-Screen1ViewBase.cpp:78:6:void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
+Screen1ViewBase.cpp:9:1:Screen1ViewBase::Screen1ViewBase()	112	static
+Screen1ViewBase.cpp:78:6:virtual void Screen1ViewBase::setupScreen()	16	static
+Screen1ViewBase.cpp:83:6:void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
 View.hpp:50:5:touchgfx::View<T>::View() [with T = Screen1Presenter]	16	static
 Callback.hpp:167:7:constexpr touchgfx::GenericCallback<const touchgfx::AbstractButton&>::GenericCallback()	16	static
 Callback.hpp:493:5:touchgfx::Callback<dest_type, T1, void, void>::Callback(dest_type*, void (dest_type::*)(T1)) [with dest_type = Screen1ViewBase; T1 = const touchgfx::AbstractButton&]	24	static

@@ -12,6 +12,8 @@ class Screen1View : public Screen1ViewBase {
 		virtual void setupScreen();
 		virtual void tearDownScreen();
 
+		void showAuthScreen();
+
 		void setUidText(uint8_t uid_tab[]);
 		void showChosenAvatar(uint8_t id);
 

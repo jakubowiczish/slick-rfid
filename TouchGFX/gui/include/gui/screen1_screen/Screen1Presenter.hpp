@@ -26,9 +26,7 @@ public:
 
 	virtual ~Screen1Presenter() {};
 
-	virtual void notifyThatNewCardIsPresent(uint8_t tab[]);
-
-	virtual void showAvatar(uint8_t id);
+    virtual void showAuthScreen();
 private:
 	Screen1Presenter();
 

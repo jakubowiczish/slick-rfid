@@ -10,6 +10,8 @@
 #include <touchgfx/hal/HAL.hpp>
 #include <gui/screen1_screen/Screen1View.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
+#include <gui/authscreen_screen/AuthScreenView.hpp>
+#include <gui/authscreen_screen/AuthScreenPresenter.hpp>
 
 using namespace touchgfx;
 

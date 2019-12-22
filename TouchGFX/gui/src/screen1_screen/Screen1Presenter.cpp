@@ -13,10 +13,6 @@ void Screen1Presenter::deactivate() {
 
 }
 
-void Screen1Presenter::notifyThatNewCardIsPresent(uint8_t uid_tab[]) {
-	view.setUidText(uid_tab);
-}
-
-void Screen1Presenter::showAvatar(uint8_t id) {
-	view.showChosenAvatar(id);
+void Screen1Presenter::showAuthScreen() {
+	view.showAuthScreen();
 }

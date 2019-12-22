@@ -54,10 +54,13 @@ Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F \
 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang \
 STM32469I-Discovery \
 TouchGFX/generated/fonts/src \
+TouchGFX/generated/gui_generated/src/authscreen_screen \
 TouchGFX/generated/gui_generated/src/common \
 TouchGFX/generated/gui_generated/src/screen1_screen \
 TouchGFX/generated/images/src \
+TouchGFX/generated/images/src/__designer \
 TouchGFX/generated/texts/src \
+TouchGFX/gui/src/authscreen_screen \
 TouchGFX/gui/src/common \
 TouchGFX/gui/src/model \
 TouchGFX/gui/src/screen1_screen \

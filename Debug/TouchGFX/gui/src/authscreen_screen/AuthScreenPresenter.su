@@ -1,0 +1,19 @@
+Presenter.hpp:42:18:virtual void touchgfx::Presenter::activate()	16	static
+Presenter.hpp:54:18:virtual void touchgfx::Presenter::deactivate()	16	static
+Presenter.hpp:65:13:touchgfx::Presenter::~Presenter()	16	static
+Presenter.hpp:65:13:virtual touchgfx::Presenter::~Presenter()	16	static
+Presenter.hpp:78:5:touchgfx::Presenter::Presenter()	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+ModelListener.hpp:17:2:ModelListener::ModelListener()	16	static
+ModelListener.hpp:21:10:ModelListener::~ModelListener()	16	static
+ModelListener.hpp:21:10:virtual ModelListener::~ModelListener()	16	static
+ModelListener.hpp:32:15:virtual void ModelListener::showAuthScreen()	16	static
+ModelListener.hpp:34:15:virtual void ModelListener::showUid()	16	static
+ModelListener.hpp:36:15:virtual void ModelListener::showAvatar()	16	static
+AuthScreenPresenter.hpp:28:13:AuthScreenPresenter::~AuthScreenPresenter()	16	static
+AuthScreenPresenter.hpp:28:13:virtual AuthScreenPresenter::~AuthScreenPresenter()	16	static
+AuthScreenPresenter.cpp:4:1:AuthScreenPresenter::AuthScreenPresenter(AuthScreenView&)	16	static
+AuthScreenPresenter.cpp:9:6:virtual void AuthScreenPresenter::activate()	16	static
+AuthScreenPresenter.cpp:14:6:virtual void AuthScreenPresenter::deactivate()	16	static
+AuthScreenPresenter.cpp:19:6:virtual void AuthScreenPresenter::showUid()	16	static
+AuthScreenPresenter.cpp:23:6:virtual void AuthScreenPresenter::showAvatar()	16	static

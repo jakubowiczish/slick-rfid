@@ -16,6 +16,10 @@ void Screen1View::tearDownScreen() {
 	Screen1ViewBase::tearDownScreen();
 }
 
+void Screen1View::showAuthScreen() {
+    application().gotoAuthScreenScreenCoverTransitionSouth();
+}
+
 void Screen1View::setUidText(uint8_t uid_tab[]) {
 	Unicode::snprintf(uidTextFieldBuffer, UIDTEXTFIELD_SIZE, "%d %d %d %d", uid_tab[0], uid_tab[1], uid_tab[2], uid_tab[3]);
 

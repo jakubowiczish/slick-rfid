@@ -29,9 +29,11 @@ public:
 		model = m;
 	}
 
-	virtual void notifyThatNewCardIsPresent(uint8_t uid_tab[]) {}
+	virtual void showAuthScreen() {}
 
-	virtual void showAvatar(uint8_t id) {}
+	virtual void showUid() {}
+
+	virtual void showAvatar() {}
 protected:
 	Model *model;
 };
