@@ -35,6 +35,7 @@ protected:
     touchgfx::Button rafal;
     touchgfx::Button zajma;
     touchgfx::Button plotnik;
+    touchgfx::TextArea choiceTextField;
 
     /*
      * Wildcard Buffers
@@ -43,6 +44,16 @@ protected:
     touchgfx::Unicode::UnicodeChar uidTextFieldBuffer[UIDTEXTFIELD_SIZE];
 
 private:
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButton&> buttonCallback;
+
+    /*
+     * Callback Handler Declarations
+     */
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

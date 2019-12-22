@@ -165,7 +165,7 @@ int main(void)
   /* USER CODE END RTOS_QUEUES */
 
   debug_init(&huart3);
-  xprintf("elo\r\n");
+  xprintf("Start\r\n");
 
 
 

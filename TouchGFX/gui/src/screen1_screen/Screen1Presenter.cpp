@@ -17,6 +17,6 @@ void Screen1Presenter::notifyThatNewCardIsPresent(uint8_t uid_tab[]) {
 	view.setUidText(uid_tab);
 }
 
-void Screen1Presenter::handleAvatarChoice(uint8_t uid_tab[]) {
-	view.chooseAvatar(uid_tab);
+uint8_t Screen1Presenter::handleAvatarChoice(uint8_t id) {
+	return view.chooseAvatar(id);
 }

@@ -31,7 +31,7 @@ public:
 
 	virtual void notifyThatNewCardIsPresent(uint8_t uid_tab[]) {}
 
-	virtual void handleAvatarChoice(uint8_t uid_tab[]) {}
+	virtual uint8_t handleAvatarChoice(uint8_t id) {}
 protected:
 	Model *model;
 };

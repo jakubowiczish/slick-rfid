@@ -116,7 +116,7 @@ rfid_status_t rfid_card_write(
 );
 
 rfid_status_t rfid_card_read(
-        uint8_t block_addres,
+        uint8_t block_address,
         uint8_t *buffer,
         uint8_t *buffer_size
 );

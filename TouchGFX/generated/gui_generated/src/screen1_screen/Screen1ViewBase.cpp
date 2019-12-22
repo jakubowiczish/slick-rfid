@@ -6,7 +6,8 @@
 #include <texts/TextKeysAndLanguages.hpp>
 #include <touchgfx/Color.hpp>
 
-Screen1ViewBase::Screen1ViewBase()
+Screen1ViewBase::Screen1ViewBase() :
+    buttonCallback(this, &Screen1ViewBase::buttonCallbackHandler)
 {
     backgroundImage.setBitmap(touchgfx::Bitmap(BITMAP_CAPALAREAL_ID));
     backgroundImage.setPosition(-270, 0, 1569, 480);
@@ -28,19 +29,35 @@ Screen1ViewBase::Screen1ViewBase()
     avatarChoiceTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID6));
 
     szczygi.setXY(0, 0);
+    szczygi.setVisible(false);
     szczygi.setBitmaps(touchgfx::Bitmap(BITMAP_SZCZYGI_ID), touchgfx::Bitmap(BITMAP_SZCZYGI_ID));
+    szczygi.setAction(buttonCallback);
 
     dybczak.setXY(166, 0);
+    dybczak.setVisible(false);
     dybczak.setBitmaps(touchgfx::Bitmap(BITMAP_DYBCZAK_ID), touchgfx::Bitmap(BITMAP_DYBCZAK_ID));
+    dybczak.setAction(buttonCallback);
 
     rafal.setXY(338, 0);
+    rafal.setVisible(false);
     rafal.setBitmaps(touchgfx::Bitmap(BITMAP_RAV_ID), touchgfx::Bitmap(BITMAP_RAV_ID));
+    rafal.setAction(buttonCallback);
 
     zajma.setXY(514, 0);
+    zajma.setVisible(false);
     zajma.setBitmaps(touchgfx::Bitmap(BITMAP_ZAJMA_ID), touchgfx::Bitmap(BITMAP_ZAJMA_ID));
+    zajma.setAction(buttonCallback);
 
     plotnik.setXY(675, 0);
+    plotnik.setVisible(false);
     plotnik.setBitmaps(touchgfx::Bitmap(BITMAP_PLOTNIK_ID), touchgfx::Bitmap(BITMAP_PLOTNIK_ID));
+    plotnik.setAction(buttonCallback);
+
+    choiceTextField.setPosition(18, 240, 763, 74);
+    choiceTextField.setVisible(false);
+    choiceTextField.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 229, 255));
+    choiceTextField.setLinespacing(0);
+    choiceTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID7));
 
     add(backgroundImage);
     add(uidTextField);
@@ -50,9 +67,49 @@ Screen1ViewBase::Screen1ViewBase()
     add(rafal);
     add(zajma);
     add(plotnik);
+    add(choiceTextField);
 }
 
 void Screen1ViewBase::setupScreen()
 {
 
+}
+
+void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+{
+    if (&src == &szczygi)
+    {
+        //szczygi
+        //When szczygi clicked execute C++ code
+        //Execute C++ code
+        szczygiHandler(1);
+    }
+    else if (&src == &dybczak)
+    {
+        //dybczak
+        //When dybczak clicked execute C++ code
+        //Execute C++ code
+        dybczakHandler(2);
+    }
+    else if (&src == &rafal)
+    {
+        //rafal
+        //When rafal clicked execute C++ code
+        //Execute C++ code
+        rafalHandler(3);
+    }
+    else if (&src == &zajma)
+    {
+        //zajma
+        //When zajma clicked execute C++ code
+        //Execute C++ code
+        zajmaHandler(4);
+    }
+    else if (&src == &plotnik)
+    {
+        //plotnik
+        //When plotnik clicked execute C++ code
+        //Execute C++ code
+        plotnikHandler(5);
+    }
 }

@@ -12,9 +12,18 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
     void setUidText(uint8_t uid_tab[]);
-    void chooseAvatar(uint8_t uid_tab[]);
+    uint8_t showChosenAvatar(uint8_t id);
+
 protected:
 
+private:
+    void plotnikHandler(uint8_t id);
+    void zajmaHandler(uint8_t id);
+    void szczygiHandler(uint8_t id);
+    void dybczakHandler(uint8_t id);
+    void rafalHandler(uint8_t id);
+    uint8_t clicked_id = 0;
 };
+
 
 #endif // SCREEN1VIEW_HPP

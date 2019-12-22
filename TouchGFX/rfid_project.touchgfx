@@ -149,9 +149,93 @@
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId7",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 229,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Name": "choiceTextField",
+            "X": 18,
+            "Y": 240,
+            "Width": 763,
+            "Height": 74,
+            "Type": "TextArea",
+            "Visible": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
           }
         ],
-        "Interactions": [],
+        "Interactions": [
+          {
+            "InteractionName": "plotnik",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "plotnik",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "Code": "plotnikHandler(5);",
+              "Type": "ActionExecuteCode"
+            }
+          },
+          {
+            "InteractionName": "zajma",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "zajma",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "Code": "zajmaHandler(4);",
+              "Type": "ActionExecuteCode"
+            }
+          },
+          {
+            "InteractionName": "rafal",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "rafal",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "Code": "rafalHandler(3);",
+              "Type": "ActionExecuteCode"
+            }
+          },
+          {
+            "InteractionName": "dybczak",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "dybczak",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "Code": "dybczakHandler(2);",
+              "Type": "ActionExecuteCode"
+            }
+          },
+          {
+            "InteractionName": "szczygi",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "szczygi",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "Code": "szczygiHandler(1);",
+              "Type": "ActionExecuteCode"
+            }
+          }
+        ],
         "Name": "Screen1",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0
@@ -173,6 +257,10 @@
       },
       {
         "TextEntryId": "SingleUseId6",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId7",
         "IsResource": false
       }
     ],

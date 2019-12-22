@@ -35,6 +35,12 @@ public:
 	 * the ModelListener interface.
 	 */
 	void tick();
+
+	void saveUidAndAvatar(uint8_t uid_tab[], uint8_t avatar_id);
+
+	uint8_t getAvatarForUid(std::string uid);
+
+	std::string Model::convertUidToString(uint8_t uid_tab[]);
 protected:
 	/**
 	 * Pointer to the currently active presenter.
@@ -43,7 +49,9 @@ protected:
 
 private:
 	uint8_t uid_tab_buffer[10];
-	std::string saved_uids[20];
+	std::string saved_uids[50];
+	uint8_t avatar_ids_for_uids[50];
+	uint8_t storage_size = 50;
 };
 
 #endif /* MODEL_HPP */
