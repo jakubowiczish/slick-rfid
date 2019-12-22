@@ -12,8 +12,8 @@ ModelListener.hpp:34:15:virtual void ModelListener::showUid()	16	static
 ModelListener.hpp:36:15:virtual void ModelListener::showAvatar()	16	static
 AuthScreenPresenter.hpp:28:13:AuthScreenPresenter::~AuthScreenPresenter()	16	static
 AuthScreenPresenter.hpp:28:13:virtual AuthScreenPresenter::~AuthScreenPresenter()	16	static
-AuthScreenPresenter.cpp:4:1:AuthScreenPresenter::AuthScreenPresenter(AuthScreenView&)	16	static
-AuthScreenPresenter.cpp:9:6:virtual void AuthScreenPresenter::activate()	16	static
-AuthScreenPresenter.cpp:14:6:virtual void AuthScreenPresenter::deactivate()	16	static
-AuthScreenPresenter.cpp:19:6:virtual void AuthScreenPresenter::showUid()	16	static
-AuthScreenPresenter.cpp:23:6:virtual void AuthScreenPresenter::showAvatar()	16	static
+AuthScreenPresenter.cpp:5:1:AuthScreenPresenter::AuthScreenPresenter(AuthScreenView&)	16	static
+AuthScreenPresenter.cpp:8:6:virtual void AuthScreenPresenter::activate()	16	static
+AuthScreenPresenter.cpp:12:6:virtual void AuthScreenPresenter::deactivate()	16	static
+AuthScreenPresenter.cpp:16:6:virtual void AuthScreenPresenter::showUid()	24	static
+AuthScreenPresenter.cpp:21:6:virtual void AuthScreenPresenter::showAvatar()	16	static

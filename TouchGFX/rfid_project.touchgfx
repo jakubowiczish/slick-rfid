@@ -8,7 +8,7 @@
             "Alpha": 171,
             "ScalingAlgorithm": "Bilinear Interpolation",
             "Name": "backgroundImage",
-            "X": -270,
+            "X": -271,
             "Y": 0,
             "Width": 1569,
             "Height": 480,
@@ -172,6 +172,23 @@
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Alpha": 255,
+            "Style": "Style4",
+            "Name": "changeScreenButton",
+            "X": 630,
+            "Y": 420,
+            "Width": 170,
+            "Height": 60,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
           }
         ],
         "Interactions": [
@@ -233,6 +250,20 @@
             "Action": {
               "FunctionName": "szczygiHandler",
               "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "changeScreenInteraction",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "changeScreenButton",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "South",
+              "ActionComponent": "AuthScreen",
+              "Type": "ActionGotoScreen"
             }
           }
         ],

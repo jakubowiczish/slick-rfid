@@ -14,7 +14,6 @@ Drawable.hpp:416:18:virtual void touchgfx::Drawable::handleClickEvent(const touc
 Drawable.hpp:428:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	16	static
 Drawable.hpp:440:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	16	static
 Drawable.hpp:453:18:virtual void touchgfx::Drawable::handleTickEvent()	16	static
-Drawable.hpp:469:10:void touchgfx::Drawable::setVisible(bool)	16	static
 Drawable.hpp:500:10:bool touchgfx::Drawable::isVisible() const	16	static
 Drawable.hpp:516:10:bool touchgfx::Drawable::isTouchable() const	16	static
 Drawable.hpp:564:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	16	static
@@ -62,6 +61,11 @@ View.hpp:39:7:touchgfx::View<Screen1Presenter>::~View()	16	static
 View.hpp:39:7:virtual touchgfx::View<Screen1Presenter>::~View()	16	static
 Screen1ViewBase.hpp:19:13:Screen1ViewBase::~Screen1ViewBase()	16	static
 Screen1ViewBase.hpp:19:13:virtual Screen1ViewBase::~Screen1ViewBase()	16	static
+Screen1ViewBase.hpp:25:18:virtual void Screen1ViewBase::plotnikHandler()	16	static
+Screen1ViewBase.hpp:30:18:virtual void Screen1ViewBase::zajmaHandler()	16	static
+Screen1ViewBase.hpp:35:18:virtual void Screen1ViewBase::rafalHandler()	16	static
+Screen1ViewBase.hpp:40:18:virtual void Screen1ViewBase::dybczakHandler()	16	static
+Screen1ViewBase.hpp:45:18:virtual void Screen1ViewBase::szczygiHandler()	16	static
 Screen1ViewBase.hpp:51:26:FrontendApplication& Screen1ViewBase::application()	16	static
 Screen1View.hpp:10:11:Screen1View::~Screen1View()	16	static
 Screen1View.hpp:10:11:virtual Screen1View::~Screen1View()	16	static
@@ -69,29 +73,14 @@ Screen1View.cpp:7:1:Screen1View::Screen1View()	16	static
 Screen1View.cpp:11:6:virtual void Screen1View::setupScreen()	16	static
 Screen1View.cpp:15:6:virtual void Screen1View::tearDownScreen()	16	static
 Screen1View.cpp:19:6:void Screen1View::showAuthScreen()	16	static
-Screen1View.cpp:23:6:void Screen1View::setUidText(uint8_t*)	40	static
-Screen1View.cpp:30:6:void Screen1View::makeTextFieldsVisible()	16	static
-Screen1View.cpp:37:6:void Screen1View::makeAllAvatarsVisible()	16	static
-Screen1View.cpp:47:6:void Screen1View::showChosenAvatar(uint8_t)	16	static
-Screen1View.cpp:61:6:virtual void Screen1View::zajmaHandler()	16	static
-Screen1View.cpp:67:6:virtual void Screen1View::szczygiHandler()	16	static
-Screen1View.cpp:73:6:virtual void Screen1View::dybczakHandler()	16	static
-Screen1View.cpp:79:6:virtual void Screen1View::rafalHandler()	16	static
-Screen1View.cpp:85:6:virtual void Screen1View::plotnikHandler()	16	static
-Screen1View.cpp:91:6:void Screen1View::handleZajmaVisibility()	16	static
-Screen1View.cpp:101:6:void Screen1View::handleSzczygiVisibility()	16	static
-Screen1View.cpp:111:6:void Screen1View::handleDybczakVisibility()	16	static
-Screen1View.cpp:121:6:void Screen1View::handleRafalVisibility()	16	static
-Screen1View.cpp:131:6:void Screen1View::handlePlotnikVisibility()	16	static
-Screen1View.cpp:141:6:void Screen1View::invalidateAvatarButtons()	16	static
 TextAreaWithWildcard.hpp:76:7:touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	16	static
 TextAreaWithWildcard.hpp:76:7:virtual touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	16	static
-Screen1View.cpp:147:1:void __static_initialization_and_destruction_0(int, int)	16	static
+Screen1View.cpp:21:1:void __static_initialization_and_destruction_0(int, int)	16	static
 Callback.hpp:469:8:touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButton&>::~Callback()	16	static
 Callback.hpp:469:8:virtual touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButton&>::~Callback()	16	static
 Callback.hpp:177:13:touchgfx::GenericCallback<T1, void, void>::~GenericCallback() [with T1 = const touchgfx::AbstractButton&]	16	static
 Callback.hpp:177:13:touchgfx::GenericCallback<T1, void, void>::~GenericCallback() [with T1 = const touchgfx::AbstractButton&]	16	static
 Callback.hpp:511:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = Screen1ViewBase; T1 = const touchgfx::AbstractButton&]	16	static
 Callback.hpp:525:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = Screen1ViewBase; T1 = const touchgfx::AbstractButton&]	16	static
-Screen1View.cpp:147:1:cpp)	8	static
-Screen1View.cpp:147:1:cpp)	8	static
+Screen1View.cpp:21:1:cpp)	8	static
+Screen1View.cpp:21:1:cpp)	8	static

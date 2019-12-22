@@ -41,9 +41,10 @@ TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o: \
  ../TouchGFX/gui/include/gui/common/FrontendHeap.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp \
- ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transitions/CoverTransition.hpp \
- ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  ../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  ../TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp \
@@ -146,11 +147,13 @@ TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o: \
 
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp:
 
-../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transitions/CoverTransition.hpp:
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:
 
-../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 
 ../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
 

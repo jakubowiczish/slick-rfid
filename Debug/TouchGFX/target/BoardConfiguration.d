@@ -39,10 +39,11 @@ TouchGFX/target/BoardConfiguration.o: \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/common/AbstractPartition.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/MVPHeap.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp \
- ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transitions/CoverTransition.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/containers/Container.hpp \
- ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  ../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/MVPApplication.hpp \
@@ -200,13 +201,15 @@ TouchGFX/target/BoardConfiguration.o: \
 
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp:
 
-../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transitions/CoverTransition.hpp:
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/containers/Container.hpp:
 
-../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 
 ../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
 

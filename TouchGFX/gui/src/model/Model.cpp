@@ -3,6 +3,10 @@
 #include "rfid.h"
 #include "term_io.h"
 #include <stdbool.h>
+#include "cmsis_os.h"
+#include "fatfs.h"
+#include "usb_host.h"
+#include "dbgu.h"
 
 Model::Model() : modelListener(0) {
 }
@@ -32,6 +36,10 @@ void Model::tick() {
 				isAuthenticated = true;
 				status = rfid_card_read(blockAddress, buffer, &bufferSize);
 				avatarId = buffer[1];
+
+				xprintf("avatar id %d \r\n", avatarId);
+				xprintf("uid buffer %d %d %d %d \r\n", uidTabBuffer[0], uidTabBuffer[1], uidTabBuffer[2], uidTabBuffer[3]);
+
 				modelListener->showAuthScreen();
 				modelListener->showUid();
 				modelListener->showAvatar();

@@ -36,23 +36,22 @@ class Model {
 		 */
 		void tick();
 
-		void saveUidAndAvatar(uint8_t uid_tab[], uint8_t avatar_id);
-
-		uint8_t getAvatarForUid(std::string uid);
-
-		std::string convertUidToString(uint8_t uid_tab[]);
+//		void saveUidAndAvatar(uint8_t uid_tab[], uint8_t avatar_id);
+//
+//		uint8_t getAvatarForUid(std::string uid);
+//
+//		std::string convertUidToString(uint8_t uid_tab[]);
 
 		uint8_t uidTabBuffer[10];
+
 		uint8_t avatarId;
+
 		bool isAuthenticated = false;
 	protected:
 		/**
 		 * Pointer to the currently active presenter.
 		 */
 		ModelListener *modelListener;
-
-	private:
-
 };
 
 #endif /* MODEL_HPP */

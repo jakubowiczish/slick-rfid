@@ -198,10 +198,9 @@ int main(void)
 }
 
 void initialize_rfid() {
-	rfid_configure(&hspi2, GPIOH, SPI_CS_Pin,GPIOA, RFID_RESET_Pin );
-	 rfid_self_test();
-	  rfid_init();
-
+	rfid_configure(&hspi2, GPIOH, SPI_CS_Pin, GPIOA, RFID_RESET_Pin);
+	rfid_self_test();
+	rfid_init();
 }
 
 void main_task(void *p) {

@@ -10,7 +10,7 @@ Screen1ViewBase::Screen1ViewBase() :
     buttonCallback(this, &Screen1ViewBase::buttonCallbackHandler)
 {
     backgroundImage.setBitmap(touchgfx::Bitmap(BITMAP_CAPALAREAL_ID));
-    backgroundImage.setPosition(-270, 0, 1569, 480);
+    backgroundImage.setPosition(-271, 0, 1569, 480);
     backgroundImage.setScalingAlgorithm(touchgfx::ScalableImage::BILINEAR_INTERPOLATION);
     backgroundImage.setAlpha(171);
 
@@ -59,6 +59,10 @@ Screen1ViewBase::Screen1ViewBase() :
     choiceTextField.setLinespacing(0);
     choiceTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID7));
 
+    changeScreenButton.setXY(630, 420);
+    changeScreenButton.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    changeScreenButton.setAction(buttonCallback);
+
     add(backgroundImage);
     add(uidTextField);
     add(avatarChoiceTextField);
@@ -68,6 +72,7 @@ Screen1ViewBase::Screen1ViewBase() :
     add(zajma);
     add(plotnik);
     add(choiceTextField);
+    add(changeScreenButton);
 }
 
 void Screen1ViewBase::setupScreen()
@@ -111,5 +116,12 @@ void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
         //When plotnik clicked call virtual function
         //Call plotnikHandler
         plotnikHandler();
+    }
+    else if (&src == &changeScreenButton)
+    {
+        //changeScreenInteraction
+        //When changeScreenButton clicked change screen to AuthScreen
+        //Go to AuthScreen with screen transition towards South
+        application().gotoAuthScreenScreenSlideTransitionSouth();
     }
 }

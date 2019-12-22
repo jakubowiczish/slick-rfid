@@ -14,28 +14,26 @@ class Screen1View : public Screen1ViewBase {
 
 		void showAuthScreen();
 
-		void setUidText(uint8_t uid_tab[]);
-		void showChosenAvatar(uint8_t id);
+//		void setUidText(uint8_t uid_tab[]);
+//		void showChosenAvatar(uint8_t id);
+//
+//		void plotnikHandler();
+//		void zajmaHandler();
+//		void rafalHandler();
+//		void dybczakHandler();
+//		void szczygiHandler();
+//
+//		void invalidateAvatarButtons();
+//
+//		void handlePlotnikVisibility();
+//		void handleZajmaVisibility();
+//		void handleRafalVisibility();
+//		void handleDybczakVisibility();
+//		void handleSzczygiVisibility();
+//
+//		void makeTextFieldsVisible();
+//		void makeAllAvatarsVisible();
 
-		void plotnikHandler();
-		void zajmaHandler();
-		void rafalHandler();
-		void dybczakHandler();
-		void szczygiHandler();
-
-		void invalidateAvatarButtons();
-
-		void handlePlotnikVisibility();
-		void handleZajmaVisibility();
-		void handleRafalVisibility();
-		void handleDybczakVisibility();
-		void handleSzczygiVisibility();
-
-		void makeTextFieldsVisible();
-		void makeAllAvatarsVisible();
-
-	private:
-		uint8_t clicked_id = 0;
 };
 
 #endif // SCREEN1VIEW_HPP

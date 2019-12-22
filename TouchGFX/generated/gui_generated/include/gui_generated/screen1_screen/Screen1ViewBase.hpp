@@ -64,6 +64,7 @@ protected:
     touchgfx::Button zajma;
     touchgfx::Button plotnik;
     touchgfx::TextArea choiceTextField;
+    touchgfx::Button changeScreenButton;
 
     /*
      * Wildcard Buffers
