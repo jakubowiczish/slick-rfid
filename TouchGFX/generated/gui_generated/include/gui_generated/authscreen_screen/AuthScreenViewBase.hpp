@@ -91,6 +91,7 @@ protected:
     touchgfx::Button radoj;
     touchgfx::Button capala;
 
+    touchgfx::TextArea waitingTextField;
 
     /*
      * Wildcard Buffers

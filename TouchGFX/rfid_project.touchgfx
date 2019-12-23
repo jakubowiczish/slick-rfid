@@ -342,7 +342,7 @@
             "Moveable": false
           },
           {
-            "Filename": "__designer\\Blue_Icons_User_48.png",
+            "Filename": "__designer\\Blue_Icons_Remove_48.png",
             "Alpha": 255,
             "ScalingAlgorithm": "Bilinear Interpolation",
             "Name": "currentAvatarImage",
@@ -593,6 +593,29 @@
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId14",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 0,
+              "Blue": 183
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "waitingTextField",
+            "X": 256,
+            "Y": 113,
+            "Width": 227,
+            "Height": 31,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
           }
         ],
         "Interactions": [
@@ -672,7 +695,7 @@
             "InteractionName": "capala",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "TriggerComponent": "radoj",
+              "TriggerComponent": "capala",
               "Type": "TriggerClicked"
             },
             "Action": {
@@ -738,6 +761,10 @@
       },
       {
         "TextEntryId": "SingleUseId13",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId14",
         "IsResource": false
       }
     ],

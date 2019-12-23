@@ -42,15 +42,22 @@ class Model {
 //
 //		std::string convertUidToString(uint8_t uid_tab[]);
 
-		static uint8_t uidTabBuffer[10];
+		uint8_t uidTabBuffer[10];
 
-		static uint8_t avatarId;
+		uint8_t bufferSize = 18;
 
-		static bool isAuthenticated;
+		uint8_t buffer[18];
 
-		static uint8_t bufferSize;
+		uint8_t avatarId;
 
-		static uint8_t avatarBlockAddress;
+		bool isAuthenticated = false;
+
+		uint8_t avatarBlockAddress = 1;
+
+		uint8_t size = 30;
+		uint8_t sak;
+
+		uint8_t key_tab[6] = { 0xff, 0xff, 0xff, 0xff, 0xff, 0xff };
 
 	protected:
 		/**

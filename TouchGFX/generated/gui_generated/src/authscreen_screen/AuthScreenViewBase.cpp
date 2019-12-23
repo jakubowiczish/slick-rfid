@@ -18,7 +18,7 @@ AuthScreenViewBase::AuthScreenViewBase() :
     currentAvatarTextField.setLinespacing(0);
     currentAvatarTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID8));
 
-    currentAvatarImage.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_ICONS_USER_48_ID));
+    currentAvatarImage.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_ICONS_REMOVE_48_ID));
     currentAvatarImage.setPosition(675, 0, 125, 150);
     currentAvatarImage.setScalingAlgorithm(touchgfx::ScalableImage::BILINEAR_INTERPOLATION);
 
@@ -80,6 +80,7 @@ AuthScreenViewBase::AuthScreenViewBase() :
 
     capala.setXY(224, 50);
     capala.setBitmaps(touchgfx::Bitmap(BITMAP_CAPALA_ID), touchgfx::Bitmap(BITMAP_CAPALA_ID));
+    capala.setAction(buttonCallback);
     swipeContainer1Page2.add(capala);
     swipeContainer1.add(swipeContainer1Page2);
 
@@ -89,12 +90,18 @@ AuthScreenViewBase::AuthScreenViewBase() :
     swipeContainer1.setEndSwipeElasticWidth(50);
     swipeContainer1.setSelectedPage(1);
 
+    waitingTextField.setXY(256, 113);
+    waitingTextField.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 0, 183));
+    waitingTextField.setLinespacing(0);
+    waitingTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID14));
+
     add(authTheme);
     add(currentAvatarTextField);
     add(currentAvatarImage);
     add(chooseAvatarTextField);
     add(uidTextField);
     add(swipeContainer1);
+    add(waitingTextField);
 }
 
 void AuthScreenViewBase::setupScreen()
@@ -148,14 +155,16 @@ void AuthScreenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& s
     }
     else if (&src == &radoj)
     {
-        //capala
-        //When radoj clicked call virtual function
-        //Call capalaHandler
-        capalaHandler();
-
         //radoj
         //When radoj clicked call virtual function
         //Call radojHandler
         radojHandler();
+    }
+    else if (&src == &capala)
+    {
+        //capala
+        //When capala clicked call virtual function
+        //Call capalaHandler
+        capalaHandler();
     }
 }
