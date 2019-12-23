@@ -16,8 +16,23 @@ public:
 
     void showAvatar(uint8_t id);
 
+    void showBitmapAvatar(uint16_t bitmap_value);
+
+    void saveAvatar();
+
     void invalidateAvatar();
-protected:
+
+    void szczygiHandler();
+    void zajmaHandler();
+    void dybczakHandler();
+    void plotnikHandler();
+    void rafalHandler();
+    void tomsiaHandler();
+    void radojHandler();
+    void capalaHandler();
+
+private:
+    uint8_t clickedId;
 };
 
 #endif // AUTHSCREENVIEW_HPP

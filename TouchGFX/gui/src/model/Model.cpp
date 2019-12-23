@@ -9,6 +9,9 @@
 #include "dbgu.h"
 
 Model::Model() : modelListener(0) {
+	isAuthenticated = false;
+	bufferSize = 18;
+	avatarBlockAddress = 1;
 }
 
 void Model::tick() {
@@ -25,24 +28,19 @@ void Model::tick() {
 		}
 
 		uint8_t buffer[18];
-		uint8_t bufferSize = 18;
-		uint8_t blockAddress = 1;
 
 		if (status == MI_OK) {
 			status = rfid_authenticate(MIF_AUTHENTA, 1, key_tab, uidTabBuffer);
-			xprintf("authenticate status: %d \r\n", status);
+			xprintf("authenticate READ status: %d \r\n", status);
 
 			if (status == MI_OK) {
 				isAuthenticated = true;
-				status = rfid_card_read(blockAddress, buffer, &bufferSize);
+				status = rfid_card_read(avatarBlockAddress, buffer, &bufferSize);
+				xprintf("READ status: %d \r\n", status);
+
 				avatarId = buffer[1];
 
-				xprintf("avatar id %d \r\n", avatarId);
-				xprintf("uid buffer %d %d %d %d \r\n", uidTabBuffer[0], uidTabBuffer[1], uidTabBuffer[2], uidTabBuffer[3]);
-
 				modelListener->showAuthScreen();
-				modelListener->showUid();
-				modelListener->showAvatar();
 			}
 		}
 	}

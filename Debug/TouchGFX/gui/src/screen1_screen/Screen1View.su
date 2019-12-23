@@ -57,6 +57,8 @@ AbstractButton.hpp:35:7:touchgfx::AbstractButton::~AbstractButton()	16	static
 AbstractButton.hpp:35:7:virtual touchgfx::AbstractButton::~AbstractButton()	16	static
 Button.hpp:54:13:touchgfx::Button::~Button()	16	static
 Button.hpp:54:13:virtual touchgfx::Button::~Button()	16	static
+Box.hpp:77:13:touchgfx::Box::~Box()	16	static
+Box.hpp:77:13:virtual touchgfx::Box::~Box()	16	static
 View.hpp:39:7:touchgfx::View<Screen1Presenter>::~View()	16	static
 View.hpp:39:7:virtual touchgfx::View<Screen1Presenter>::~View()	16	static
 Screen1ViewBase.hpp:19:13:Screen1ViewBase::~Screen1ViewBase()	16	static

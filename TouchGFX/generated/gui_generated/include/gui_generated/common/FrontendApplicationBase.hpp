@@ -20,7 +20,7 @@ public:
 
 
     // AuthScreen
-    void gotoAuthScreenScreenSlideTransitionSouth();
+    void gotoAuthScreenScreenCoverTransitionNorth();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
@@ -32,7 +32,7 @@ protected:
 
 
     // AuthScreen
-    void gotoAuthScreenScreenSlideTransitionSouthImpl();
+    void gotoAuthScreenScreenCoverTransitionNorthImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

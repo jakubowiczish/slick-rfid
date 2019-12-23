@@ -9,12 +9,16 @@
 const uint16_t BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID = 0;
 const uint16_t BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID = 1;
 const uint16_t BITMAP_BLUE_ICONS_USER_48_ID = 2;
-const uint16_t BITMAP_CAPALAREAL_ID = 3;
-const uint16_t BITMAP_DYBCZAK_ID = 4;
-const uint16_t BITMAP_PLOTNIK_ID = 5;
-const uint16_t BITMAP_RAV_ID = 6;
-const uint16_t BITMAP_SZCZYGI_ID = 7;
-const uint16_t BITMAP_ZAJMA_ID = 8;
+const uint16_t BITMAP_BLUE_PAGEINDICATOR_DOT_INDICATOR_LARGE_HIGHLIGHT_ID = 3;
+const uint16_t BITMAP_BLUE_PAGEINDICATOR_DOT_INDICATOR_LARGE_NORMAL_ID = 4;
+const uint16_t BITMAP_CAPALA_ID = 5;
+const uint16_t BITMAP_DYBCZAK_ID = 6;
+const uint16_t BITMAP_PLOTNIK_ID = 7;
+const uint16_t BITMAP_RADOJ_ID = 8;
+const uint16_t BITMAP_RAV_ID = 9;
+const uint16_t BITMAP_SZCZYGI_ID = 10;
+const uint16_t BITMAP_TOMSIA_ID = 11;
+const uint16_t BITMAP_ZAJMA_ID = 12;
 
 namespace BitmapDatabase
 {

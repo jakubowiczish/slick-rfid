@@ -42,11 +42,16 @@ class Model {
 //
 //		std::string convertUidToString(uint8_t uid_tab[]);
 
-		uint8_t uidTabBuffer[10];
+		static uint8_t uidTabBuffer[10];
 
-		uint8_t avatarId;
+		static uint8_t avatarId;
 
-		bool isAuthenticated = false;
+		static bool isAuthenticated;
+
+		static uint8_t bufferSize;
+
+		static uint8_t avatarBlockAddress;
+
 	protected:
 		/**
 		 * Pointer to the currently active presenter.

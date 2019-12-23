@@ -6,7 +6,8 @@ AuthScreenPresenter::AuthScreenPresenter(AuthScreenView &v) : view(v)  {
 }
 
 void AuthScreenPresenter::activate() {
-
+	showUid();
+	showAvatar();
 }
 
 void AuthScreenPresenter::deactivate() {

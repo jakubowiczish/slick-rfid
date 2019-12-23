@@ -23,6 +23,13 @@ RM := rm -rf
 -include TouchGFX/generated/gui_generated/src/common/subdir.mk
 -include TouchGFX/generated/gui_generated/src/authscreen_screen/subdir.mk
 -include TouchGFX/generated/fonts/src/subdir.mk
+-include TouchGFX/build/MINGW32_NT-6.2/gui/src/screen1_screen/subdir.mk
+-include TouchGFX/build/MINGW32_NT-6.2/gui/src/common/subdir.mk
+-include TouchGFX/build/MINGW32_NT-6.2/gui/src/authscreen_screen/subdir.mk
+-include TouchGFX/build/MINGW32_NT-6.2/generated/gui_generated/src/screen1_screen/subdir.mk
+-include TouchGFX/build/MINGW32_NT-6.2/generated/gui_generated/src/common/subdir.mk
+-include TouchGFX/build/MINGW32_NT-6.2/generated/gui_generated/src/authscreen_screen/subdir.mk
+-include TouchGFX/build/MINGW32_NT-6.2/generated/fonts/src/subdir.mk
 -include STM32469I-Discovery/subdir.mk
 -include Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/subdir.mk
 -include Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/subdir.mk

@@ -6,9 +6,10 @@
 #include <texts/TextKeysAndLanguages.hpp>
 #include "BitmapDatabase.hpp"
 
-AuthScreenViewBase::AuthScreenViewBase()
+AuthScreenViewBase::AuthScreenViewBase() :
+    buttonCallback(this, &AuthScreenViewBase::buttonCallbackHandler)
 {
-    authTheme.setPosition(0, 0, 800, 480);
+    authTheme.setPosition(0, 1, 800, 480);
     authTheme.setColor(touchgfx::Color::getColorFrom24BitRGB(16, 52, 106));
     authTheme.setAlpha(237);
 
@@ -21,25 +22,10 @@ AuthScreenViewBase::AuthScreenViewBase()
     currentAvatarImage.setPosition(675, 0, 125, 150);
     currentAvatarImage.setScalingAlgorithm(touchgfx::ScalableImage::BILINEAR_INTERPOLATION);
 
-    chooseAvatarTextField.setXY(249, 192);
+    chooseAvatarTextField.setXY(256, 158);
     chooseAvatarTextField.setColor(touchgfx::Color::getColorFrom24BitRGB(33, 255, 0));
     chooseAvatarTextField.setLinespacing(0);
     chooseAvatarTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID9));
-
-    plotnik.setXY(675, 241);
-    plotnik.setBitmaps(touchgfx::Bitmap(BITMAP_PLOTNIK_ID), touchgfx::Bitmap(BITMAP_PLOTNIK_ID));
-
-    zajma.setXY(501, 241);
-    zajma.setBitmaps(touchgfx::Bitmap(BITMAP_ZAJMA_ID), touchgfx::Bitmap(BITMAP_ZAJMA_ID));
-
-    rafal.setXY(338, 241);
-    rafal.setBitmaps(touchgfx::Bitmap(BITMAP_RAV_ID), touchgfx::Bitmap(BITMAP_RAV_ID));
-
-    dybczak.setXY(175, 242);
-    dybczak.setBitmaps(touchgfx::Bitmap(BITMAP_DYBCZAK_ID), touchgfx::Bitmap(BITMAP_DYBCZAK_ID));
-
-    szczygi.setXY(0, 240);
-    szczygi.setBitmaps(touchgfx::Bitmap(BITMAP_SZCZYGI_ID), touchgfx::Bitmap(BITMAP_SZCZYGI_ID));
 
     uidTextField.setPosition(0, 57, 449, 37);
     uidTextField.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 246, 0));
@@ -48,19 +34,128 @@ AuthScreenViewBase::AuthScreenViewBase()
     uidTextField.setWildcard(uidTextFieldBuffer);
     uidTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID11));
 
+    swipeContainer1.setXY(0, 206);
+
+    swipeContainer1Page1.setWidth(800);
+    swipeContainer1Page1.setHeight(250);
+
+    szczygi.setXY(0, 50);
+    szczygi.setBitmaps(touchgfx::Bitmap(BITMAP_SZCZYGI_ID), touchgfx::Bitmap(BITMAP_SZCZYGI_ID));
+    szczygi.setAction(buttonCallback);
+    swipeContainer1Page1.add(szczygi);
+
+    dybczak.setXY(224, 52);
+    dybczak.setBitmaps(touchgfx::Bitmap(BITMAP_DYBCZAK_ID), touchgfx::Bitmap(BITMAP_DYBCZAK_ID));
+    dybczak.setAction(buttonCallback);
+    swipeContainer1Page1.add(dybczak);
+
+    rafal.setXY(444, 50);
+    rafal.setBitmaps(touchgfx::Bitmap(BITMAP_RAV_ID), touchgfx::Bitmap(BITMAP_RAV_ID));
+    rafal.setAction(buttonCallback);
+    swipeContainer1Page1.add(rafal);
+
+    zajma.setXY(675, 50);
+    zajma.setBitmaps(touchgfx::Bitmap(BITMAP_ZAJMA_ID), touchgfx::Bitmap(BITMAP_ZAJMA_ID));
+    zajma.setAction(buttonCallback);
+    swipeContainer1Page1.add(zajma);
+    swipeContainer1.add(swipeContainer1Page1);
+
+    swipeContainer1Page2.setWidth(800);
+    swipeContainer1Page2.setHeight(250);
+
+    plotnik.setXY(0, 50);
+    plotnik.setBitmaps(touchgfx::Bitmap(BITMAP_PLOTNIK_ID), touchgfx::Bitmap(BITMAP_PLOTNIK_ID));
+    plotnik.setAction(buttonCallback);
+    swipeContainer1Page2.add(plotnik);
+
+    tomsia.setXY(444, 51);
+    tomsia.setBitmaps(touchgfx::Bitmap(BITMAP_TOMSIA_ID), touchgfx::Bitmap(BITMAP_TOMSIA_ID));
+    tomsia.setAction(buttonCallback);
+    swipeContainer1Page2.add(tomsia);
+
+    radoj.setXY(675, 50);
+    radoj.setBitmaps(touchgfx::Bitmap(BITMAP_RADOJ_ID), touchgfx::Bitmap(BITMAP_RADOJ_ID));
+    radoj.setAction(buttonCallback);
+    swipeContainer1Page2.add(radoj);
+
+    capala.setXY(224, 50);
+    capala.setBitmaps(touchgfx::Bitmap(BITMAP_CAPALA_ID), touchgfx::Bitmap(BITMAP_CAPALA_ID));
+    swipeContainer1Page2.add(capala);
+    swipeContainer1.add(swipeContainer1Page2);
+
+    swipeContainer1.setPageIndicatorBitmaps(touchgfx::Bitmap(BITMAP_BLUE_PAGEINDICATOR_DOT_INDICATOR_LARGE_NORMAL_ID), touchgfx::Bitmap(BITMAP_BLUE_PAGEINDICATOR_DOT_INDICATOR_LARGE_HIGHLIGHT_ID));
+    swipeContainer1.setPageIndicatorXY(10, 5);
+    swipeContainer1.setSwipeCutoff(50);
+    swipeContainer1.setEndSwipeElasticWidth(50);
+    swipeContainer1.setSelectedPage(1);
+
     add(authTheme);
     add(currentAvatarTextField);
     add(currentAvatarImage);
     add(chooseAvatarTextField);
-    add(plotnik);
-    add(zajma);
-    add(rafal);
-    add(dybczak);
-    add(szczygi);
     add(uidTextField);
+    add(swipeContainer1);
 }
 
 void AuthScreenViewBase::setupScreen()
 {
 
+}
+
+void AuthScreenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+{
+    if (&src == &szczygi)
+    {
+        //szczygi
+        //When szczygi clicked call virtual function
+        //Call szczygiHandler
+        szczygiHandler();
+    }
+    else if (&src == &dybczak)
+    {
+        //dybczak
+        //When dybczak clicked call virtual function
+        //Call dybczakHandler
+        dybczakHandler();
+    }
+    else if (&src == &rafal)
+    {
+        //rafal
+        //When rafal clicked call virtual function
+        //Call rafalHandler
+        rafalHandler();
+    }
+    else if (&src == &zajma)
+    {
+        //zajma
+        //When zajma clicked call virtual function
+        //Call zajmaHandler
+        zajmaHandler();
+    }
+    else if (&src == &plotnik)
+    {
+        //plotnik
+        //When plotnik clicked call virtual function
+        //Call plotnikHandler
+        plotnikHandler();
+    }
+    else if (&src == &tomsia)
+    {
+        //tomsia
+        //When tomsia clicked call virtual function
+        //Call tomsiaHandler
+        tomsiaHandler();
+    }
+    else if (&src == &radoj)
+    {
+        //capala
+        //When radoj clicked call virtual function
+        //Call capalaHandler
+        capalaHandler();
+
+        //radoj
+        //When radoj clicked call virtual function
+        //Call radojHandler
+        radojHandler();
+    }
 }

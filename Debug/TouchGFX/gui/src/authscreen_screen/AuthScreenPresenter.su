@@ -14,6 +14,6 @@ AuthScreenPresenter.hpp:28:13:AuthScreenPresenter::~AuthScreenPresenter()	16	sta
 AuthScreenPresenter.hpp:28:13:virtual AuthScreenPresenter::~AuthScreenPresenter()	16	static
 AuthScreenPresenter.cpp:5:1:AuthScreenPresenter::AuthScreenPresenter(AuthScreenView&)	16	static
 AuthScreenPresenter.cpp:8:6:virtual void AuthScreenPresenter::activate()	16	static
-AuthScreenPresenter.cpp:12:6:virtual void AuthScreenPresenter::deactivate()	16	static
-AuthScreenPresenter.cpp:16:6:virtual void AuthScreenPresenter::showUid()	24	static
-AuthScreenPresenter.cpp:21:6:virtual void AuthScreenPresenter::showAvatar()	16	static
+AuthScreenPresenter.cpp:13:6:virtual void AuthScreenPresenter::deactivate()	16	static
+AuthScreenPresenter.cpp:17:6:virtual void AuthScreenPresenter::showUid()	24	static
+AuthScreenPresenter.cpp:22:6:virtual void AuthScreenPresenter::showAvatar()	16	static

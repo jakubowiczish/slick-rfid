@@ -51,9 +51,12 @@ TouchGFX/gui/src/authscreen_screen/AuthScreenPresenter.o: \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/Texts.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
- ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/term_io.h \
  C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/dbgu.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -206,11 +209,17 @@ TouchGFX/gui/src/authscreen_screen/AuthScreenPresenter.o: \
 
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/containers/SwipeContainer.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/containers/ListLayout.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
+
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
-
-../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/term_io.h:
 

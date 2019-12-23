@@ -8,7 +8,7 @@
 #include <common/Partition.hpp>
 #include <mvp/MVPHeap.hpp>
 #include <touchgfx/transitions/NoTransition.hpp>
-#include <touchgfx/transitions/SlideTransition.hpp>
+#include <touchgfx/transitions/CoverTransition.hpp>
 
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
@@ -68,7 +68,7 @@ public:
      * @note All transition types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< touchgfx::NoTransition,
-            touchgfx::meta::TypeList< SlideTransition<SOUTH>,
+            touchgfx::meta::TypeList< CoverTransition<NORTH>,
             touchgfx::meta::Nil >
             > GeneratedTransitionTypes;
 

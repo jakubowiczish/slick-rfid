@@ -17,7 +17,7 @@ void Screen1View::tearDownScreen() {
 }
 
 void Screen1View::showAuthScreen() {
-    application().gotoAuthScreenScreenSlideTransitionSouth();
+    application().gotoAuthScreenScreenCoverTransitionNorth();
 }
 
 //void Screen1View::setUidText(uint8_t uid_tab[]) {

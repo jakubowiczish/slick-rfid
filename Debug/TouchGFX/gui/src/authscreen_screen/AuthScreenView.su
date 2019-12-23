@@ -48,10 +48,6 @@ TextArea.hpp:141:18:virtual void touchgfx::TextArea::setBaselineY(int16_t)	40	st
 TextArea.hpp:160:18:virtual void touchgfx::TextArea::setXBaselineY(int16_t, int16_t)	16	static
 TextArea.hpp:295:15:touchgfx::TypedText touchgfx::TextArea::getTypedText() const	16	static
 TextArea.hpp:435:22:virtual uint16_t touchgfx::TextArea::getType() const	16	static
-AbstractButton.hpp:35:7:touchgfx::AbstractButton::~AbstractButton()	16	static
-AbstractButton.hpp:35:7:virtual touchgfx::AbstractButton::~AbstractButton()	16	static
-Button.hpp:54:13:touchgfx::Button::~Button()	16	static
-Button.hpp:54:13:virtual touchgfx::Button::~Button()	16	static
 TextArea.hpp:46:7:touchgfx::TextArea::~TextArea()	16	static
 TextArea.hpp:46:7:virtual touchgfx::TextArea::~TextArea()	16	static
 TextAreaWithWildcard.hpp:35:7:touchgfx::TextAreaWithWildcardBase::~TextAreaWithWildcardBase()	16	static
@@ -60,17 +56,37 @@ TextAreaWithWildcard.hpp:102:21:virtual int16_t touchgfx::TextAreaWithOneWildcar
 TextAreaWithWildcard.hpp:117:18:virtual void touchgfx::TextAreaWithOneWildcard::draw(const touchgfx::Rect&) const	96	static
 TextAreaWithWildcard.hpp:168:22:virtual uint16_t touchgfx::TextAreaWithOneWildcard::getTextWidth() const	32	static
 TextAreaWithWildcard.hpp:182:22:virtual uint16_t touchgfx::TextAreaWithOneWildcard::getType() const	16	static
+AbstractButton.hpp:35:7:touchgfx::AbstractButton::~AbstractButton()	16	static
+AbstractButton.hpp:35:7:virtual touchgfx::AbstractButton::~AbstractButton()	16	static
+Button.hpp:54:13:touchgfx::Button::~Button()	16	static
+Button.hpp:54:13:virtual touchgfx::Button::~Button()	16	static
 View.hpp:39:7:touchgfx::View<AuthScreenPresenter>::~View()	16	static
 View.hpp:39:7:virtual touchgfx::View<AuthScreenPresenter>::~View()	16	static
-AuthScreenViewBase.hpp:20:13:AuthScreenViewBase::~AuthScreenViewBase()	16	static
-AuthScreenViewBase.hpp:20:13:virtual AuthScreenViewBase::~AuthScreenViewBase()	16	static
+AuthScreenViewBase.hpp:22:13:AuthScreenViewBase::~AuthScreenViewBase()	16	static
+AuthScreenViewBase.hpp:22:13:virtual AuthScreenViewBase::~AuthScreenViewBase()	16	static
 AuthScreenView.hpp:11:13:AuthScreenView::~AuthScreenView()	16	static
 AuthScreenView.hpp:11:13:virtual AuthScreenView::~AuthScreenView()	16	static
-AuthScreenView.cpp:4:1:AuthScreenView::AuthScreenView()	16	static
-AuthScreenView.cpp:9:6:virtual void AuthScreenView::setupScreen()	16	static
+AuthScreenView.cpp:6:1:AuthScreenView::AuthScreenView()	16	static
+AuthScreenView.cpp:10:6:virtual void AuthScreenView::setupScreen()	16	static
 AuthScreenView.cpp:14:6:virtual void AuthScreenView::tearDownScreen()	16	static
-AuthScreenView.cpp:24:6:void AuthScreenView::showUid(uint8_t*)	40	static
-AuthScreenView.cpp:29:6:void AuthScreenView::showAvatar(uint8_t)	48	static
-AuthScreenView.cpp:51:6:void AuthScreenView::invalidateAvatar()	16	static
+AuthScreenView.cpp:18:6:void AuthScreenView::showUid(uint8_t*)	40	static
+AuthScreenView.cpp:23:6:void AuthScreenView::showAvatar(uint8_t)	16	static
+AuthScreenView.cpp:45:6:void AuthScreenView::showBitmapAvatar(uint16_t)	32	static
+AuthScreenView.cpp:50:6:void AuthScreenView::saveAvatar()	32	static
+AuthScreenView.cpp:74:6:virtual void AuthScreenView::szczygiHandler()	16	static
+AuthScreenView.cpp:79:6:virtual void AuthScreenView::dybczakHandler()	16	static
+AuthScreenView.cpp:84:6:virtual void AuthScreenView::rafalHandler()	16	static
+AuthScreenView.cpp:89:6:virtual void AuthScreenView::zajmaHandler()	16	static
+AuthScreenView.cpp:94:6:virtual void AuthScreenView::plotnikHandler()	16	static
+AuthScreenView.cpp:99:6:virtual void AuthScreenView::capalaHandler()	16	static
+AuthScreenView.cpp:104:6:virtual void AuthScreenView::tomsiaHandler()	16	static
+AuthScreenView.cpp:109:6:virtual void AuthScreenView::radojHandler()	16	static
+AuthScreenView.cpp:114:6:void AuthScreenView::invalidateAvatar()	16	static
 TextAreaWithWildcard.hpp:76:7:touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	16	static
 TextAreaWithWildcard.hpp:76:7:virtual touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	16	static
+Callback.hpp:469:8:touchgfx::Callback<AuthScreenViewBase, const touchgfx::AbstractButton&>::~Callback()	16	static
+Callback.hpp:469:8:virtual touchgfx::Callback<AuthScreenViewBase, const touchgfx::AbstractButton&>::~Callback()	16	static
+Callback.hpp:177:13:touchgfx::GenericCallback<T1, void, void>::~GenericCallback() [with T1 = const touchgfx::AbstractButton&]	16	static
+Callback.hpp:177:13:touchgfx::GenericCallback<T1, void, void>::~GenericCallback() [with T1 = const touchgfx::AbstractButton&]	16	static
+Callback.hpp:511:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = AuthScreenViewBase; T1 = const touchgfx::AbstractButton&]	16	static
+Callback.hpp:525:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = AuthScreenViewBase; T1 = const touchgfx::AbstractButton&]	16	static

@@ -43,7 +43,6 @@ Widget.hpp:53:13:touchgfx::Widget::~Widget()	16	static
 Widget.hpp:53:13:virtual touchgfx::Widget::~Widget()	16	static
 Widget.hpp:74:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	24	static
 Widget.hpp:91:22:virtual uint16_t touchgfx::Widget::getType() const	16	static
-ScalableImage.hpp:114:18:virtual void touchgfx::ScalableImage::setAlpha(uint8_t)	16	static
 TypedText.hpp:79:14:touchgfx::TypedText::TypedText(touchgfx::TypedTextId)	16	static
 TypedText.hpp:106:10:bool touchgfx::TypedText::hasValidId() const	16	static
 TypedText.hpp:120:33:const UnicodeChar* touchgfx::TypedText::getText() const	16	static
@@ -77,6 +76,10 @@ AbstractButton.hpp:35:7:virtual touchgfx::AbstractButton::~AbstractButton()	16	s
 Button.hpp:45:5:touchgfx::Button::Button()	16	static
 Button.hpp:54:13:touchgfx::Button::~Button()	16	static
 Button.hpp:54:13:virtual touchgfx::Button::~Button()	16	static
+Box.hpp:47:5:touchgfx::Box::Box()	16	static
+Box.hpp:77:13:touchgfx::Box::~Box()	16	static
+Box.hpp:77:13:virtual touchgfx::Box::~Box()	16	static
+Box.hpp:90:10:void touchgfx::Box::setColor(touchgfx::colortype)	16	static
 View.hpp:39:7:touchgfx::View<Screen1Presenter>::~View()	16	static
 View.hpp:39:7:virtual touchgfx::View<Screen1Presenter>::~View()	16	static
 Screen1ViewBase.hpp:19:13:Screen1ViewBase::~Screen1ViewBase()	16	static
@@ -89,8 +92,8 @@ Screen1ViewBase.hpp:45:18:virtual void Screen1ViewBase::szczygiHandler()	16	stat
 Screen1ViewBase.hpp:51:26:FrontendApplication& Screen1ViewBase::application()	16	static
 Color.hpp:54:22:static touchgfx::colortype touchgfx::Color::getColorFrom24BitRGB(uint8_t, uint8_t, uint8_t)	24	static
 Screen1ViewBase.cpp:9:1:Screen1ViewBase::Screen1ViewBase()	112	static
-Screen1ViewBase.cpp:78:6:virtual void Screen1ViewBase::setupScreen()	16	static
-Screen1ViewBase.cpp:83:6:void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
+Screen1ViewBase.cpp:82:6:virtual void Screen1ViewBase::setupScreen()	16	static
+Screen1ViewBase.cpp:87:6:void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
 View.hpp:50:5:touchgfx::View<T>::View() [with T = Screen1Presenter]	16	static
 Callback.hpp:167:7:constexpr touchgfx::GenericCallback<const touchgfx::AbstractButton&>::GenericCallback()	16	static
 Callback.hpp:493:5:touchgfx::Callback<dest_type, T1, void, void>::Callback(dest_type*, void (dest_type::*)(T1)) [with dest_type = Screen1ViewBase; T1 = const touchgfx::AbstractButton&]	24	static

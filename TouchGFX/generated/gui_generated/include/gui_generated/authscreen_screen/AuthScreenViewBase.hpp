@@ -10,8 +10,10 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/widgets/ScalableImage.hpp>
-#include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/containers/SwipeContainer.hpp>
+#include <touchgfx/containers/Container.hpp>
+#include <touchgfx/widgets/Button.hpp>
 
 class AuthScreenViewBase : public touchgfx::View<AuthScreenPresenter>
 {
@@ -19,6 +21,49 @@ public:
     AuthScreenViewBase();
     virtual ~AuthScreenViewBase() {}
     virtual void setupScreen();
+
+    /*
+     * Virtual Action Handlers
+     */
+    virtual void plotnikHandler()
+    {
+        // Override and implement this function in AuthScreen
+    }
+
+    virtual void zajmaHandler()
+    {
+        // Override and implement this function in AuthScreen
+    }
+
+    virtual void rafalHandler()
+    {
+        // Override and implement this function in AuthScreen
+    }
+
+    virtual void dybczakHandler()
+    {
+        // Override and implement this function in AuthScreen
+    }
+
+    virtual void szczygiHandler()
+    {
+        // Override and implement this function in AuthScreen
+    }
+
+    virtual void tomsiaHandler()
+    {
+        // Override and implement this function in AuthScreen
+    }
+
+    virtual void capalaHandler()
+    {
+        // Override and implement this function in AuthScreen
+    }
+
+    virtual void radojHandler()
+    {
+        // Override and implement this function in AuthScreen
+    }
 
 protected:
     FrontendApplication& application() {
@@ -32,12 +77,20 @@ protected:
     touchgfx::TextArea currentAvatarTextField;
     touchgfx::ScalableImage currentAvatarImage;
     touchgfx::TextArea chooseAvatarTextField;
-    touchgfx::Button plotnik;
-    touchgfx::Button zajma;
-    touchgfx::Button rafal;
-    touchgfx::Button dybczak;
-    touchgfx::Button szczygi;
     touchgfx::TextAreaWithOneWildcard uidTextField;
+    touchgfx::SwipeContainer swipeContainer1;
+    touchgfx::Container swipeContainer1Page1;
+    touchgfx::Button szczygi;
+    touchgfx::Button dybczak;
+    touchgfx::Button rafal;
+    touchgfx::Button zajma;
+
+    touchgfx::Container swipeContainer1Page2;
+    touchgfx::Button plotnik;
+    touchgfx::Button tomsia;
+    touchgfx::Button radoj;
+    touchgfx::Button capala;
+
 
     /*
      * Wildcard Buffers
@@ -46,6 +99,16 @@ protected:
     touchgfx::Unicode::UnicodeChar uidTextFieldBuffer[UIDTEXTFIELD_SIZE];
 
 private:
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<AuthScreenViewBase, const touchgfx::AbstractButton&> buttonCallback;
+
+    /*
+     * Callback Handler Declarations
+     */
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

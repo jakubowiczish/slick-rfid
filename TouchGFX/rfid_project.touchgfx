@@ -4,22 +4,6 @@
       {
         "Components": [
           {
-            "Filename": "CapalaReal.png",
-            "Alpha": 171,
-            "ScalingAlgorithm": "Bilinear Interpolation",
-            "Name": "backgroundImage",
-            "X": -271,
-            "Y": 0,
-            "Width": 1569,
-            "Height": 480,
-            "Type": "ScalableImage",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
             "TextId": "SingleUseId3",
             "TextRotation": "0",
             "Color": {
@@ -179,11 +163,53 @@
             "Alpha": 255,
             "Style": "Style4",
             "Name": "changeScreenButton",
-            "X": 630,
+            "X": 800,
             "Y": 420,
             "Width": 170,
             "Height": 60,
             "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 153,
+              "Green": 27,
+              "Blue": 27
+            },
+            "Alpha": 255,
+            "Name": "screen1Theme",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId13",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 255,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea1",
+            "X": 7,
+            "Y": 167,
+            "Width": 787,
+            "Height": 146,
+            "Type": "TextArea",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -260,8 +286,8 @@
               "Type": "TriggerClicked"
             },
             "Action": {
-              "ScreenTransitionType": "ScreenTransitionSlide",
-              "ScreenTransitionDirection": "South",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "North",
               "ActionComponent": "AuthScreen",
               "Type": "ActionGotoScreen"
             }
@@ -282,7 +308,7 @@
             "Alpha": 237,
             "Name": "authTheme",
             "X": 0,
-            "Y": 0,
+            "Y": 1,
             "Width": 800,
             "Height": 480,
             "Type": "Box",
@@ -343,91 +369,11 @@
             "AutoSize": true,
             "LineSpacing": 0,
             "Name": "chooseAvatarTextField",
-            "X": 249,
-            "Y": 192,
+            "X": 256,
+            "Y": 158,
             "Width": 251,
             "Height": 31,
             "Type": "TextArea",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Pressed": "Plotnik.png",
-            "Released": "Plotnik.png",
-            "Alpha": 255,
-            "Name": "plotnik",
-            "X": 675,
-            "Y": 241,
-            "Width": 125,
-            "Height": 150,
-            "Type": "Button",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Pressed": "Zajma.png",
-            "Released": "Zajma.png",
-            "Alpha": 255,
-            "Name": "zajma",
-            "X": 501,
-            "Y": 241,
-            "Width": 125,
-            "Height": 150,
-            "Type": "Button",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Pressed": "RaV.png",
-            "Released": "RaV.png",
-            "Alpha": 255,
-            "Name": "rafal",
-            "X": 338,
-            "Y": 241,
-            "Width": 124,
-            "Height": 150,
-            "Type": "Button",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Pressed": "Dybczak.png",
-            "Released": "Dybczak.png",
-            "Alpha": 255,
-            "Name": "dybczak",
-            "X": 175,
-            "Y": 242,
-            "Width": 125,
-            "Height": 149,
-            "Type": "Button",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Pressed": "Szczygi.png",
-            "Released": "Szczygi.png",
-            "Alpha": 255,
-            "Name": "szczygi",
-            "X": 0,
-            "Y": 240,
-            "Width": 125,
-            "Height": 150,
-            "Type": "Button",
             "Visible": true,
             "Draggable": false,
             "Clickable": false,
@@ -461,9 +407,292 @@
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
+          },
+          {
+            "Components": [
+              {
+                "Components": [
+                  {
+                    "Pressed": "Szczygi.png",
+                    "Released": "Szczygi.png",
+                    "Alpha": 255,
+                    "Name": "szczygi",
+                    "X": 0,
+                    "Y": 50,
+                    "Width": 125,
+                    "Height": 150,
+                    "Type": "Button",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Pressed": "Dybczak.png",
+                    "Released": "Dybczak.png",
+                    "Alpha": 255,
+                    "Name": "dybczak",
+                    "X": 224,
+                    "Y": 52,
+                    "Width": 125,
+                    "Height": 149,
+                    "Type": "Button",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Pressed": "RaV.png",
+                    "Released": "RaV.png",
+                    "Alpha": 255,
+                    "Name": "rafal",
+                    "X": 444,
+                    "Y": 50,
+                    "Width": 124,
+                    "Height": 150,
+                    "Type": "Button",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Pressed": "Zajma.png",
+                    "Released": "Zajma.png",
+                    "Alpha": 255,
+                    "Name": "zajma",
+                    "X": 675,
+                    "Y": 50,
+                    "Width": 125,
+                    "Height": 150,
+                    "Type": "Button",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  }
+                ],
+                "IsCacheableContainer": false,
+                "Name": "swipeContainer1Page1",
+                "X": 0,
+                "Y": 0,
+                "Width": 800,
+                "Height": 250,
+                "Type": "Container",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Components": [
+                  {
+                    "Pressed": "Plotnik.png",
+                    "Released": "Plotnik.png",
+                    "Alpha": 255,
+                    "Name": "plotnik",
+                    "X": 0,
+                    "Y": 50,
+                    "Width": 125,
+                    "Height": 150,
+                    "Type": "Button",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Pressed": "Tomsia.png",
+                    "Released": "Tomsia.png",
+                    "Alpha": 255,
+                    "Name": "tomsia",
+                    "X": 444,
+                    "Y": 51,
+                    "Width": 125,
+                    "Height": 150,
+                    "Type": "Button",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Pressed": "Radoj.png",
+                    "Released": "Radoj.png",
+                    "Alpha": 255,
+                    "Name": "radoj",
+                    "X": 675,
+                    "Y": 50,
+                    "Width": 125,
+                    "Height": 150,
+                    "Type": "Button",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Pressed": "Capala.png",
+                    "Released": "Capala.png",
+                    "Alpha": 255,
+                    "Name": "capala",
+                    "X": 224,
+                    "Y": 50,
+                    "Width": 125,
+                    "Height": 150,
+                    "Type": "Button",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  }
+                ],
+                "IsCacheableContainer": false,
+                "Name": "swipeContainer1Page2",
+                "X": 0,
+                "Y": 0,
+                "Width": 800,
+                "Height": 250,
+                "Type": "Container",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              }
+            ],
+            "SwipeCutoff": 50,
+            "ShowPageIndicator": true,
+            "PageIndicatorX": 10,
+            "PageIndicatorY": 5,
+            "CenteredX": false,
+            "IndicatorImageNormal": "__designer\\Blue_PageIndicator_dot_indicator_large_normal.png",
+            "IndicatorImageHighlight": "__designer\\Blue_PageIndicator_dot_indicator_large_highlight.png",
+            "EndSwipeElasticWidth": 50,
+            "SelectedPage": "swipeContainer1Page2",
+            "Style": "Style2",
+            "IsCacheableContainer": false,
+            "Name": "swipeContainer1",
+            "X": 0,
+            "Y": 206,
+            "Width": 800,
+            "Height": 250,
+            "Type": "SwipeContainer",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
           }
         ],
-        "Interactions": [],
+        "Interactions": [
+          {
+            "InteractionName": "plotnik",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "plotnik",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "plotnikHandler",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "zajma",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "zajma",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "zajmaHandler",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "rafal",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "rafal",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "rafalHandler",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "dybczak",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "dybczak",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "dybczakHandler",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "szczygi",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "szczygi",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "szczygiHandler",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "tomsia",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "tomsia",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "tomsiaHandler",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "capala",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "radoj",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "capalaHandler",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "radoj",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "radoj",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "radojHandler",
+              "Type": "ActionCustom"
+            }
+          }
+        ],
         "Name": "AuthScreen",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0
@@ -505,6 +734,10 @@
       },
       {
         "TextEntryId": "SingleUseId12",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId13",
         "IsResource": false
       }
     ],

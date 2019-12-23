@@ -44,14 +44,14 @@ void FrontendApplicationBase::gotoScreen1ScreenNoTransitionImpl()
 
 // AuthScreen
 
-void FrontendApplicationBase::gotoAuthScreenScreenSlideTransitionSouth()
+void FrontendApplicationBase::gotoAuthScreenScreenCoverTransitionNorth()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoAuthScreenScreenSlideTransitionSouthImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoAuthScreenScreenCoverTransitionNorthImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoAuthScreenScreenSlideTransitionSouthImpl()
+void FrontendApplicationBase::gotoAuthScreenScreenCoverTransitionNorthImpl()
 {
-    touchgfx::makeTransition<AuthScreenView, AuthScreenPresenter, touchgfx::SlideTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<AuthScreenView, AuthScreenPresenter, touchgfx::CoverTransition<NORTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
