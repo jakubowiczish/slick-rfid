@@ -46,8 +46,8 @@ class AuthScreenView : public AuthScreenViewBase {
 
 		uint8_t key_tab[6] = { 0xff, 0xff, 0xff, 0xff, 0xff, 0xff };
 
-	private:
-		uint8_t clickedId;
+//		char avatarName[30];
+		std::string avatarName;
 };
 
 #endif // AUTHSCREENVIEW_HPP

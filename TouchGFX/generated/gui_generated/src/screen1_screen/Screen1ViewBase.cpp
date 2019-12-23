@@ -23,31 +23,6 @@ Screen1ViewBase::Screen1ViewBase() :
     avatarChoiceTextField.setLinespacing(0);
     avatarChoiceTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID6));
 
-    szczygi.setXY(0, 0);
-    szczygi.setVisible(false);
-    szczygi.setBitmaps(touchgfx::Bitmap(BITMAP_SZCZYGI_ID), touchgfx::Bitmap(BITMAP_SZCZYGI_ID));
-    szczygi.setAction(buttonCallback);
-
-    dybczak.setXY(166, 0);
-    dybczak.setVisible(false);
-    dybczak.setBitmaps(touchgfx::Bitmap(BITMAP_DYBCZAK_ID), touchgfx::Bitmap(BITMAP_DYBCZAK_ID));
-    dybczak.setAction(buttonCallback);
-
-    rafal.setXY(338, 0);
-    rafal.setVisible(false);
-    rafal.setBitmaps(touchgfx::Bitmap(BITMAP_RAV_ID), touchgfx::Bitmap(BITMAP_RAV_ID));
-    rafal.setAction(buttonCallback);
-
-    zajma.setXY(514, 0);
-    zajma.setVisible(false);
-    zajma.setBitmaps(touchgfx::Bitmap(BITMAP_ZAJMA_ID), touchgfx::Bitmap(BITMAP_ZAJMA_ID));
-    zajma.setAction(buttonCallback);
-
-    plotnik.setXY(675, 0);
-    plotnik.setVisible(false);
-    plotnik.setBitmaps(touchgfx::Bitmap(BITMAP_PLOTNIK_ID), touchgfx::Bitmap(BITMAP_PLOTNIK_ID));
-    plotnik.setAction(buttonCallback);
-
     choiceTextField.setPosition(18, 240, 763, 74);
     choiceTextField.setVisible(false);
     choiceTextField.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 229, 255));
@@ -61,18 +36,13 @@ Screen1ViewBase::Screen1ViewBase() :
     screen1Theme.setPosition(0, 0, 800, 480);
     screen1Theme.setColor(touchgfx::Color::getColorFrom24BitRGB(153, 27, 27));
 
-    textArea1.setXY(7, 167);
+    textArea1.setXY(150, 167);
     textArea1.setColor(touchgfx::Color::getColorFrom24BitRGB(253, 255, 0));
     textArea1.setLinespacing(0);
     textArea1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID13));
 
     add(uidTextField);
     add(avatarChoiceTextField);
-    add(szczygi);
-    add(dybczak);
-    add(rafal);
-    add(zajma);
-    add(plotnik);
     add(choiceTextField);
     add(changeScreenButton);
     add(screen1Theme);
@@ -86,42 +56,7 @@ void Screen1ViewBase::setupScreen()
 
 void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
-    if (&src == &szczygi)
-    {
-        //szczygi
-        //When szczygi clicked call virtual function
-        //Call szczygiHandler
-        szczygiHandler();
-    }
-    else if (&src == &dybczak)
-    {
-        //dybczak
-        //When dybczak clicked call virtual function
-        //Call dybczakHandler
-        dybczakHandler();
-    }
-    else if (&src == &rafal)
-    {
-        //rafal
-        //When rafal clicked call virtual function
-        //Call rafalHandler
-        rafalHandler();
-    }
-    else if (&src == &zajma)
-    {
-        //zajma
-        //When zajma clicked call virtual function
-        //Call zajmaHandler
-        zajmaHandler();
-    }
-    else if (&src == &plotnik)
-    {
-        //plotnik
-        //When plotnik clicked call virtual function
-        //Call plotnikHandler
-        plotnikHandler();
-    }
-    else if (&src == &changeScreenButton)
+    if (&src == &changeScreenButton)
     {
         //changeScreenInteraction
         //When changeScreenButton clicked change screen to AuthScreen

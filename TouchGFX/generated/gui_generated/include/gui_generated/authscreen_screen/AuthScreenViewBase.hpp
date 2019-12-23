@@ -92,12 +92,15 @@ protected:
     touchgfx::Button capala;
 
     touchgfx::TextArea waitingTextField;
+    touchgfx::TextAreaWithOneWildcard savedTextField;
 
     /*
      * Wildcard Buffers
      */
     static const uint16_t UIDTEXTFIELD_SIZE = 30;
     touchgfx::Unicode::UnicodeChar uidTextFieldBuffer[UIDTEXTFIELD_SIZE];
+    static const uint16_t SAVEDTEXTFIELD_SIZE = 30;
+    touchgfx::Unicode::UnicodeChar savedTextFieldBuffer[SAVEDTEXTFIELD_SIZE];
 
 private:
 

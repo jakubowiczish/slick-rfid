@@ -19,34 +19,6 @@ public:
     virtual ~Screen1ViewBase() {}
     virtual void setupScreen();
 
-    /*
-     * Virtual Action Handlers
-     */
-    virtual void plotnikHandler()
-    {
-        // Override and implement this function in Screen1
-    }
-
-    virtual void zajmaHandler()
-    {
-        // Override and implement this function in Screen1
-    }
-
-    virtual void rafalHandler()
-    {
-        // Override and implement this function in Screen1
-    }
-
-    virtual void dybczakHandler()
-    {
-        // Override and implement this function in Screen1
-    }
-
-    virtual void szczygiHandler()
-    {
-        // Override and implement this function in Screen1
-    }
-
 protected:
     FrontendApplication& application() {
         return *static_cast<FrontendApplication*>(touchgfx::Application::getInstance());
@@ -57,11 +29,6 @@ protected:
      */
     touchgfx::TextAreaWithOneWildcard uidTextField;
     touchgfx::TextArea avatarChoiceTextField;
-    touchgfx::Button szczygi;
-    touchgfx::Button dybczak;
-    touchgfx::Button rafal;
-    touchgfx::Button zajma;
-    touchgfx::Button plotnik;
     touchgfx::TextArea choiceTextField;
     touchgfx::Button changeScreenButton;
     touchgfx::Box screen1Theme;

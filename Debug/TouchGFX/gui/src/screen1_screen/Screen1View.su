@@ -63,12 +63,7 @@ View.hpp:39:7:touchgfx::View<Screen1Presenter>::~View()	16	static
 View.hpp:39:7:virtual touchgfx::View<Screen1Presenter>::~View()	16	static
 Screen1ViewBase.hpp:19:13:Screen1ViewBase::~Screen1ViewBase()	16	static
 Screen1ViewBase.hpp:19:13:virtual Screen1ViewBase::~Screen1ViewBase()	16	static
-Screen1ViewBase.hpp:25:18:virtual void Screen1ViewBase::plotnikHandler()	16	static
-Screen1ViewBase.hpp:30:18:virtual void Screen1ViewBase::zajmaHandler()	16	static
-Screen1ViewBase.hpp:35:18:virtual void Screen1ViewBase::rafalHandler()	16	static
-Screen1ViewBase.hpp:40:18:virtual void Screen1ViewBase::dybczakHandler()	16	static
-Screen1ViewBase.hpp:45:18:virtual void Screen1ViewBase::szczygiHandler()	16	static
-Screen1ViewBase.hpp:51:26:FrontendApplication& Screen1ViewBase::application()	16	static
+Screen1ViewBase.hpp:23:26:FrontendApplication& Screen1ViewBase::application()	16	static
 Screen1View.hpp:10:11:Screen1View::~Screen1View()	16	static
 Screen1View.hpp:10:11:virtual Screen1View::~Screen1View()	16	static
 Screen1View.cpp:7:1:Screen1View::Screen1View()	16	static

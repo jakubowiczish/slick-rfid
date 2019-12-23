@@ -22,12 +22,12 @@ AuthScreenViewBase::AuthScreenViewBase() :
     currentAvatarImage.setPosition(675, 0, 125, 150);
     currentAvatarImage.setScalingAlgorithm(touchgfx::ScalableImage::BILINEAR_INTERPOLATION);
 
-    chooseAvatarTextField.setXY(256, 158);
+    chooseAvatarTextField.setXY(0, 164);
     chooseAvatarTextField.setColor(touchgfx::Color::getColorFrom24BitRGB(33, 255, 0));
     chooseAvatarTextField.setLinespacing(0);
     chooseAvatarTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID9));
 
-    uidTextField.setPosition(0, 57, 449, 37);
+    uidTextField.setPosition(0, 54, 449, 37);
     uidTextField.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 246, 0));
     uidTextField.setLinespacing(0);
     Unicode::snprintf(uidTextFieldBuffer, UIDTEXTFIELD_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID12).getText());
@@ -88,12 +88,21 @@ AuthScreenViewBase::AuthScreenViewBase() :
     swipeContainer1.setPageIndicatorXY(10, 5);
     swipeContainer1.setSwipeCutoff(50);
     swipeContainer1.setEndSwipeElasticWidth(50);
-    swipeContainer1.setSelectedPage(1);
+    swipeContainer1.setSelectedPage(0);
 
-    waitingTextField.setXY(256, 113);
+    waitingTextField.setXY(539, 180);
+    waitingTextField.setVisible(false);
     waitingTextField.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 0, 183));
     waitingTextField.setLinespacing(0);
     waitingTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID14));
+
+    savedTextField.setPosition(263, 155, 537, 51);
+    savedTextField.setVisible(false);
+    savedTextField.setColor(touchgfx::Color::getColorFrom24BitRGB(117, 255, 0));
+    savedTextField.setLinespacing(0);
+    Unicode::snprintf(savedTextFieldBuffer, SAVEDTEXTFIELD_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID16).getText());
+    savedTextField.setWildcard(savedTextFieldBuffer);
+    savedTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID15));
 
     add(authTheme);
     add(currentAvatarTextField);
@@ -102,6 +111,7 @@ AuthScreenViewBase::AuthScreenViewBase() :
     add(uidTextField);
     add(swipeContainer1);
     add(waitingTextField);
+    add(savedTextField);
 }
 
 void AuthScreenViewBase::setupScreen()

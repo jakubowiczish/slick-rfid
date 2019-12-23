@@ -6,6 +6,8 @@
 #include "fatfs.h"
 #include "usb_host.h"
 #include "dbgu.h"
+#include <stdio.h>
+#include <string.h>
 
 AuthScreenView::AuthScreenView() {
 
@@ -53,7 +55,8 @@ void AuthScreenView::showBitmapAvatar(uint16_t bitmap_value) {
 }
 
 void AuthScreenView::saveAvatar(uint8_t clickedId) {
-	xprintf("essa byku \r\n");
+	waitingTextField.setVisible(true);
+
 	while (!rfid_is_new_card()) {
 
 	}
@@ -76,57 +79,66 @@ void AuthScreenView::saveAvatar(uint8_t clickedId) {
 
 		if (status == MI_OK) {
 			xprintf("saved");
+
+			xprintf("Chosen avatar: %s \r\n", avatarName.c_str());
+		    Unicode::UnicodeChar saveBuf[30];
+	        Unicode::strncpy(saveBuf, avatarName.c_str(), 30);
+
+			Unicode::snprintf(savedTextFieldBuffer, SAVEDTEXTFIELD_SIZE, "%s", saveBuf);
+			savedTextField.setVisible(true);
+			savedTextField.invalidate();
+
+			rfid_halt();
+			rfid_stop_crypto();
 		}
 	}
 }
 
 void AuthScreenView::szczygiHandler() {
 	xprintf("szczygi clicked \r\n");
-	clickedId = 1;
+	avatarName = "SZCZYGI";
 	saveAvatar(1);
 }
 
 void AuthScreenView::dybczakHandler() {
 	xprintf("dybczak clicked \r\n");
-	clickedId = 2;
+	avatarName = "DYBCZAK";
 	saveAvatar(2);
 }
 
 void AuthScreenView::rafalHandler() {
 	xprintf("rafal clicked \r\n");
-	clickedId = 3;
+	avatarName = "RAFAL";
 	saveAvatar(3);
-
 }
 
 void AuthScreenView::zajmaHandler() {
 	xprintf("zajma clicked \r\n");
-	clickedId = 4;
+	avatarName = "ZAJMA";
 	saveAvatar(4);
-
 }
 
 void AuthScreenView::plotnikHandler() {
 	xprintf("plotnik clicked \r\n");
-	clickedId = 5;
+	avatarName = "PLOTNIK";
 	saveAvatar(5);
 }
 
 void AuthScreenView::capalaHandler() {
 	xprintf("capala clicked \r\n");
-	clickedId = 6;
+	avatarName = "CAPALA";
 	saveAvatar(6);
 }
 
 void AuthScreenView::tomsiaHandler() {
 	xprintf("tomsia clicked \r\n");
-	clickedId = 7;
+	avatarName = "TOMSIA";
 	saveAvatar(7);
 }
 
 void AuthScreenView::radojHandler() {
 	xprintf("radoj clicked \r\n");
-	clickedId = 8;
+	avatarName = "RADOJ";
 	saveAvatar(8);
 }
 
