@@ -13,6 +13,7 @@ Model::Model() : modelListener(0) {
 }
 
 void Model::tick() {
+//	xprintf("%d ", isAuthenticated);
 	if (!isAuthenticated && rfid_is_new_card()) {
 
 		rfid_status_t status = rfid_select_tag(uidTabBuffer, &size, &sak);
@@ -25,11 +26,14 @@ void Model::tick() {
 			if (status == MI_OK) {
 				isAuthenticated = true;
 
-				status = rfid_card_read(0, buffer, &bufferSize);
+				status = rfid_card_read(1, buffer, &bufferSize);
 				xprintf("READ status: %d \r\n", status);
 
 				avatarId = buffer[0];
 
+
+				rfid_halt();
+				rfid_stop_crypto();
 				modelListener->showAuthScreen();
 			}
 		}

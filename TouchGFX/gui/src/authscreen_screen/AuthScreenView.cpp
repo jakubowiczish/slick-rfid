@@ -55,8 +55,7 @@ void AuthScreenView::showBitmapAvatar(uint16_t bitmap_value) {
 void AuthScreenView::saveAvatar(uint8_t clickedId) {
 	xprintf("essa byku \r\n");
 	while (!rfid_is_new_card()) {
-//		xprintf("essasito wariacie \r\n");
-//		vTaskDelay(10);
+
 	}
 
 	waitingTextField.setVisible(false);
@@ -72,7 +71,7 @@ void AuthScreenView::saveAvatar(uint8_t clickedId) {
 	buffer[0] = clickedId;
 
 	if (status == MI_OK) {
-		status = rfid_card_write(0, buffer, bufferSize);
+		status = rfid_card_write(1, buffer, bufferSize);
 		xprintf("WRITE status: %d \r\n", status);
 
 		if (status == MI_OK) {

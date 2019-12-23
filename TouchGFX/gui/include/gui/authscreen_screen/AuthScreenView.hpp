@@ -33,13 +33,11 @@ class AuthScreenView : public AuthScreenViewBase {
 
 		uint8_t uidTabBuffer[10];
 
-		uint8_t bufferSize = 18;
+		uint8_t bufferSize = 16;
 
-		uint8_t buffer[18];
+		uint8_t buffer[16];
 
 		uint8_t avatarId;
-
-		bool isAuthenticated = false;
 
 		uint8_t avatarBlockAddress = 1;
 

@@ -459,6 +459,7 @@ bool rfid_is_new_card() {
 	rfid_write_register(REG_RX_MODE, 0x00);
 
 	rfid_status_t status = rfid_reqa(tag_buffer, &buffer_size);
+	xprintf("status in rfid new card: %d \r\n", status);
 
 	if (status == MI_OK || status == MI_COLLISION) {
 		return true;

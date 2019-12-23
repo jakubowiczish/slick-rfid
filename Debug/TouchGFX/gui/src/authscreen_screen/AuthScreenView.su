@@ -74,15 +74,15 @@ AuthScreenView.cpp:22:6:void AuthScreenView::showUid(uint8_t*)	40	static
 AuthScreenView.cpp:27:6:void AuthScreenView::showAvatar(uint8_t)	16	static
 AuthScreenView.cpp:49:6:void AuthScreenView::showBitmapAvatar(uint16_t)	40	static
 AuthScreenView.cpp:55:6:void AuthScreenView::saveAvatar(uint8_t)	24	static
-AuthScreenView.cpp:84:6:virtual void AuthScreenView::szczygiHandler()	16	static
-AuthScreenView.cpp:90:6:virtual void AuthScreenView::dybczakHandler()	16	static
-AuthScreenView.cpp:96:6:virtual void AuthScreenView::rafalHandler()	16	static
-AuthScreenView.cpp:103:6:virtual void AuthScreenView::zajmaHandler()	16	static
-AuthScreenView.cpp:110:6:virtual void AuthScreenView::plotnikHandler()	16	static
-AuthScreenView.cpp:116:6:virtual void AuthScreenView::capalaHandler()	16	static
-AuthScreenView.cpp:122:6:virtual void AuthScreenView::tomsiaHandler()	16	static
-AuthScreenView.cpp:128:6:virtual void AuthScreenView::radojHandler()	16	static
-AuthScreenView.cpp:134:6:void AuthScreenView::invalidateAvatar()	16	static
+AuthScreenView.cpp:83:6:virtual void AuthScreenView::szczygiHandler()	16	static
+AuthScreenView.cpp:89:6:virtual void AuthScreenView::dybczakHandler()	16	static
+AuthScreenView.cpp:95:6:virtual void AuthScreenView::rafalHandler()	16	static
+AuthScreenView.cpp:102:6:virtual void AuthScreenView::zajmaHandler()	16	static
+AuthScreenView.cpp:109:6:virtual void AuthScreenView::plotnikHandler()	16	static
+AuthScreenView.cpp:115:6:virtual void AuthScreenView::capalaHandler()	16	static
+AuthScreenView.cpp:121:6:virtual void AuthScreenView::tomsiaHandler()	16	static
+AuthScreenView.cpp:127:6:virtual void AuthScreenView::radojHandler()	16	static
+AuthScreenView.cpp:133:6:void AuthScreenView::invalidateAvatar()	16	static
 TextAreaWithWildcard.hpp:76:7:touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	16	static
 TextAreaWithWildcard.hpp:76:7:virtual touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	16	static
 Callback.hpp:469:8:touchgfx::Callback<AuthScreenViewBase, const touchgfx::AbstractButton&>::~Callback()	16	static

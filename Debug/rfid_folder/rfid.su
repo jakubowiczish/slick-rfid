@@ -19,9 +19,9 @@ rfid.c:300:15:rfid_card_read	48	static
 rfid.c:321:15:rfid_authenticate	72	static
 rfid.c:350:15:rfid_select_tag	80	static
 rfid.c:453:6:rfid_is_new_card	16	static
-rfid.c:470:15:rfid_reqa	16	static
-rfid.c:475:15:rfid_reqa_or_wupa	48	static
-rfid.c:497:15:rfid_transcive_data	48	static
-rfid.c:508:15:rfid_to_card	32	static
-rfid.c:621:15:rfid_calc_crc	40	static
-rfid.c:650:6:rfid_stop_crypto	8	static
+rfid.c:471:15:rfid_reqa	16	static
+rfid.c:476:15:rfid_reqa_or_wupa	48	static
+rfid.c:498:15:rfid_transcive_data	48	static
+rfid.c:509:15:rfid_to_card	32	static
+rfid.c:622:15:rfid_calc_crc	40	static
+rfid.c:651:6:rfid_stop_crypto	8	static
