@@ -18,7 +18,6 @@ Drawable.hpp:416:18:virtual void touchgfx::Drawable::handleClickEvent(const touc
 Drawable.hpp:428:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	16	static
 Drawable.hpp:440:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	16	static
 Drawable.hpp:453:18:virtual void touchgfx::Drawable::handleTickEvent()	16	static
-Drawable.hpp:469:10:void touchgfx::Drawable::setVisible(bool)	16	static
 Drawable.hpp:483:10:void touchgfx::Drawable::setTouchable(bool)	16	static
 Drawable.hpp:500:10:bool touchgfx::Drawable::isVisible() const	16	static
 Drawable.hpp:516:10:bool touchgfx::Drawable::isTouchable() const	16	static
@@ -102,8 +101,8 @@ AuthScreenViewBase.hpp:69:18:virtual void AuthScreenViewBase::confirmChoiceHandl
 AuthScreenViewBase.hpp:75:26:FrontendApplication& AuthScreenViewBase::application()	16	static
 Color.hpp:54:22:static touchgfx::colortype touchgfx::Color::getColorFrom24BitRGB(uint8_t, uint8_t, uint8_t)	24	static
 AuthScreenViewBase.cpp:9:1:AuthScreenViewBase::AuthScreenViewBase()	168	static
-AuthScreenViewBase.cpp:132:6:virtual void AuthScreenViewBase::setupScreen()	16	static
-AuthScreenViewBase.cpp:137:6:void AuthScreenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
+AuthScreenViewBase.cpp:141:6:virtual void AuthScreenViewBase::setupScreen()	16	static
+AuthScreenViewBase.cpp:146:6:void AuthScreenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
 View.hpp:50:5:touchgfx::View<T>::View() [with T = AuthScreenPresenter]	16	static
 Callback.hpp:167:7:constexpr touchgfx::GenericCallback<const touchgfx::AbstractButton&>::GenericCallback()	16	static
 Callback.hpp:493:5:touchgfx::Callback<dest_type, T1, void, void>::Callback(dest_type*, void (dest_type::*)(T1)) [with dest_type = AuthScreenViewBase; T1 = const touchgfx::AbstractButton&]	24	static

@@ -55,13 +55,12 @@ void AuthScreenView::showBitmapAvatar(uint16_t bitmap_value) {
 }
 
 void AuthScreenView::saveAvatar(uint8_t clickedId) {
-	waitingTextField.setVisible(true);
-
 	while (!rfid_is_new_card()) {
-
+		vTaskDelay(50);
 	}
 
 	waitingTextField.setVisible(false);
+	waitingTextField.invalidate();
 
 	xprintf("\r\n WRITE \r\n");
 
@@ -86,16 +85,28 @@ void AuthScreenView::saveAvatar(uint8_t clickedId) {
 	}
 }
 
+void AuthScreenView::showWaitingForCardText() {
+	waitingTextField.setVisible(true);
+	waitingTextField.invalidate();
+
+	Unicode::strncpy(saveBuf, avatarName.c_str(), 45);
+	Unicode::snprintf(waitingTextFieldBuffer, WAITINGTEXTFIELD_SIZE, "%s", saveBuf);
+
+	waitingTextField.invalidate();
+}
+
 void AuthScreenView::confirmChoiceHandler() {
+	xprintf("Choice confirmed, you chose %s \r\n", avatarName.c_str());
+	showWaitingForCardText();
+	vTaskDelay(300);
 	saveAvatar(clickedAvatarId);
 }
 
 void AuthScreenView::showAvatarName(std::string state) {
-	xprintf("Chosen avatar: %s \r\n", avatarName.c_str());
+	xprintf("%s avatar: %s \r\n", state.c_str(), avatarName.c_str());
 
 	std::string statementToPrint = state + ": " + avatarName;
-	Unicode::UnicodeChar saveBuf[30];
-	Unicode::strncpy(saveBuf, statementToPrint.c_str(), 30);
+	Unicode::strncpy(saveBuf, statementToPrint.c_str(), 45);
 
 	Unicode::snprintf(avatarNameTextFieldBuffer, AVATARNAMETEXTFIELD_SIZE, "%s", saveBuf);
 	avatarNameTextField.invalidate();

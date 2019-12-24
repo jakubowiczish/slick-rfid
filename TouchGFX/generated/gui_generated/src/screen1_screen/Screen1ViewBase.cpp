@@ -16,14 +16,14 @@ Screen1ViewBase::Screen1ViewBase() :
     screen1Theme.setPosition(0, 0, 800, 480);
     screen1Theme.setColor(touchgfx::Color::getColorFrom24BitRGB(153, 27, 27));
 
-    textArea1.setXY(150, 167);
-    textArea1.setColor(touchgfx::Color::getColorFrom24BitRGB(253, 255, 0));
-    textArea1.setLinespacing(0);
-    textArea1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID13));
+    welcomeTextArea.setXY(150, 167);
+    welcomeTextArea.setColor(touchgfx::Color::getColorFrom24BitRGB(253, 255, 0));
+    welcomeTextArea.setLinespacing(0);
+    welcomeTextArea.setTypedText(touchgfx::TypedText(T_SINGLEUSEID13));
 
     add(changeScreenButton);
     add(screen1Theme);
-    add(textArea1);
+    add(welcomeTextArea);
 }
 
 void Screen1ViewBase::setupScreen()

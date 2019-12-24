@@ -35,6 +35,8 @@ class AuthScreenView : public AuthScreenViewBase {
 
 		void confirmChoiceHandler();
 
+		void showWaitingForCardText();
+
 		uint8_t uidTabBuffer[10];
 
 		uint8_t bufferSize = 16;
@@ -53,6 +55,8 @@ class AuthScreenView : public AuthScreenViewBase {
 		std::string avatarName;
 
 		uint8_t clickedAvatarId;
+
+		Unicode::UnicodeChar saveBuf[45];
 };
 
 #endif // AUTHSCREENVIEW_HPP

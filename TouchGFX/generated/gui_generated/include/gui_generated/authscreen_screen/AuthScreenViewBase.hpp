@@ -88,16 +88,20 @@ protected:
     touchgfx::Container swipeContainer1Page1;
     touchgfx::Button szczygi;
     touchgfx::Button dybczak;
-    touchgfx::Button rafal;
-    touchgfx::Button zajma;
 
     touchgfx::Container swipeContainer1Page2;
-    touchgfx::Button plotnik;
-    touchgfx::Button tomsia;
-    touchgfx::Button radoj;
-    touchgfx::Button capala;
+    touchgfx::Button zajma;
+    touchgfx::Button rafal;
 
-    touchgfx::TextArea waitingTextField;
+    touchgfx::Container swipeContainer1Page3;
+    touchgfx::Button capala;
+    touchgfx::Button plotnik;
+
+    touchgfx::Container swipeContainer1Page4;
+    touchgfx::Button radoj;
+    touchgfx::Button tomsia;
+
+    touchgfx::TextAreaWithOneWildcard waitingTextField;
     touchgfx::TextAreaWithOneWildcard avatarNameTextField;
     touchgfx::ButtonWithLabel signOutButton;
     touchgfx::ButtonWithLabel confirmButton;
@@ -107,7 +111,9 @@ protected:
      */
     static const uint16_t UIDTEXTFIELD_SIZE = 30;
     touchgfx::Unicode::UnicodeChar uidTextFieldBuffer[UIDTEXTFIELD_SIZE];
-    static const uint16_t AVATARNAMETEXTFIELD_SIZE = 30;
+    static const uint16_t WAITINGTEXTFIELD_SIZE = 45;
+    touchgfx::Unicode::UnicodeChar waitingTextFieldBuffer[WAITINGTEXTFIELD_SIZE];
+    static const uint16_t AVATARNAMETEXTFIELD_SIZE = 45;
     touchgfx::Unicode::UnicodeChar avatarNameTextFieldBuffer[AVATARNAMETEXTFIELD_SIZE];
 
 private:

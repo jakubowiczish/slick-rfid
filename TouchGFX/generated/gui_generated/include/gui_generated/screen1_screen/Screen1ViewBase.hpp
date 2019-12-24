@@ -28,7 +28,7 @@ protected:
      */
     touchgfx::Button changeScreenButton;
     touchgfx::Box screen1Theme;
-    touchgfx::TextArea textArea1;
+    touchgfx::TextArea welcomeTextArea;
 
 private:
 

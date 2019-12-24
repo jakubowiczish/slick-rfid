@@ -1,21 +1,711 @@
-
 {
   "Application": {
     "Screens": [
       {
-       "Components": [],
-        "Interactions": [],
-        "Name": "Screen1"
+        "Components": [
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Alpha": 255,
+            "Style": "Style4",
+            "Name": "changeScreenButton",
+            "X": 800,
+            "Y": 420,
+            "Width": 170,
+            "Height": 60,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 153,
+              "Green": 27,
+              "Blue": 27
+            },
+            "Alpha": 255,
+            "Name": "screen1Theme",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId13",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 255,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea1",
+            "X": 150,
+            "Y": 167,
+            "Width": 501,
+            "Height": 146,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "changeScreenInteraction",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "changeScreenButton",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "North",
+              "ActionComponent": "AuthScreen",
+              "Type": "ActionGotoScreen"
+            }
+          }
+        ],
+        "Name": "Screen1",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 16,
+              "Green": 52,
+              "Blue": 106
+            },
+            "Alpha": 237,
+            "Name": "authTheme",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId8",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 232,
+              "Green": 255,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "currentAvatarTextField",
+            "X": 447,
+            "Y": 57,
+            "Width": 184,
+            "Height": 31,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Filename": "__designer\\Blue_Icons_Remove_48.png",
+            "Alpha": 255,
+            "ScalingAlgorithm": "Nearest-neighbor",
+            "Name": "currentAvatarImage",
+            "X": 675,
+            "Y": 0,
+            "Width": 125,
+            "Height": 150,
+            "Type": "ScalableImage",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId9",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 33,
+              "Green": 255,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "chooseAvatarTextField",
+            "X": 0,
+            "Y": 103,
+            "Width": 251,
+            "Height": 31,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId11",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 246,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId12",
+              "UseBuffer": true,
+              "BufferSize": 30
+            },
+            "Name": "uidTextField",
+            "X": 0,
+            "Y": 54,
+            "Width": 449,
+            "Height": 37,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Components": [
+              {
+                "Components": [
+                  {
+                    "Pressed": "Szczygi.png",
+                    "Released": "Szczygi.png",
+                    "Alpha": 255,
+                    "Name": "szczygi",
+                    "X": 234,
+                    "Y": 27,
+                    "Width": 125,
+                    "Height": 150,
+                    "Type": "Button",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Pressed": "Dybczak.png",
+                    "Released": "Dybczak.png",
+                    "Alpha": 255,
+                    "Name": "dybczak",
+                    "X": 449,
+                    "Y": 27,
+                    "Width": 125,
+                    "Height": 149,
+                    "Type": "Button",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  }
+                ],
+                "IsCacheableContainer": false,
+                "Name": "swipeContainer1Page1",
+                "X": 0,
+                "Y": 0,
+                "Width": 800,
+                "Height": 180,
+                "Type": "Container",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Components": [
+                  {
+                    "Pressed": "Zajma.png",
+                    "Released": "Zajma.png",
+                    "Alpha": 255,
+                    "Name": "zajma",
+                    "X": 447,
+                    "Y": 27,
+                    "Width": 125,
+                    "Height": 150,
+                    "Type": "Button",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Pressed": "RaV.png",
+                    "Released": "RaV.png",
+                    "Alpha": 255,
+                    "Name": "rafal",
+                    "X": 235,
+                    "Y": 27,
+                    "Width": 124,
+                    "Height": 150,
+                    "Type": "Button",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  }
+                ],
+                "IsCacheableContainer": false,
+                "Name": "swipeContainer1Page2",
+                "X": 0,
+                "Y": 0,
+                "Width": 800,
+                "Height": 180,
+                "Type": "Container",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Components": [
+                  {
+                    "Pressed": "Capala.png",
+                    "Released": "Capala.png",
+                    "Alpha": 255,
+                    "Name": "capala",
+                    "X": 449,
+                    "Y": 27,
+                    "Width": 125,
+                    "Height": 150,
+                    "Type": "Button",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Pressed": "Plotnik.png",
+                    "Released": "Plotnik.png",
+                    "Alpha": 255,
+                    "Name": "plotnik",
+                    "X": 234,
+                    "Y": 27,
+                    "Width": 125,
+                    "Height": 150,
+                    "Type": "Button",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  }
+                ],
+                "IsCacheableContainer": false,
+                "Name": "swipeContainer1Page3",
+                "X": 0,
+                "Y": 0,
+                "Width": 800,
+                "Height": 180,
+                "Type": "Container",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Components": [
+                  {
+                    "Pressed": "Radoj.png",
+                    "Released": "Radoj.png",
+                    "Alpha": 255,
+                    "Name": "radoj",
+                    "X": 447,
+                    "Y": 27,
+                    "Width": 125,
+                    "Height": 150,
+                    "Type": "Button",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  },
+                  {
+                    "Pressed": "Tomsia.png",
+                    "Released": "Tomsia.png",
+                    "Alpha": 255,
+                    "Name": "tomsia",
+                    "X": 234,
+                    "Y": 27,
+                    "Width": 125,
+                    "Height": 150,
+                    "Type": "Button",
+                    "Visible": true,
+                    "Draggable": false,
+                    "Clickable": false,
+                    "Fadeable": false,
+                    "Moveable": false
+                  }
+                ],
+                "IsCacheableContainer": false,
+                "Name": "swipeContainer1Page4",
+                "X": 0,
+                "Y": 0,
+                "Width": 800,
+                "Height": 180,
+                "Type": "Container",
+                "Visible": true,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              }
+            ],
+            "SwipeCutoff": 50,
+            "ShowPageIndicator": true,
+            "PageIndicatorX": 10,
+            "PageIndicatorY": 5,
+            "CenteredX": false,
+            "IndicatorImageNormal": "__designer\\Blue_PageIndicator_dot_indicator_small_normal.png",
+            "IndicatorImageHighlight": "__designer\\Blue_PageIndicator_dot_indicator_small_highlight.png",
+            "EndSwipeElasticWidth": 50,
+            "SelectedPage": "swipeContainer1Page1",
+            "Style": "Style1",
+            "IsCacheableContainer": false,
+            "Name": "swipeContainer1",
+            "X": 0,
+            "Y": 288,
+            "Width": 800,
+            "Height": 180,
+            "Type": "SwipeContainer",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId14",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 0,
+              "Blue": 183
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "UseBuffer": true,
+              "BufferSize": 30
+            },
+            "Name": "waitingTextField",
+            "X": 10,
+            "Y": 232,
+            "Width": 781,
+            "Height": 44,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId15",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 117,
+              "Green": 255,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "UseBuffer": true,
+              "BufferSize": 40
+            },
+            "Name": "avatarNameTextField",
+            "X": 257,
+            "Y": 103,
+            "Width": 417,
+            "Height": 38,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_medium_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_medium.png",
+            "Alpha": 255,
+            "TextId": "SingleUseId17",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Name": "signOutButton",
+            "X": 444,
+            "Y": 156,
+            "Width": 230,
+            "Height": 60,
+            "Type": "ButtonWithLabel",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_medium_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_medium.png",
+            "Alpha": 255,
+            "TextId": "SingleUseId18",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Name": "confirmButton",
+            "X": 129,
+            "Y": 156,
+            "Width": 230,
+            "Height": 60,
+            "Type": "ButtonWithLabel",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "plotnik",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "plotnik",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "plotnikHandler",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "zajma",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "zajma",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "zajmaHandler",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "rafal",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "rafal",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "rafalHandler",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "dybczak",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "dybczak",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "dybczakHandler",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "szczygi",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "szczygi",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "szczygiHandler",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "tomsia",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "tomsia",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "tomsiaHandler",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "capala",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "capala",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "capalaHandler",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "radoj",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "radoj",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "radojHandler",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "signoutInteraction",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "signOutButton",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "South",
+              "ActionComponent": "Screen1",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "confirmChoice",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "confirmButton",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "confirmChoiceHandler",
+              "Type": "ActionCustom"
+            }
+          }
+        ],
+        "Name": "AuthScreen",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
       }
     ],
     "CustomContainerDefinitions": [],
+    "TextEntries": [
+      {
+        "TextEntryId": "uid_resource",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId8",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId9",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId11",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId12",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId13",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId14",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "saved_resource",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId15",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId17",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId18",
+        "IsResource": false
+      }
+    ],
     "Name": "MyApplication",
     "Resolution": {
-      "Width": 480,
-      "Height": 272
+      "Width": 800,
+      "Height": 480
     },
+    "SelectedColorDepth": 24,
     "StartupScreenName": "Screen1",
-    "SelectedColorDepth": 24,    
     "SelectedStartupLanguage": "GB",
     "Skin": "Blue",
     "TouchGfxPath": "../Middlewares/ST/TouchGFX/touchgfx/",
@@ -24,29 +714,27 @@
       "Name": "Simulator",
       "Version": "1.0.0",
       "Description": "STM32CubeMX Generated Simulator Application Template",
-      "NativeResolution": {
-        "Width": 480,
-        "Height": 272
-      },
       "AvailableColorDepths": [
         24
       ],
-      "AvailableImageFormats": {
-        "24": {
-          "Opaque": "RGB888",
-          "NonOpaque": "ARGB8888"
-        }
-      },
+      "AvailableSections": [
+        "ExtFlashSection",
+        "IntFlashSection"
+      ],
       "AvailableResolutions": [],
       "PhysicalButtons": [],
       "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j10",
-
-      "PostGenerateCommand": "touchgfx update_project --project-file=../.cproject ",      
+      "PostGenerateCommand": "touchgfx update_project --project-file=../.cproject ",
       "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j10",
       "RunSimulatorCommand": "build\\bin\\simulator.exe",
       "CompileTargetCommand": "",
       "FlashTargetCommand": ""
-    }
+    },
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape"
   },
-  "Version": "4.10.0"
+  "Version": "4.12.3"
 }
