@@ -98,11 +98,12 @@ AuthScreenViewBase.hpp:49:18:virtual void AuthScreenViewBase::szczygiHandler()	1
 AuthScreenViewBase.hpp:54:18:virtual void AuthScreenViewBase::tomsiaHandler()	16	static
 AuthScreenViewBase.hpp:59:18:virtual void AuthScreenViewBase::capalaHandler()	16	static
 AuthScreenViewBase.hpp:64:18:virtual void AuthScreenViewBase::radojHandler()	16	static
-AuthScreenViewBase.hpp:70:26:FrontendApplication& AuthScreenViewBase::application()	16	static
+AuthScreenViewBase.hpp:69:18:virtual void AuthScreenViewBase::confirmChoiceHandler()	16	static
+AuthScreenViewBase.hpp:75:26:FrontendApplication& AuthScreenViewBase::application()	16	static
 Color.hpp:54:22:static touchgfx::colortype touchgfx::Color::getColorFrom24BitRGB(uint8_t, uint8_t, uint8_t)	24	static
-AuthScreenViewBase.cpp:9:1:AuthScreenViewBase::AuthScreenViewBase()	160	static
-AuthScreenViewBase.cpp:125:6:virtual void AuthScreenViewBase::setupScreen()	16	static
-AuthScreenViewBase.cpp:130:6:void AuthScreenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
+AuthScreenViewBase.cpp:9:1:AuthScreenViewBase::AuthScreenViewBase()	168	static
+AuthScreenViewBase.cpp:132:6:virtual void AuthScreenViewBase::setupScreen()	16	static
+AuthScreenViewBase.cpp:137:6:void AuthScreenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	16	static
 View.hpp:50:5:touchgfx::View<T>::View() [with T = AuthScreenPresenter]	16	static
 Callback.hpp:167:7:constexpr touchgfx::GenericCallback<const touchgfx::AbstractButton&>::GenericCallback()	16	static
 Callback.hpp:493:5:touchgfx::Callback<dest_type, T1, void, void>::Callback(dest_type*, void (dest_type::*)(T1)) [with dest_type = AuthScreenViewBase; T1 = const touchgfx::AbstractButton&]	24	static

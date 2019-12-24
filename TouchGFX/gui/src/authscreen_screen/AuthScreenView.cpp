@@ -50,7 +50,7 @@ void AuthScreenView::showAvatar(uint8_t id) {
 
 void AuthScreenView::showBitmapAvatar(uint16_t bitmap_value) {
 	currentAvatarImage.setBitmap(touchgfx::Bitmap(bitmap_value));
-    currentAvatarImage.setPosition(675, 0, 125, 150);
+	currentAvatarImage.setPosition(675, 0, 125, 150);
 	invalidateAvatar();
 }
 
@@ -78,68 +78,83 @@ void AuthScreenView::saveAvatar(uint8_t clickedId) {
 		xprintf("WRITE status: %d \r\n", status);
 
 		if (status == MI_OK) {
-			xprintf("saved");
-
-			xprintf("Chosen avatar: %s \r\n", avatarName.c_str());
-		    Unicode::UnicodeChar saveBuf[30];
-	        Unicode::strncpy(saveBuf, avatarName.c_str(), 30);
-
-			Unicode::snprintf(savedTextFieldBuffer, SAVEDTEXTFIELD_SIZE, "%s", saveBuf);
-			savedTextField.setVisible(true);
-			savedTextField.invalidate();
-
+			xprintf("Saved \r\n");
+			showAvatarName("SAVED");
 			rfid_halt();
 			rfid_stop_crypto();
 		}
 	}
 }
 
+void AuthScreenView::confirmChoiceHandler() {
+	saveAvatar(clickedAvatarId);
+}
+
+void AuthScreenView::showAvatarName(std::string state) {
+	xprintf("Chosen avatar: %s \r\n", avatarName.c_str());
+
+	std::string statementToPrint = state + ": " + avatarName;
+	Unicode::UnicodeChar saveBuf[30];
+	Unicode::strncpy(saveBuf, statementToPrint.c_str(), 30);
+
+	Unicode::snprintf(avatarNameTextFieldBuffer, AVATARNAMETEXTFIELD_SIZE, "%s", saveBuf);
+	avatarNameTextField.invalidate();
+}
+
 void AuthScreenView::szczygiHandler() {
 	xprintf("szczygi clicked \r\n");
 	avatarName = "SZCZYGI";
-	saveAvatar(1);
+	showAvatarName("CLICKED");
+	clickedAvatarId = 1;
 }
 
 void AuthScreenView::dybczakHandler() {
 	xprintf("dybczak clicked \r\n");
 	avatarName = "DYBCZAK";
-	saveAvatar(2);
+	showAvatarName("CLICKED");
+	clickedAvatarId = 2;
 }
 
 void AuthScreenView::rafalHandler() {
 	xprintf("rafal clicked \r\n");
 	avatarName = "RAFAL";
-	saveAvatar(3);
+	showAvatarName("CLICKED");
+	clickedAvatarId = 3;
 }
 
 void AuthScreenView::zajmaHandler() {
 	xprintf("zajma clicked \r\n");
 	avatarName = "ZAJMA";
-	saveAvatar(4);
+	showAvatarName("CLICKED");
+	clickedAvatarId = 4;
 }
 
 void AuthScreenView::plotnikHandler() {
 	xprintf("plotnik clicked \r\n");
 	avatarName = "PLOTNIK";
-	saveAvatar(5);
+	showAvatarName("CLICKED");
+	clickedAvatarId = 5;
 }
 
 void AuthScreenView::capalaHandler() {
 	xprintf("capala clicked \r\n");
 	avatarName = "CAPALA";
-	saveAvatar(6);
+	showAvatarName("CLICKED");
+	clickedAvatarId = 6;
 }
 
 void AuthScreenView::tomsiaHandler() {
 	xprintf("tomsia clicked \r\n");
 	avatarName = "TOMSIA";
-	saveAvatar(7);
+	showAvatarName("CLICKED");
+	clickedAvatarId = 7;
 }
 
 void AuthScreenView::radojHandler() {
 	xprintf("radoj clicked \r\n");
 	avatarName = "RADOJ";
-	saveAvatar(8);
+	showAvatarName("CLICKED");
+	clickedAvatarId = 8;
 }
 
 void AuthScreenView::invalidateAvatar() {

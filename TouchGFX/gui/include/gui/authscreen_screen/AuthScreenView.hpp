@@ -20,6 +20,8 @@ class AuthScreenView : public AuthScreenViewBase {
 
 		void saveAvatar(uint8_t clickedId);
 
+		void showAvatarName(std::string state);
+
 		void invalidateAvatar();
 
 		void szczygiHandler();
@@ -30,6 +32,8 @@ class AuthScreenView : public AuthScreenViewBase {
 		void tomsiaHandler();
 		void radojHandler();
 		void capalaHandler();
+
+		void confirmChoiceHandler();
 
 		uint8_t uidTabBuffer[10];
 
@@ -47,6 +51,8 @@ class AuthScreenView : public AuthScreenViewBase {
 		uint8_t key_tab[6] = { 0xff, 0xff, 0xff, 0xff, 0xff, 0xff };
 
 		std::string avatarName;
+
+		uint8_t clickedAvatarId;
 };
 
 #endif // AUTHSCREENVIEW_HPP

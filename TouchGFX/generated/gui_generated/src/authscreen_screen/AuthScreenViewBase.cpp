@@ -22,7 +22,7 @@ AuthScreenViewBase::AuthScreenViewBase() :
     currentAvatarImage.setPosition(675, 0, 125, 150);
     currentAvatarImage.setScalingAlgorithm(touchgfx::ScalableImage::BILINEAR_INTERPOLATION);
 
-    chooseAvatarTextField.setXY(0, 164);
+    chooseAvatarTextField.setXY(0, 119);
     chooseAvatarTextField.setColor(touchgfx::Color::getColorFrom24BitRGB(33, 255, 0));
     chooseAvatarTextField.setLinespacing(0);
     chooseAvatarTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID9));
@@ -34,7 +34,7 @@ AuthScreenViewBase::AuthScreenViewBase() :
     uidTextField.setWildcard(uidTextFieldBuffer);
     uidTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID11));
 
-    swipeContainer1.setXY(0, 206);
+    swipeContainer1.setXY(0, 240);
 
     swipeContainer1Page1.setWidth(800);
     swipeContainer1Page1.setHeight(201);
@@ -96,20 +96,26 @@ AuthScreenViewBase::AuthScreenViewBase() :
     waitingTextField.setLinespacing(0);
     waitingTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID14));
 
-    savedTextField.setPosition(263, 155, 537, 51);
-    savedTextField.setVisible(false);
-    savedTextField.setColor(touchgfx::Color::getColorFrom24BitRGB(117, 255, 0));
-    savedTextField.setLinespacing(0);
-    Unicode::snprintf(savedTextFieldBuffer, SAVEDTEXTFIELD_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID16).getText());
-    savedTextField.setWildcard(savedTextFieldBuffer);
-    savedTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID15));
+    avatarNameTextField.setPosition(257, 119, 417, 31);
+    avatarNameTextField.setColor(touchgfx::Color::getColorFrom24BitRGB(117, 255, 0));
+    avatarNameTextField.setLinespacing(0);
+    avatarNameTextFieldBuffer[0] = 0;
+    avatarNameTextField.setWildcard(avatarNameTextFieldBuffer);
+    avatarNameTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID15));
 
-    signOutButton.setXY(631, 420);
-    signOutButton.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    signOutButton.setXY(444, 170);
+    signOutButton.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_MEDIUM_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_MEDIUM_ID));
     signOutButton.setLabelText(touchgfx::TypedText(T_SINGLEUSEID17));
     signOutButton.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     signOutButton.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     signOutButton.setAction(buttonCallback);
+
+    confirmButton.setXY(136, 170);
+    confirmButton.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_MEDIUM_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_MEDIUM_ID));
+    confirmButton.setLabelText(touchgfx::TypedText(T_SINGLEUSEID18));
+    confirmButton.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    confirmButton.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    confirmButton.setAction(buttonCallback);
 
     add(authTheme);
     add(currentAvatarTextField);
@@ -118,8 +124,9 @@ AuthScreenViewBase::AuthScreenViewBase() :
     add(uidTextField);
     add(swipeContainer1);
     add(waitingTextField);
-    add(savedTextField);
+    add(avatarNameTextField);
     add(signOutButton);
+    add(confirmButton);
 }
 
 void AuthScreenViewBase::setupScreen()
@@ -191,5 +198,12 @@ void AuthScreenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& s
         //When signOutButton clicked change screen to Screen1
         //Go to Screen1 with screen transition towards South
         application().gotoScreen1ScreenCoverTransitionSouth();
+    }
+    else if (&src == &confirmButton)
+    {
+        //confirmChoice
+        //When confirmButton clicked call virtual function
+        //Call confirmChoiceHandler
+        confirmChoiceHandler();
     }
 }

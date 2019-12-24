@@ -156,7 +156,7 @@
             "LineSpacing": 0,
             "Name": "chooseAvatarTextField",
             "X": 0,
-            "Y": 164,
+            "Y": 119,
             "Width": 251,
             "Height": 31,
             "Type": "TextArea",
@@ -370,7 +370,7 @@
             "IsCacheableContainer": false,
             "Name": "swipeContainer1",
             "X": 0,
-            "Y": 206,
+            "Y": 240,
             "Width": 800,
             "Height": 201,
             "Type": "SwipeContainer",
@@ -415,25 +415,24 @@
             "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
-              "TextId": "SingleUseId16",
               "UseBuffer": true,
               "BufferSize": 30
             },
-            "Name": "savedTextField",
-            "X": 263,
-            "Y": 155,
-            "Width": 537,
-            "Height": 51,
+            "Name": "avatarNameTextField",
+            "X": 257,
+            "Y": 119,
+            "Width": 417,
+            "Height": 31,
             "Type": "TextArea",
-            "Visible": false,
+            "Visible": true,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
           },
           {
-            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_medium.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_medium.png",
             "Alpha": 255,
             "TextId": "SingleUseId17",
             "ReleasedColor": {
@@ -447,11 +446,38 @@
               "Blue": 255
             },
             "TextRotation": "0",
-            "Style": "Style4",
             "Name": "signOutButton",
-            "X": 631,
-            "Y": 420,
-            "Width": 170,
+            "X": 444,
+            "Y": 170,
+            "Width": 230,
+            "Height": 60,
+            "Type": "ButtonWithLabel",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_medium.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_medium.png",
+            "Alpha": 255,
+            "TextId": "SingleUseId18",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Name": "confirmButton",
+            "X": 136,
+            "Y": 170,
+            "Width": 230,
             "Height": 60,
             "Type": "ButtonWithLabel",
             "Visible": true,
@@ -571,6 +597,18 @@
               "ActionComponent": "Screen1",
               "Type": "ActionGotoScreen"
             }
+          },
+          {
+            "InteractionName": "confirmChoice",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "confirmButton",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "confirmChoiceHandler",
+              "Type": "ActionCustom"
+            }
           }
         ],
         "Name": "AuthScreen",
@@ -617,11 +655,11 @@
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId16",
+        "TextEntryId": "SingleUseId17",
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId17",
+        "TextEntryId": "SingleUseId18",
         "IsResource": false
       }
     ],

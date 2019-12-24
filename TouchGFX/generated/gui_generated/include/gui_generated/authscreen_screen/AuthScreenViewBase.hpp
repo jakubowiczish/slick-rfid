@@ -66,6 +66,11 @@ public:
         // Override and implement this function in AuthScreen
     }
 
+    virtual void confirmChoiceHandler()
+    {
+        // Override and implement this function in AuthScreen
+    }
+
 protected:
     FrontendApplication& application() {
         return *static_cast<FrontendApplication*>(touchgfx::Application::getInstance());
@@ -93,16 +98,17 @@ protected:
     touchgfx::Button capala;
 
     touchgfx::TextArea waitingTextField;
-    touchgfx::TextAreaWithOneWildcard savedTextField;
+    touchgfx::TextAreaWithOneWildcard avatarNameTextField;
     touchgfx::ButtonWithLabel signOutButton;
+    touchgfx::ButtonWithLabel confirmButton;
 
     /*
      * Wildcard Buffers
      */
     static const uint16_t UIDTEXTFIELD_SIZE = 30;
     touchgfx::Unicode::UnicodeChar uidTextFieldBuffer[UIDTEXTFIELD_SIZE];
-    static const uint16_t SAVEDTEXTFIELD_SIZE = 30;
-    touchgfx::Unicode::UnicodeChar savedTextFieldBuffer[SAVEDTEXTFIELD_SIZE];
+    static const uint16_t AVATARNAMETEXTFIELD_SIZE = 30;
+    touchgfx::Unicode::UnicodeChar avatarNameTextFieldBuffer[AVATARNAMETEXTFIELD_SIZE];
 
 private:
 
