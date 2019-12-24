@@ -37,7 +37,7 @@ AuthScreenViewBase::AuthScreenViewBase() :
     swipeContainer1.setXY(0, 206);
 
     swipeContainer1Page1.setWidth(800);
-    swipeContainer1Page1.setHeight(250);
+    swipeContainer1Page1.setHeight(201);
 
     szczygi.setXY(0, 50);
     szczygi.setBitmaps(touchgfx::Bitmap(BITMAP_SZCZYGI_ID), touchgfx::Bitmap(BITMAP_SZCZYGI_ID));
@@ -61,7 +61,7 @@ AuthScreenViewBase::AuthScreenViewBase() :
     swipeContainer1.add(swipeContainer1Page1);
 
     swipeContainer1Page2.setWidth(800);
-    swipeContainer1Page2.setHeight(250);
+    swipeContainer1Page2.setHeight(201);
 
     plotnik.setXY(0, 50);
     plotnik.setBitmaps(touchgfx::Bitmap(BITMAP_PLOTNIK_ID), touchgfx::Bitmap(BITMAP_PLOTNIK_ID));
@@ -104,6 +104,13 @@ AuthScreenViewBase::AuthScreenViewBase() :
     savedTextField.setWildcard(savedTextFieldBuffer);
     savedTextField.setTypedText(touchgfx::TypedText(T_SINGLEUSEID15));
 
+    signOutButton.setXY(631, 420);
+    signOutButton.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    signOutButton.setLabelText(touchgfx::TypedText(T_SINGLEUSEID17));
+    signOutButton.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    signOutButton.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    signOutButton.setAction(buttonCallback);
+
     add(authTheme);
     add(currentAvatarTextField);
     add(currentAvatarImage);
@@ -112,6 +119,7 @@ AuthScreenViewBase::AuthScreenViewBase() :
     add(swipeContainer1);
     add(waitingTextField);
     add(savedTextField);
+    add(signOutButton);
 }
 
 void AuthScreenViewBase::setupScreen()
@@ -176,5 +184,12 @@ void AuthScreenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& s
         //When capala clicked call virtual function
         //Call capalaHandler
         capalaHandler();
+    }
+    else if (&src == &signOutButton)
+    {
+        //signoutInteraction
+        //When signOutButton clicked change screen to Screen1
+        //Go to Screen1 with screen transition towards South
+        application().gotoScreen1ScreenCoverTransitionSouth();
     }
 }

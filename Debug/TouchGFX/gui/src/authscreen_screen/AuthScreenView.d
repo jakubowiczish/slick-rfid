@@ -57,6 +57,7 @@ TouchGFX/gui/src/authscreen_screen/AuthScreenView.o: \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  ../TouchGFX/generated/images/include/BitmapDatabase.hpp \
  C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/term_io.h \
  C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/dbgu.h \
@@ -248,6 +249,8 @@ TouchGFX/gui/src/authscreen_screen/AuthScreenView.o: \
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
 
 ../TouchGFX/generated/images/include/BitmapDatabase.hpp:
 

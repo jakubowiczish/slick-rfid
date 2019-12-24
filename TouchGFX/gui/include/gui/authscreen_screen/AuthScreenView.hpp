@@ -46,7 +46,6 @@ class AuthScreenView : public AuthScreenViewBase {
 
 		uint8_t key_tab[6] = { 0xff, 0xff, 0xff, 0xff, 0xff, 0xff };
 
-//		char avatarName[30];
 		std::string avatarName;
 };
 

@@ -51,12 +51,12 @@ FrontendApplicationBase.hpp:16:13:virtual FrontendApplicationBase::~FrontendAppl
 FrontendApplication.hpp:14:13:FrontendApplication::~FrontendApplication()	16	static
 FrontendApplication.hpp:14:13:virtual FrontendApplication::~FrontendApplication()	16	static
 FrontendApplication.hpp:16:18:virtual void FrontendApplication::handleTickEvent()	16	static
-FrontendHeapBase.hpp:80:18:virtual void FrontendHeapBase::gotoStartScreen(FrontendApplication&)	16	static
-FrontendHeapBase.hpp:85:5:FrontendHeapBase::FrontendHeapBase(touchgfx::AbstractPartition&, touchgfx::AbstractPartition&, touchgfx::AbstractPartition&, FrontendApplication&)	32	static
+FrontendHeapBase.hpp:82:18:virtual void FrontendHeapBase::gotoStartScreen(FrontendApplication&)	16	static
+FrontendHeapBase.hpp:87:5:FrontendHeapBase::FrontendHeapBase(touchgfx::AbstractPartition&, touchgfx::AbstractPartition&, touchgfx::AbstractPartition&, FrontendApplication&)	32	static
 FrontendHeap.hpp:56:29:void __tcf_0()	8	static
 FrontendHeap.hpp:54:26:static FrontendHeap& FrontendHeap::getInstance()	8	static
-FrontendHeapBase.hpp:35:7:FrontendHeapBase::~FrontendHeapBase()	16	static
-FrontendHeapBase.hpp:35:7:virtual FrontendHeapBase::~FrontendHeapBase()	16	static
+FrontendHeapBase.hpp:36:7:FrontendHeapBase::~FrontendHeapBase()	16	static
+FrontendHeapBase.hpp:36:7:virtual FrontendHeapBase::~FrontendHeapBase()	16	static
 FrontendHeap.hpp:67:5:FrontendHeap::FrontendHeap()	32	static
 LCD24bpp.hpp:49:13:touchgfx::LCD24bpp::~LCD24bpp()	16	static
 LCD24bpp.hpp:49:13:virtual touchgfx::LCD24bpp::~LCD24bpp()	16	static
@@ -85,9 +85,9 @@ Partition.hpp:79:13:touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::~Parti
 Partition.hpp:70:5:touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::Partition() [with ListOfTypes = touchgfx::meta::TypeList<AuthScreenView, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	16	static
 Partition.hpp:79:13:touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::~Partition() [with ListOfTypes = touchgfx::meta::TypeList<AuthScreenView, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	16	static
 Partition.hpp:79:13:touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::~Partition() [with ListOfTypes = touchgfx::meta::TypeList<AuthScreenView, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	16	static
-Partition.hpp:70:5:touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::Partition() [with ListOfTypes = touchgfx::meta::TypeList<touchgfx::CoverTransition<(touchgfx::Direction)0>, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	16	static
-Partition.hpp:79:13:touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::~Partition() [with ListOfTypes = touchgfx::meta::TypeList<touchgfx::CoverTransition<(touchgfx::Direction)0>, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	16	static
-Partition.hpp:79:13:touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::~Partition() [with ListOfTypes = touchgfx::meta::TypeList<touchgfx::CoverTransition<(touchgfx::Direction)0>, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	16	static
+Partition.hpp:70:5:touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::Partition() [with ListOfTypes = touchgfx::meta::TypeList<touchgfx::CoverTransition<(touchgfx::Direction)1>, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	16	static
+Partition.hpp:79:13:touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::~Partition() [with ListOfTypes = touchgfx::meta::TypeList<touchgfx::CoverTransition<(touchgfx::Direction)1>, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	16	static
+Partition.hpp:79:13:touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::~Partition() [with ListOfTypes = touchgfx::meta::TypeList<touchgfx::CoverTransition<(touchgfx::Direction)1>, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	16	static
 TouchGFXInit.hpp:83:6:touchgfx::HAL& touchgfx::touchgfx_generic_init(touchgfx::DMA_Interface&, touchgfx::LCD&, touchgfx::TouchController&, int16_t, int16_t, uint16_t*, uint32_t, uint32_t) [with HALType = STM32F4HAL_DSI]	48	static
 STM32F4HAL_DSI.hpp:19:7:STM32F4HAL_DSI::~STM32F4HAL_DSI()	16	static
 STM32F4HAL_DSI.hpp:19:7:virtual STM32F4HAL_DSI::~STM32F4HAL_DSI()	16	static
@@ -102,10 +102,10 @@ Callback.hpp:557:8:touchgfx::Callback<FrontendApplicationBase>::~Callback()	16	s
 Callback.hpp:557:8:virtual touchgfx::Callback<FrontendApplicationBase>::~Callback()	16	static
 ApplicationFontProvider.hpp:26:7:ApplicationFontProvider::~ApplicationFontProvider()	16	static
 ApplicationFontProvider.hpp:26:7:virtual ApplicationFontProvider::~ApplicationFontProvider()	16	static
-Partition.hpp:94:22:uint16_t touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::capacity() const [with ListOfTypes = touchgfx::meta::TypeList<touchgfx::CoverTransition<(touchgfx::Direction)0>, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	16	static
-Partition.hpp:110:22:uint32_t touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::element_size() [with ListOfTypes = touchgfx::meta::TypeList<touchgfx::CoverTransition<(touchgfx::Direction)0>, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	16	static
-Partition.hpp:128:19:void* touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::element(uint16_t) [with ListOfTypes = touchgfx::meta::TypeList<touchgfx::CoverTransition<(touchgfx::Direction)0>, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	16	static
-Partition.hpp:144:25:const void* touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::element(uint16_t) const [with ListOfTypes = touchgfx::meta::TypeList<touchgfx::CoverTransition<(touchgfx::Direction)0>, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	16	static
+Partition.hpp:94:22:uint16_t touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::capacity() const [with ListOfTypes = touchgfx::meta::TypeList<touchgfx::CoverTransition<(touchgfx::Direction)1>, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	16	static
+Partition.hpp:110:22:uint32_t touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::element_size() [with ListOfTypes = touchgfx::meta::TypeList<touchgfx::CoverTransition<(touchgfx::Direction)1>, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	16	static
+Partition.hpp:128:19:void* touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::element(uint16_t) [with ListOfTypes = touchgfx::meta::TypeList<touchgfx::CoverTransition<(touchgfx::Direction)1>, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	16	static
+Partition.hpp:144:25:const void* touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::element(uint16_t) const [with ListOfTypes = touchgfx::meta::TypeList<touchgfx::CoverTransition<(touchgfx::Direction)1>, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	16	static
 Partition.hpp:94:22:uint16_t touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::capacity() const [with ListOfTypes = touchgfx::meta::TypeList<AuthScreenView, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	16	static
 Partition.hpp:110:22:uint32_t touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::element_size() [with ListOfTypes = touchgfx::meta::TypeList<AuthScreenView, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	16	static
 Partition.hpp:128:19:void* touchgfx::Partition<ListOfTypes, NUMBER_OF_ELEMENTS>::element(uint16_t) [with ListOfTypes = touchgfx::meta::TypeList<AuthScreenView, touchgfx::meta::TypeList<touchgfx::meta::Nil, touchgfx::meta::Nil> >; short unsigned int NUMBER_OF_ELEMENTS = 1]	16	static

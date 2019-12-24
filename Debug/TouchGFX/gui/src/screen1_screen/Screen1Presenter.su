@@ -13,6 +13,7 @@ ModelListener.hpp:36:15:virtual void ModelListener::showAvatar()	16	static
 Screen1Presenter.hpp:27:10:Screen1Presenter::~Screen1Presenter()	16	static
 Screen1Presenter.hpp:27:10:virtual Screen1Presenter::~Screen1Presenter()	16	static
 Screen1Presenter.cpp:4:1:Screen1Presenter::Screen1Presenter(Screen1View&)	16	static
-Screen1Presenter.cpp:8:6:virtual void Screen1Presenter::activate()	16	static
+Screen1Presenter.cpp:7:6:virtual void Screen1Presenter::activate()	16	static
 Screen1Presenter.cpp:12:6:virtual void Screen1Presenter::deactivate()	16	static
 Screen1Presenter.cpp:16:6:virtual void Screen1Presenter::showAuthScreen()	16	static
+Screen1Presenter.cpp:20:6:virtual void Screen1Presenter::initalizeArrays()	32	static

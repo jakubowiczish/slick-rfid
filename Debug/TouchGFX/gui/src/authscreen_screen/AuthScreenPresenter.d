@@ -57,6 +57,7 @@ TouchGFX/gui/src/authscreen_screen/AuthScreenPresenter.o: \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
+ ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/term_io.h \
  C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/dbgu.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
@@ -220,6 +221,8 @@ TouchGFX/gui/src/authscreen_screen/AuthScreenPresenter.o: \
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 
 ../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
+
+../Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
 
 C:/Users/jakub/Downloads/test/slick_rfid/rfid_folder/term_io.h:
 

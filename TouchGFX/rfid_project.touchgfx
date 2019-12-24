@@ -4,80 +4,6 @@
       {
         "Components": [
           {
-            "TextId": "SingleUseId3",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 246,
-              "Blue": 0
-            },
-            "Alpha": 255,
-            "AutoSize": false,
-            "LineSpacing": 0,
-            "Wildcard1": {
-              "TextId": "SingleUseId4",
-              "UseBuffer": true,
-              "BufferSize": 30
-            },
-            "Name": "uidTextField",
-            "X": 7,
-            "Y": 340,
-            "Width": 786,
-            "Height": 80,
-            "Type": "TextArea",
-            "Visible": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "TextId": "SingleUseId6",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 0,
-              "Green": 19,
-              "Blue": 255
-            },
-            "Alpha": 255,
-            "AutoSize": false,
-            "LineSpacing": 0,
-            "Name": "avatarChoiceTextField",
-            "X": 16,
-            "Y": 202,
-            "Width": 751,
-            "Height": 76,
-            "Type": "TextArea",
-            "Visible": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "TextId": "SingleUseId7",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 0,
-              "Green": 229,
-              "Blue": 255
-            },
-            "Alpha": 255,
-            "AutoSize": false,
-            "LineSpacing": 0,
-            "Name": "choiceTextField",
-            "X": 18,
-            "Y": 240,
-            "Width": 763,
-            "Height": 74,
-            "Type": "TextArea",
-            "Visible": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
             "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
             "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
             "Alpha": 255,
@@ -342,7 +268,7 @@
                 "X": 0,
                 "Y": 0,
                 "Width": 800,
-                "Height": 250,
+                "Height": 201,
                 "Type": "Container",
                 "Visible": true,
                 "Draggable": false,
@@ -422,7 +348,7 @@
                 "X": 0,
                 "Y": 0,
                 "Width": 800,
-                "Height": 250,
+                "Height": 201,
                 "Type": "Container",
                 "Visible": true,
                 "Draggable": false,
@@ -446,7 +372,7 @@
             "X": 0,
             "Y": 206,
             "Width": 800,
-            "Height": 250,
+            "Height": 201,
             "Type": "SwipeContainer",
             "Visible": true,
             "Draggable": false,
@@ -500,6 +426,35 @@
             "Height": 51,
             "Type": "TextArea",
             "Visible": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Alpha": 255,
+            "TextId": "SingleUseId17",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Style": "Style4",
+            "Name": "signOutButton",
+            "X": 631,
+            "Y": 420,
+            "Width": 170,
+            "Height": 60,
+            "Type": "ButtonWithLabel",
+            "Visible": true,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,
@@ -602,6 +557,20 @@
               "FunctionName": "radojHandler",
               "Type": "ActionCustom"
             }
+          },
+          {
+            "InteractionName": "signoutInteraction",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "signOutButton",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "South",
+              "ActionComponent": "Screen1",
+              "Type": "ActionGotoScreen"
+            }
           }
         ],
         "Name": "AuthScreen",
@@ -614,22 +583,6 @@
       {
         "TextEntryId": "uid_resource",
         "IsResource": true
-      },
-      {
-        "TextEntryId": "SingleUseId3",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId4",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId6",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId7",
-        "IsResource": false
       },
       {
         "TextEntryId": "SingleUseId8",
@@ -665,6 +618,10 @@
       },
       {
         "TextEntryId": "SingleUseId16",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId17",
         "IsResource": false
       }
     ],

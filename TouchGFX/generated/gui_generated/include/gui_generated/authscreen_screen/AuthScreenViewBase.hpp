@@ -15,6 +15,7 @@
 #include <touchgfx/containers/Container.hpp>
 #include <touchgfx/widgets/Button.hpp>
 
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
 class AuthScreenViewBase : public touchgfx::View<AuthScreenPresenter>
 {
 public:
@@ -93,6 +94,7 @@ protected:
 
     touchgfx::TextArea waitingTextField;
     touchgfx::TextAreaWithOneWildcard savedTextField;
+    touchgfx::ButtonWithLabel signOutButton;
 
     /*
      * Wildcard Buffers

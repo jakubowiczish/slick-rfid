@@ -27,6 +27,8 @@ public:
 	virtual ~Screen1Presenter() {};
 
     virtual void showAuthScreen();
+
+    virtual void initalizeArrays();
 private:
 	Screen1Presenter();
 

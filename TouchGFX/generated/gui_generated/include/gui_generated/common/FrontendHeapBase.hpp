@@ -9,6 +9,7 @@
 #include <mvp/MVPHeap.hpp>
 #include <touchgfx/transitions/NoTransition.hpp>
 #include <touchgfx/transitions/CoverTransition.hpp>
+#include <touchgfx/transitions/CoverTransition.hpp>
 
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
@@ -69,7 +70,8 @@ public:
      */
     typedef touchgfx::meta::TypeList< touchgfx::NoTransition,
             touchgfx::meta::TypeList< CoverTransition<NORTH>,
-            touchgfx::meta::Nil >
+            touchgfx::meta::TypeList< CoverTransition<SOUTH>,
+            touchgfx::meta::Nil > >
             > GeneratedTransitionTypes;
 
     /**

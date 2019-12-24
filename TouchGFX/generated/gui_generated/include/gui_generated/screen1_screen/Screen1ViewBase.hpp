@@ -7,10 +7,9 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <mvp/View.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
-#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
-#include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/widgets/Box.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -27,18 +26,9 @@ protected:
     /*
      * Member Declarations
      */
-    touchgfx::TextAreaWithOneWildcard uidTextField;
-    touchgfx::TextArea avatarChoiceTextField;
-    touchgfx::TextArea choiceTextField;
     touchgfx::Button changeScreenButton;
     touchgfx::Box screen1Theme;
     touchgfx::TextArea textArea1;
-
-    /*
-     * Wildcard Buffers
-     */
-    static const uint16_t UIDTEXTFIELD_SIZE = 30;
-    touchgfx::Unicode::UnicodeChar uidTextFieldBuffer[UIDTEXTFIELD_SIZE];
 
 private:
 

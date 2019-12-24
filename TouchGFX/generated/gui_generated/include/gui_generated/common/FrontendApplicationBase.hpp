@@ -18,6 +18,8 @@ public:
     // Screen1
     void gotoScreen1ScreenNoTransition();
 
+    void gotoScreen1ScreenCoverTransitionSouth();
+
 
     // AuthScreen
     void gotoAuthScreenScreenCoverTransitionNorth();
@@ -29,6 +31,8 @@ protected:
 
     // Screen1
     void gotoScreen1ScreenNoTransitionImpl();
+
+    void gotoScreen1ScreenCoverTransitionSouthImpl();
 
 
     // AuthScreen
