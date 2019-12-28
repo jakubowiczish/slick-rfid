@@ -21,6 +21,7 @@ Drawable.hpp:516:10:bool touchgfx::Drawable::isTouchable() const	16	static
 Drawable.hpp:564:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	16	static
 Drawable.hpp:662:10:void touchgfx::Drawable::resetDrawChainCache()	16	static
 Drawable.hpp:748:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	24	static
+HAL.hpp:115:17:static touchgfx::HAL* touchgfx::HAL::getInstance()	4	static
 HAL.hpp:296:17:static touchgfx::LCD& touchgfx::HAL::lcd()	4	static
 Container.hpp:64:13:touchgfx::Container::~Container()	16	static
 Container.hpp:64:13:virtual touchgfx::Container::~Container()	16	static
@@ -67,28 +68,25 @@ AuthScreenViewBase.hpp:23:13:AuthScreenViewBase::~AuthScreenViewBase()	16	static
 AuthScreenViewBase.hpp:23:13:virtual AuthScreenViewBase::~AuthScreenViewBase()	16	static
 AuthScreenView.hpp:10:11:AuthScreenView::~AuthScreenView()	16	static
 AuthScreenView.hpp:10:11:virtual AuthScreenView::~AuthScreenView()	16	static
-AuthScreenView.cpp:12:1:AuthScreenView::AuthScreenView()	16	static
-AuthScreenView.cpp:16:6:virtual void AuthScreenView::setupScreen()	16	static
-AuthScreenView.cpp:20:6:virtual void AuthScreenView::tearDownScreen()	16	static
-AuthScreenView.cpp:24:6:void AuthScreenView::showUid(uint8_t*)	40	static
-AuthScreenView.cpp:29:6:void AuthScreenView::showAvatar(uint8_t)	16	static
-AuthScreenView.cpp:51:6:void AuthScreenView::showBitmapAvatar(uint16_t)	40	static
-AuthScreenView.cpp:57:6:void AuthScreenView::saveAvatar(uint8_t)	48	static
-AuthScreenView.cpp:88:6:void AuthScreenView::showWaitingForCardText()	24	static
-AuthScreenView.cpp:98:6:virtual void AuthScreenView::confirmChoiceHandler()	16	static
-AuthScreenView.cpp:105:6:void AuthScreenView::showAvatarName(std::__cxx11::string)	72	static
-AuthScreenView.cpp:115:6:virtual void AuthScreenView::szczygiHandler()	48	static
-AuthScreenView.cpp:122:6:virtual void AuthScreenView::dybczakHandler()	48	static
-AuthScreenView.cpp:129:6:virtual void AuthScreenView::rafalHandler()	48	static
-AuthScreenView.cpp:136:6:virtual void AuthScreenView::zajmaHandler()	48	static
-AuthScreenView.cpp:143:6:virtual void AuthScreenView::plotnikHandler()	48	static
-AuthScreenView.cpp:150:6:virtual void AuthScreenView::capalaHandler()	48	static
-AuthScreenView.cpp:157:6:virtual void AuthScreenView::tomsiaHandler()	48	static
-AuthScreenView.cpp:164:6:virtual void AuthScreenView::radojHandler()	48	static
-AuthScreenView.cpp:171:6:void AuthScreenView::invalidateAvatar()	16	static
-basic_string.h:5916:5:std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	24	static
-basic_string.h:5944:5:std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	24	static
-move.h:98:5:constexpr typename std::remove_reference< <template-parameter-1-1> >::type&& std::move(_Tp&&) [with _Tp = std::__cxx11::basic_string<char>&]	16	static
+AuthScreenView.cpp:15:1:AuthScreenView::AuthScreenView()	16	static
+AuthScreenView.cpp:19:6:virtual void AuthScreenView::setupScreen()	16	static
+AuthScreenView.cpp:23:6:virtual void AuthScreenView::tearDownScreen()	16	static
+AuthScreenView.cpp:27:6:void AuthScreenView::showUid(uint8_t*)	40	static
+AuthScreenView.cpp:32:6:void AuthScreenView::showAvatar(uint8_t)	16	static
+AuthScreenView.cpp:54:6:void AuthScreenView::showBitmapAvatar(uint16_t)	40	static
+AuthScreenView.cpp:60:6:void AuthScreenView::saveAvatar(uint8_t)	48	static
+AuthScreenView.cpp:93:6:void AuthScreenView::showWaitingForCardText()	24	static
+AuthScreenView.cpp:103:6:virtual void AuthScreenView::confirmChoiceHandler()	16	static
+AuthScreenView.cpp:110:6:void AuthScreenView::showAvatarName(std::__cxx11::string)	80	static
+AuthScreenView.cpp:121:6:virtual void AuthScreenView::szczygiHandler()	48	static
+AuthScreenView.cpp:128:6:virtual void AuthScreenView::dybczakHandler()	48	static
+AuthScreenView.cpp:135:6:virtual void AuthScreenView::rafalHandler()	48	static
+AuthScreenView.cpp:142:6:virtual void AuthScreenView::zajmaHandler()	48	static
+AuthScreenView.cpp:149:6:virtual void AuthScreenView::plotnikHandler()	48	static
+AuthScreenView.cpp:156:6:virtual void AuthScreenView::capalaHandler()	48	static
+AuthScreenView.cpp:163:6:virtual void AuthScreenView::tomsiaHandler()	48	static
+AuthScreenView.cpp:170:6:virtual void AuthScreenView::radojHandler()	48	static
+AuthScreenView.cpp:177:6:void AuthScreenView::invalidateAvatar()	16	static
 TextAreaWithWildcard.hpp:76:7:touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	16	static
 TextAreaWithWildcard.hpp:76:7:virtual touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	16	static
 ButtonWithLabel.hpp:33:7:touchgfx::ButtonWithLabel::~ButtonWithLabel()	16	static

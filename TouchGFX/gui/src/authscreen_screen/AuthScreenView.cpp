@@ -7,7 +7,10 @@
 #include "usb_host.h"
 #include "dbgu.h"
 #include <stdio.h>
-#include <string.h>
+#include <sstream>
+#include <string>
+
+using namespace touchgfx;
 
 AuthScreenView::AuthScreenView() {
 
@@ -55,6 +58,8 @@ void AuthScreenView::showBitmapAvatar(uint16_t bitmap_value) {
 }
 
 void AuthScreenView::saveAvatar(uint8_t clickedId) {
+	touchgfx::HAL::getInstance()->taskDelay(1000);
+
 	while (!rfid_is_new_card()) {
 		vTaskDelay(50);
 	}
@@ -105,8 +110,9 @@ void AuthScreenView::confirmChoiceHandler() {
 void AuthScreenView::showAvatarName(std::string state) {
 	xprintf("%s avatar: %s \r\n", state.c_str(), avatarName.c_str());
 
-	std::string statementToPrint = state + ": " + avatarName;
-	Unicode::strncpy(saveBuf, statementToPrint.c_str(), 45);
+	char statementToPrint[50];
+	sprintf (statementToPrint, "%s : %s", state.c_str(), avatarName.c_str());
+	Unicode::strncpy(saveBuf, statementToPrint, 45);
 
 	Unicode::snprintf(avatarNameTextFieldBuffer, AVATARNAMETEXTFIELD_SIZE, "%s", saveBuf);
 	avatarNameTextField.invalidate();
