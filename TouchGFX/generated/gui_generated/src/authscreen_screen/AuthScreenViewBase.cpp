@@ -99,6 +99,7 @@ AuthScreenViewBase::AuthScreenViewBase() :
     swipeContainer1.setSelectedPage(0);
 
     waitingTextField.setPosition(10, 232, 781, 44);
+    waitingTextField.setVisible(false);
     waitingTextField.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 0, 183));
     waitingTextField.setLinespacing(0);
     waitingTextFieldBuffer[0] = 0;

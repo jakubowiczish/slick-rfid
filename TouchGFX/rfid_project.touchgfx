@@ -433,7 +433,7 @@
             "Width": 781,
             "Height": 44,
             "Type": "TextArea",
-            "Visible": true,
+            "Visible": false,
             "Draggable": false,
             "Clickable": false,
             "Fadeable": false,

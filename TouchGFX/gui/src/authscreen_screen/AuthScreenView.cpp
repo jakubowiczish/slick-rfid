@@ -58,8 +58,6 @@ void AuthScreenView::showBitmapAvatar(uint16_t bitmap_value) {
 }
 
 void AuthScreenView::saveAvatar(uint8_t clickedId) {
-	touchgfx::HAL::getInstance()->taskDelay(1000);
-
 	while (!rfid_is_new_card()) {
 		vTaskDelay(50);
 	}
@@ -94,10 +92,14 @@ void AuthScreenView::showWaitingForCardText() {
 	waitingTextField.setVisible(true);
 	waitingTextField.invalidate();
 
-	Unicode::strncpy(saveBuf, avatarName.c_str(), 45);
+	vTaskDelay(1000);
+	char waitingAvatarBuffer[50];
+	sprintf (waitingAvatarBuffer, "%s", avatarName.c_str());
+	Unicode::strncpy(saveBuf, waitingAvatarBuffer, 45);
 	Unicode::snprintf(waitingTextFieldBuffer, WAITINGTEXTFIELD_SIZE, "%s", saveBuf);
 
 	waitingTextField.invalidate();
+	xprintf("confirm choice text field updated \r\n");
 }
 
 void AuthScreenView::confirmChoiceHandler() {
