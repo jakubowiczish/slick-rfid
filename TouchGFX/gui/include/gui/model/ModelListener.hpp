@@ -34,6 +34,10 @@ public:
 	virtual void showUid() {}
 
 	virtual void showAvatar() {}
+
+	virtual void hideWaitingTextField() {}
+
+	virtual void showSavedAvatarName() {}
 protected:
 	Model *model;
 };

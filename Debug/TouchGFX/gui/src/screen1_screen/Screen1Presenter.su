@@ -10,6 +10,8 @@ ModelListener.hpp:21:10:virtual ModelListener::~ModelListener()	16	static
 ModelListener.hpp:32:15:virtual void ModelListener::showAuthScreen()	16	static
 ModelListener.hpp:34:15:virtual void ModelListener::showUid()	16	static
 ModelListener.hpp:36:15:virtual void ModelListener::showAvatar()	16	static
+ModelListener.hpp:38:15:virtual void ModelListener::hideWaitingTextField()	16	static
+ModelListener.hpp:40:15:virtual void ModelListener::showSavedAvatarName()	16	static
 Screen1Presenter.hpp:27:10:Screen1Presenter::~Screen1Presenter()	16	static
 Screen1Presenter.hpp:27:10:virtual Screen1Presenter::~Screen1Presenter()	16	static
 Screen1Presenter.cpp:4:1:Screen1Presenter::Screen1Presenter(Screen1View&)	16	static

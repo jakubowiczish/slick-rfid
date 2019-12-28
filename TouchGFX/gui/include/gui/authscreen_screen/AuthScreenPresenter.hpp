@@ -31,6 +31,14 @@ public:
 
     virtual void showAvatar();
 
+    virtual void saveAvatar();
+
+    virtual void hideWaitingTextField();
+
+    virtual void showSavedAvatarName();
+
+    uint8_t clickedId;
+
 private:
     AuthScreenPresenter();
 

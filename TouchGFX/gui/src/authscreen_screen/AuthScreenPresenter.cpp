@@ -23,3 +23,17 @@ void AuthScreenPresenter::showAvatar() {
 	xprintf("avatarId %d \r\n", model->avatarId);
 	view.showAvatar(model->avatarId);
 }
+
+void AuthScreenPresenter::saveAvatar() {
+	xprintf("handle saving invoked \r\n");
+	model->clickedId = clickedId;
+	model->saveToCard = true;
+}
+
+void AuthScreenPresenter::hideWaitingTextField() {
+	view.hideWaitingTextField();
+}
+
+void AuthScreenPresenter::showSavedAvatarName() {
+	view.showAvatarName("SAVED");
+}

@@ -10,6 +10,8 @@ ModelListener.hpp:21:10:virtual ModelListener::~ModelListener()	16	static
 ModelListener.hpp:32:15:virtual void ModelListener::showAuthScreen()	16	static
 ModelListener.hpp:34:15:virtual void ModelListener::showUid()	16	static
 ModelListener.hpp:36:15:virtual void ModelListener::showAvatar()	16	static
+ModelListener.hpp:38:15:virtual void ModelListener::hideWaitingTextField()	16	static
+ModelListener.hpp:40:15:virtual void ModelListener::showSavedAvatarName()	16	static
 AuthScreenPresenter.hpp:28:13:AuthScreenPresenter::~AuthScreenPresenter()	16	static
 AuthScreenPresenter.hpp:28:13:virtual AuthScreenPresenter::~AuthScreenPresenter()	16	static
 AuthScreenPresenter.cpp:5:1:AuthScreenPresenter::AuthScreenPresenter(AuthScreenView&)	16	static
@@ -17,3 +19,6 @@ AuthScreenPresenter.cpp:8:6:virtual void AuthScreenPresenter::activate()	16	stat
 AuthScreenPresenter.cpp:13:6:virtual void AuthScreenPresenter::deactivate()	16	static
 AuthScreenPresenter.cpp:17:6:virtual void AuthScreenPresenter::showUid()	24	static
 AuthScreenPresenter.cpp:22:6:virtual void AuthScreenPresenter::showAvatar()	16	static
+AuthScreenPresenter.cpp:27:6:virtual void AuthScreenPresenter::saveAvatar()	16	static
+AuthScreenPresenter.cpp:33:6:virtual void AuthScreenPresenter::hideWaitingTextField()	16	static
+AuthScreenPresenter.cpp:37:6:virtual void AuthScreenPresenter::showSavedAvatarName()	56	static

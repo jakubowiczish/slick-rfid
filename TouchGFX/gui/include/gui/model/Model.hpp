@@ -36,28 +36,21 @@ class Model {
 		 */
 		void tick();
 
-//		void saveUidAndAvatar(uint8_t uid_tab[], uint8_t avatar_id);
-//
-//		uint8_t getAvatarForUid(std::string uid);
-//
-//		std::string convertUidToString(uint8_t uid_tab[]);
-
 		uint8_t uidTabBuffer[10];
 
-		uint8_t bufferSize = 18;
-
-		uint8_t buffer[18];
-
+		uint8_t readBufferSize = 18;
+		uint8_t readBuffer[18];
 		uint8_t avatarId;
-
 		bool isAuthenticated = false;
-
 		uint8_t avatarBlockAddress = 1;
-
 		uint8_t size = 30;
 		uint8_t sak;
-
 		uint8_t key_tab[6] = { 0xff, 0xff, 0xff, 0xff, 0xff, 0xff };
+
+		bool saveToCard = false;
+		uint8_t clickedId;
+		uint8_t saveBuffer[16];
+		uint8_t saveBufferSize = 16;
 
 	protected:
 		/**

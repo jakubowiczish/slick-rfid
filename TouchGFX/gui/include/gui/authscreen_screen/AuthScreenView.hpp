@@ -18,8 +18,6 @@ class AuthScreenView : public AuthScreenViewBase {
 
 		void showBitmapAvatar(uint16_t bitmap_value);
 
-		void saveAvatar(uint8_t clickedId);
-
 		void showAvatarName(std::string state);
 
 		void invalidateAvatar();
@@ -36,6 +34,8 @@ class AuthScreenView : public AuthScreenViewBase {
 		void confirmChoiceHandler();
 
 		void showWaitingForCardText();
+
+		void hideWaitingTextField();
 
 		uint8_t uidTabBuffer[10];
 

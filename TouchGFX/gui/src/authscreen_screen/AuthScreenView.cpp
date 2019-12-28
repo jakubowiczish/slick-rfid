@@ -57,35 +57,9 @@ void AuthScreenView::showBitmapAvatar(uint16_t bitmap_value) {
 	invalidateAvatar();
 }
 
-void AuthScreenView::saveAvatar(uint8_t clickedId) {
-	while (!rfid_is_new_card()) {
-		vTaskDelay(50);
-	}
-
+void AuthScreenView::hideWaitingTextField() {
 	waitingTextField.setVisible(false);
 	waitingTextField.invalidate();
-
-	xprintf("\r\n WRITE \r\n");
-
-	rfid_status_t status = rfid_select_tag(uidTabBuffer, &size, &sak);
-	xprintf("tag read status: %d \r\n", status);
-
-	status = rfid_authenticate(MIF_AUTHENTB, 1, key_tab, uidTabBuffer);
-	xprintf("authenticate WRITE status: %d \r\n", status);
-
-	buffer[0] = clickedId;
-
-	if (status == MI_OK) {
-		status = rfid_card_write(1, buffer, bufferSize);
-		xprintf("WRITE status: %d \r\n", status);
-
-		if (status == MI_OK) {
-			xprintf("Saved \r\n");
-			showAvatarName("SAVED");
-			rfid_halt();
-			rfid_stop_crypto();
-		}
-	}
 }
 
 void AuthScreenView::showWaitingForCardText() {
@@ -94,7 +68,7 @@ void AuthScreenView::showWaitingForCardText() {
 
 	vTaskDelay(1000);
 	char waitingAvatarBuffer[50];
-	sprintf (waitingAvatarBuffer, "%s", avatarName.c_str());
+	sprintf(waitingAvatarBuffer, "%s", avatarName.c_str());
 	Unicode::strncpy(saveBuf, waitingAvatarBuffer, 45);
 	Unicode::snprintf(waitingTextFieldBuffer, WAITINGTEXTFIELD_SIZE, "%s", saveBuf);
 
@@ -105,15 +79,16 @@ void AuthScreenView::showWaitingForCardText() {
 void AuthScreenView::confirmChoiceHandler() {
 	xprintf("Choice confirmed, you chose %s \r\n", avatarName.c_str());
 	showWaitingForCardText();
-	vTaskDelay(300);
-	saveAvatar(clickedAvatarId);
+	vTaskDelay(50);
+	presenter->clickedId = clickedAvatarId;
+	presenter->saveAvatar();
 }
 
 void AuthScreenView::showAvatarName(std::string state) {
 	xprintf("%s avatar: %s \r\n", state.c_str(), avatarName.c_str());
 
 	char statementToPrint[50];
-	sprintf (statementToPrint, "%s : %s", state.c_str(), avatarName.c_str());
+	sprintf(statementToPrint, "%s : %s", state.c_str(), avatarName.c_str());
 	Unicode::strncpy(saveBuf, statementToPrint, 45);
 
 	Unicode::snprintf(avatarNameTextFieldBuffer, AVATARNAMETEXTFIELD_SIZE, "%s", saveBuf);

@@ -25,14 +25,45 @@ void Model::tick() {
 			if (status == MI_OK) {
 				isAuthenticated = true;
 
-				status = rfid_card_read(1, buffer, &bufferSize);
+				status = rfid_card_read(1, readBuffer, &readBufferSize);
 				xprintf("READ status: %d \r\n", status);
 
-				avatarId = buffer[0];
+				avatarId = readBuffer[0];
 
 				rfid_halt();
 				rfid_stop_crypto();
 				modelListener->showAuthScreen();
+			}
+		}
+	} else if (isAuthenticated && saveToCard) {
+		while (!rfid_is_new_card()) {
+			vTaskDelay(50);
+		}
+
+		modelListener->hideWaitingTextField();
+
+		xprintf("\r\n WRITE \r\n");
+
+		rfid_status_t status = rfid_select_tag(uidTabBuffer, &size, &sak);
+		xprintf("tag read status: %d \r\n", status);
+
+		if (status == MI_OK) {
+			status = rfid_authenticate(MIF_AUTHENTB, 1, key_tab, uidTabBuffer);
+			xprintf("authenticate WRITE status: %d \r\n", status);
+
+			saveBuffer[0] = clickedId;
+
+			if (status == MI_OK) {
+				status = rfid_card_write(1, saveBuffer, saveBufferSize);
+				xprintf("WRITE status: %d \r\n", status);
+
+				if (status == MI_OK) {
+					xprintf("Saved \r\n");
+					rfid_halt();
+					rfid_stop_crypto();
+					modelListener->showSavedAvatarName();
+					saveToCard = false;
+				}
 			}
 		}
 	}

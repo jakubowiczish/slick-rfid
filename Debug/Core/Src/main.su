@@ -1,4 +1,4 @@
-main.cpp:105:5:int main()	16	static
+main.cpp:105:5:int main()	48	static
 main.cpp:200:6:void initialize_rfid()	16	static
 main.cpp:206:6:void main_task(void*)	16	static
 main.cpp:230:6:void card_read_task(void*)	24	static
@@ -15,5 +15,5 @@ main.cpp:561:13:void MX_USART3_UART_Init()	8	static
 main.cpp:594:13:void MX_USART6_UART_Init()	8	static
 main.cpp:627:13:void MX_GPIO_Init()	72	static
 main.cpp:767:6:void StartDefaultTask(const void*)	16	static
-main.cpp:794:6:void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef*)	16	static
-main.cpp:811:6:void Error_Handler()	4	static
+main.cpp:795:6:void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef*)	16	static
+main.cpp:812:6:void Error_Handler()	4	static

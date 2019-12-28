@@ -19,6 +19,6 @@ void Screen1Presenter::showAuthScreen() {
 
 void Screen1Presenter::initalizeArrays() {
 	for (int i = 0; i < 10; ++i) model->uidTabBuffer[i] = 0;
-	for (int i = 0; i < 18; ++i) model->buffer[i] = 0;
+	for (int i = 0; i < 18; ++i) model->readBuffer[i] = 0;
 	for (int i = 0; i < 6; ++i) model->key_tab[i] = 0xff;
 }

@@ -171,20 +171,20 @@ int main(void)
 
   /* Create the thread(s) */
   /* definition and creation of defaultTask */
-//  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 4096);
-//  defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 4096);
+  defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
 
   /* Start scheduler */
-//  osKernelStart();
+  osKernelStart();
   
   /* We should never get here as control is now taken by the scheduler */
 
-  xTaskCreate(main_task, NULL,1024, NULL, 2, NULL);
-  vTaskStartScheduler();
+//  xTaskCreate(main_task, NULL,1024, NULL, 2, NULL);
+//  vTaskStartScheduler();
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -766,6 +766,7 @@ static void MX_GPIO_Init(void)
 /* USER CODE END Header_StartDefaultTask */
 void StartDefaultTask(void const * argument)
 {
+	initialize_rfid();
   /* init code for FATFS */
   MX_FATFS_Init();
 
