@@ -93,7 +93,7 @@ AuthScreenViewBase::AuthScreenViewBase() :
     swipeContainer1.add(swipeContainer1Page4);
 
     swipeContainer1.setPageIndicatorBitmaps(touchgfx::Bitmap(BITMAP_BLUE_PAGEINDICATOR_DOT_INDICATOR_SMALL_NORMAL_ID), touchgfx::Bitmap(BITMAP_BLUE_PAGEINDICATOR_DOT_INDICATOR_SMALL_HIGHLIGHT_ID));
-    swipeContainer1.setPageIndicatorXY(10, 5);
+    swipeContainer1.setPageIndicatorXY(370, 5);
     swipeContainer1.setSwipeCutoff(50);
     swipeContainer1.setEndSwipeElasticWidth(50);
     swipeContainer1.setSelectedPage(0);
