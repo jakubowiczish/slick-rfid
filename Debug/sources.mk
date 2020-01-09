@@ -28,7 +28,6 @@ CPP_DEPS :=
 SUBDIRS := \
 Core/Src \
 Core/Startup \
-Drivers/BSP/Components/cs43l22 \
 Drivers/BSP/Components/exc7200 \
 Drivers/BSP/Components/ft6x06 \
 Drivers/BSP/Components/otm8009a \

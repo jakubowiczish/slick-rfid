@@ -55,7 +55,6 @@ RM := rm -rf
 -include Drivers/BSP/Components/otm8009a/subdir.mk
 -include Drivers/BSP/Components/ft6x06/subdir.mk
 -include Drivers/BSP/Components/exc7200/subdir.mk
--include Drivers/BSP/Components/cs43l22/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
 -include subdir.mk
