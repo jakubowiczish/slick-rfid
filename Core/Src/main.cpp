@@ -26,6 +26,7 @@
 #include "rfid.h"
 #include "dbgu.h"
 #include "term_io.h"
+#include "stm32469i_discovery_audio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -197,11 +198,7 @@ int main(void)
   /* USER CODE END 3 */
 }
 
-void initialize_rfid() {
-	rfid_configure(&hspi2, GPIOH, SPI_CS_Pin, GPIOA, RFID_RESET_Pin);
-	rfid_self_test();
-	rfid_init();
-}
+
 
 void main_task(void *p) {
 	initialize_rfid();
@@ -753,6 +750,26 @@ static void MX_GPIO_Init(void)
 
 }
 
+
+void initialize_rfid() {
+	rfid_configure(&hspi2, GPIOH, SPI_CS_Pin, GPIOA, RFID_RESET_Pin);
+	rfid_self_test();
+	rfid_init();
+}
+
+void initialize_audio() {
+	xprintf("initializing audio codec...\n");
+
+	if(BSP_AUDIO_OUT_Init(OUTPUT_DEVICE_HEADPHONE1, 60, AUDIO_FREQUENCY_44K) == 0) {
+		xprintf("audio init OK \r\n");
+	}
+
+	else {
+		xprintf("audio init ERROR \r\n");
+	}
+
+	BSP_AUDIO_OUT_SetAudioFrameSlot(CODEC_AUDIOFRAME_SLOT_02);
+}
 /* USER CODE BEGIN 4 */
 
 /* USER CODE END 4 */
@@ -767,20 +784,21 @@ static void MX_GPIO_Init(void)
 void StartDefaultTask(void const * argument)
 {
 	initialize_rfid();
+	initialize_audio();
   /* init code for FATFS */
-  MX_FATFS_Init();
+	MX_FATFS_Init();
 
   /* init code for USB_HOST */
-  MX_USB_HOST_Init();
+	MX_USB_HOST_Init();
 
 /* Graphic application */
-  GRAPHICS_MainTask();
+	GRAPHICS_MainTask();
   /* USER CODE BEGIN 5 */
   /* Infinite loop */
-  for(;;)
-  {
-    osDelay(1);
-  }
+	for(;;)
+	{
+		osDelay(1);
+	}
   /* USER CODE END 5 */ 
 }
 
