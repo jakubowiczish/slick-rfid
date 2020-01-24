@@ -14,7 +14,6 @@ Model::Model() : modelListener(0) {
 
 void Model::tick() {
 	if (!isAuthenticated && rfid_is_new_card()) {
-
 		rfid_status_t status = rfid_select_tag(uidTabBuffer, &size, &sak);
 		xprintf("tag read status: %d \r\n", status);
 

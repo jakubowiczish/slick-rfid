@@ -1,0 +1,1 @@
+rfid_status_t rfid_reqa(uint8_t *response, uint8_t *response_size);

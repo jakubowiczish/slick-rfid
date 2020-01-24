@@ -1,0 +1,1 @@
+uint8_t rfid_get_gain();

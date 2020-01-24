@@ -1,0 +1,1 @@
+void rfid_stop_crypto();

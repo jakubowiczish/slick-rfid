@@ -1,0 +1,1 @@
+rfid_status_t rfid_halt();

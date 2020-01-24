@@ -1,0 +1,1 @@
+rfid_status_t rfid_calc_crc(uint8_t *tab, uint8_t len, uint8_t *out);

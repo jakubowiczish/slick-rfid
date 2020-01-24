@@ -1,0 +1,1 @@
+bool rfid_is_new_card();

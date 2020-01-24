@@ -1,0 +1,1 @@
+void rfid_set_gain(uint8_t mask);

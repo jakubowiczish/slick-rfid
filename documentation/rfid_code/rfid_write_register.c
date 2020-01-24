@@ -1,0 +1,1 @@
+void rfid_write_register(uint8_t addr, uint8_t val);

@@ -1,0 +1,1 @@
+void rfid_clear_bit_mask(uint8_t reg, uint8_t mask);

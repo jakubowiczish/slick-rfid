@@ -1,0 +1,1 @@
+rfid_status_t rfid_select_tag(uint8_t *uid_tab, uint8_t *size, uint8_t *sak);
