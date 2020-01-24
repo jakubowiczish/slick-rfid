@@ -1,4 +1,8 @@
-## Projekt z Systemów Wbudowanych - dokumentacja
+## Embedded Systems Project - documentation
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/jakubowiczish/slick_rfid/master/documentation/task/task.png" width="100%">
+</p>
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/jakubowiczish/slick_rfid/master/documentation/task/Dokumentacja_Systemy_Wbudowane-page-001.jpg" width="100%">
