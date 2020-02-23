@@ -1,3 +1,12 @@
+<img src="https://img.shields.io/github/languages/code-size/jakubowiczish/slick-rfid?style=for-the-badge"> <img src="https://img.shields.io/github/repo-size/jakubowiczish/slick-rfid?color=purple&style=for-the-badge"> 
+<img src="https://img.shields.io/github/languages/count/jakubowiczish/slick-rfid?color=green&style=for-the-badge"> 
+<img src="https://img.shields.io/github/languages/top/jakubowiczish/slick-rfid?color=orange&style=for-the-badge">
+<img src="https://img.shields.io/github/commit-activity/m/jakubowiczish/slick-rfid?color=lime&style=for-the-badge">
+<img src="https://img.shields.io/github/last-commit/jakubowiczish/slick-rfid?color=darkgreen&style=for-the-badge">
+
+<img src="https://tokei.rs/b1/github/jakubowiczish/slick-rfid?category=code" width="200"> <img src="https://tokei.rs/b1/github/jakubowiczish/slick-rfid?category=lines" width="175">
+<img src="https://tokei.rs/b1/github/jakubowiczish/slick-rfid?category=files" width="90">
+
 ## Embedded Systems Project - documentation
 
 <p align="center">
